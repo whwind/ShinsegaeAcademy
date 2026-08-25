@@ -4,8 +4,6 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gridstack@13.1.2/dist/gridstack.min.css" />
-	<script src="https://cdn.jsdelivr.net/npm/gridstack@13.1.2/dist/gridstack-all.js"></script>
 	<link rel="stylesheet" href="../resources/css/common.css" />
 
 	<title>신세계 아카데미</title>
@@ -56,7 +54,7 @@
 		</header>
 		<div class="video">
 			<video autoplay muted loop playsinline>
-				<source src="비디오_경로.mp4" type="video/mp4">
+				<source src="#" type="video/mp4">
 				브라우저가 비디오를 지원하지 않습니다.
 			</video>
 			<div>
@@ -89,18 +87,45 @@
 			</div>
 		</div>
 
-		<aside>
-
-		</aside>
-
 		<main>
-
+			<p>
+				이세계 회원님, 환영합니다.이세계 회원님, 환영합니다.
+나의 수강현황
+변경
+강남점
+			</p>
+			<div>
+				<ul>
+					<li><a href="#">수강 과목 1</a></li>
+					<li><a href="#">수강 과목 2</a></li>
+					<li><a href="#">수강 과목 3</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">강남점</a></li>
+					<li><a href="#">인천점</a></li>
+					<li><a href="#">부산점</a></li>
+				</ul>
+			</div>
 		</main>
 
 		<footer>
 
 		</footer>
 	</div>
+
+	
+	<script type="text/javascript">
+		console.log('스크롤');
+		var el = document.querySelector('.video');
+		el.addEventListener('scroll', function(){
+			console.log('스크롤 이동');
+			window.scrollTo({
+				top:500,
+				behavior: 'smooth'
+			});
+		});
+	</script>
+
 </body>
 
 </html>
