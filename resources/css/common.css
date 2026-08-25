@@ -1,0 +1,312 @@
+/*
+	zzzzzShin v1.0 | 20260824
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, button, input, select, textarea,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	box-sizing:border-box;
+	vertical-align:middle;
+	text-decoration:none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+select {
+
+}
+input[type=text] {
+
+}
+input[type=radio] {
+
+}
+input[type=checkbox] {
+
+}
+
+/* 신세계 반부리 */
+@font-face {
+	font-family:'Sinsegae';
+	font-style:normal;
+	font-weight:500;
+	src:url(신세계반부리Medium.ttf);
+	src:url(신세계반부리Medium.otf);
+}
+
+/* 신세계 민부리 */
+@font-face {
+	font-family:'SinsegaeSans';
+	font-style:Medium;
+	font-weight:500;
+	src:url(신세계민부리Medium.ttf);
+	src:url(신세계민부리Medium.otf);
+}
+
+body {
+	font-family:'SinsegaeSans', '맑은고딕', sans-serif; font-weight:500; font-size:20px; line-height:28px;
+}
+
+.blind {
+	display:none;
+}
+
+body {
+	font-family:'맑은고딕';
+	font-size:16px;
+}
+
+#wrap {
+	position:relative;
+	width:100%;
+}
+
+header {
+	position:absolute;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	top:0;
+	left:50%;
+	transform:translateX(-50%);
+	z-index:100;
+	width:100vw;
+	max-width:2560px;
+	padding:100px 60px 0 60px;
+}
+header > a {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:60px;
+	font-size:16px;
+	color:#D9D9D9;
+	text-align:center;
+	line-height:60px;
+	background:#353535;
+}
+header nav {
+	width:710px;
+}
+header nav ul {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	width:710px;
+}
+header nav ul li a {
+	display:block;
+	font-size:22px;
+	color:#fff;
+}
+header > ul {
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+header > ul .login {
+	display:block;
+	width:24px;
+	height:24px;
+	margin-right:20px;
+	text-indent:-9999px;
+	background:url(../images/btn_login.png) no-repeat 50% 50%;
+}
+header > ul .cart {
+	display:block;
+	width:19px;
+	height:19px;
+	text-indent:-9999px;
+	background:url(../images/btn_bag.png) no-repeat 50% 50%;
+}
+header > div {
+	position:absolute;
+	top:785px;
+	left:50%;
+	transform:translateX(-50%);
+}
+header > div fieldset {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	width:900px;
+	height:80px;
+	padding:0 40px;
+	border:1px solid #E3DAC8;
+	border-radius:40px;
+	background:rgba(0, 0, 0, 0.53);
+}
+
+header > div fieldset input[type=text] {
+	width:760px;
+	height:40px;
+	font-size:24px;
+	color:#fff;
+	background:none;
+	outline:none;
+}
+header > div fieldset input[type=text]::placeholder {
+	color:rgba(255, 255, 255, .5);
+}
+header > div fieldset button {
+	width:24px;
+	height:24px;
+	text-indent:-9999px;
+	background:url(../images/btn_serch.png) no-repeat 50% 50%;
+}
+header > div ul {
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	margin-top:24px;
+}
+header > div ul a {
+	display:block;
+	height:42px;
+	padding:0 16px;
+	font-size:16px;
+	line-height:40px;
+	color:#fff;
+	border:1px solid #5D574D;
+	border-radius:21px;
+	background:rgba(34, 34, 34, .5);
+}
+header > div ul a:before {
+	content:'#';
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.video {
+	position:absolute;
+	top:0;
+	left:50%;
+	transform:translateX(-50%);
+	z-index:-1;
+	overflow:hidden;
+	width:100vw;
+	max-width:2560px;
+	height:100vh;
+	margin:0 auto;
+	background:url(../images/sample_video.png) no-repeat 50% 50%;
+	background-size:cover;
+}
+.video:after {
+	content:'SCROLL';
+	position:absolute;
+	z-index:10;
+	bottom:35px;
+	left:50%;
+	transform:translateX(-50%);
+	padding-top:16px;
+	color:#fff;
+	font-size:16px;
+	letter-spacing:20%;
+	background:url(../images/icon_scroll.png) no-repeat 50% 0;
+	animation: fadeIn 1s ease-in-out infinite alternate;
+}
+.video video {
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	object-fit:cover;
+}
+.video > div {
+	position:absolute;
+	padding:390px 0 0 60px;
+	color:#fff;
+}
+.video > div dl dt {
+	margin-bottom:20px;
+	font-size:64px;
+	line-height:64px;
+}
+.video > div dl dd {
+	font-size:32px;
+	line-height:44px;
+}
+.video > div ul {
+	display:flex;
+	align-items:center;
+	gap:10px;
+	margin-top:40px;
+	gap:10px;
+}
+.video > div ul li {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	gap:10px;
+}
+.video > div ul li a {
+	color:#a38348;
+	font-size:12px;
+}
+.video > div ul li.on a {
+	color:#F22C2D;
+}
+.video > div ul li div {
+	display:none;
+	position:relative;
+	width:88px;
+	height:4px;
+	text-indent:-9999px;
+	border-radius:2px;
+	background:rgba(45, 45, 45, 0.3);
+}
+.video > div ul li div:after {
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	display:block;
+	width:50%;
+	height:100%;
+	background:#F22C2E;
+	border-radius:2px;
+}
+.video > div ul li.on div {
+	display:block;
+}
+.video > div ul li button {
+	display:none;
+	width:5px;
+	height:7px;
+	text-indent:-9999px;
+	background:url(../images/btn_video.png) no-repeat 50% 50%;
+	background-size:cover;
+}
+.video > div ul li.on button {
+	display:block;
+}

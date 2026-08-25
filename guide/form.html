@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Form Guide</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../resources/guide.css" />
+    <link rel="stylesheet" href="../resources/datepicker.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </head>
+  <body>
+    <div class="wrap is-guide">
+      <div class="container">
+        <!-- Lnb -->
+
+        <aside class="aside">
+          <nav>
+            <dl>
+              <dt>
+                <a href="./worksheet.html">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="3"
+                      y="4"
+                      width="18"
+                      height="16"
+                      rx="2"
+                      ry="2"
+                      stroke="#007bff"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                    <line
+                      x1="3"
+                      y1="10"
+                      x2="21"
+                      y2="10"
+                      stroke="#007bff"
+                      stroke-width="2"
+                    />
+                    <line
+                      x1="9"
+                      y1="4"
+                      x2="9"
+                      y2="20"
+                      stroke="#007bff"
+                      stroke-width="2"
+                    />
+                  </svg>
+
+                  Worksheet
+                </a>
+              </dt>
+              <dd>
+                <ul>
+                  <li></li>
+                </ul>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <a href="./form.html">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 5C4 4.44772 4.44772 4 5 4H11C11.5523 4 12 4.44772 12 5V19C12 19.5523 11.5523 20 11 20H5C4.44772 20 4 19.5523 4 19V5Z"
+                      stroke="#007bff"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                    <path
+                      d="M12 5C12 4.44772 12.4477 4 13 4H19C19.5523 4 20 4.44772 20 5V19C20 19.5523 19.5523 20 19 20H13C12.4477 20 12 19.5523 12 19V5Z"
+                      stroke="#007bff"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                    <line
+                      x1="7"
+                      y1="8"
+                      x2="10"
+                      y2="8"
+                      stroke="#007bff"
+                      stroke-width="2"
+                    />
+                    <line
+                      x1="7"
+                      y1="12"
+                      x2="10"
+                      y2="12"
+                      stroke="#007bff"
+                      stroke-width="2"
+                    />
+                    <line
+                      x1="14"
+                      y1="8"
+                      x2="17"
+                      y2="8"
+                      stroke="#007bff"
+                      stroke-width="2"
+                    />
+                  </svg>
+
+                  Guide
+                </a>
+              </dt>
+              <dd>
+                <ul>
+                  <li class="is-active">
+                    <a href="./form.html">Form</a>
+                  </li>
+
+                  <li class="">
+                    <a href="./system-popup.html">System Popup</a>
+                  </li>
+
+                  <li class="">
+                    <a href="./chart.html">Chart</a>
+                  </li>
+
+                  <li class="">
+                    <a href="./button.html">Button</a>
+                  </li>
+
+                  <li class="">
+                    <a href="./font.html">Font</a>
+                  </li>
+
+                  <li class="">
+                    <a href="./tag.html">Tag</a>
+                  </li>
+
+                  <li class="">
+                    <a href="./pagination.html">Pagination</a>
+                  </li>
+
+                  <li class="">
+                    <a href="./loading.html">loading</a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+          </nav>
+        </aside>
+
+        <!-- // Lnb -->
+        <div id="contents" class="contents">
+          <!-- 본문 시작 -->
+
+          <h2>Form</h2>
+          <h3>Input - Text</h3>
+          <p class="desc">Input Text filed Default</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <input
+                class="form-input"
+                type="text"
+                placeholder="아이디를 입력해 주세요."
+              />
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<input class="form-input" type="text" placeholder="아이디를 입력해 주세요." />
+</script>
+		</code></pre>
+            </div>
+            <div class="example-code">
+              <div class="title">Nunjucks CODE</div>
+              <pre><code class="language-html">
+{{ components(&#39;input&#39;, {
+	type: 'text',                 // Input Type  
+	placeholder: 'Placeholder',   // placeholder  
+	size: '280px',                // Width  
+	class: 'addClass',            // Add Class  
+	readonly: true,               // readonly  
+	disabled: true                // disabled  
+}) }}
+</code></pre>
+            </div>
+          </div>
+          <h3>Input - Text</h3>
+          <p class="desc">Input Text Length Box</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <div class="input-area">
+                <input
+                  class="form-input"
+                  type="text"
+                  style="width: 100%"
+                  placeholder="한글로 입력해주세요 "
+                  maxlength="20"
+                />
+
+                <div class="length-check">
+                  <em>0</em>
+                  /
+                  <em>20</em>
+                  자
+                </div>
+              </div>
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<div class="input-area">
+	<input
+  class="form-input"
+  type="text"
+	
+	style="width:100%"
+  placeholder="한글로 입력해주세요 "
+  
+  
+  maxlength="20"	
+/>
+
+	<div class="length-check">
+		<em>0</em> / <em>20</em> 자
+	</div>
+</div>
+</script>
+		</code></pre>
+            </div>
+            <div class="example-code">
+              <div class="title">Nunjucks CODE</div>
+              <pre><code class="language-html">
+<div class="input-area">
+	{{ components(&#39;input&#39;, {
+		type: 'text', 
+		placeholder: '한글로 입력해주세요 ',
+		 maxlength: 20, 
+		 size: '100%'
+	}) }}
+</div>
+{{ components(&#39;input&#39;, {
+	type: 'text',                 // Input Type  
+	placeholder: 'Placeholder',   // placeholder  
+	size: '280px',                // Width  
+	class: 'addClass',            // Add Class  
+	readonly: true,               // readonly  
+	disabled: true                // disabled  
+}) }}
+</code></pre>
+            </div>
+          </div>
+          <h3>Input - password</h3>
+          <p class="desc">Input Password filed Default</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <input
+                class="form-input"
+                type="password"
+                placeholder="비밀번호를 입력해 주세요."
+              />
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<input type="password" placeholder="비밀번호를 입력해 주세요." />
+</script>
+		</code></pre>
+            </div>
+            <div class="example-code">
+              <div class="title">Nunjucks CODE</div>
+              <pre><code class="language-html">
+{{ components(&#39;input&#39;, {
+	type: 'password',                 // Input Type  
+	placeholder: 'Placeholder',   // placeholder  
+	size: '280px',                // Width  
+	class: 'addClass',            // Add Class  
+	readonly: true,               // readonly  
+	disabled: true                // disabled  
+}) }}
+</code></pre>
+            </div>
+          </div>
+          <h3>Input - Date Picker</h3>
+          <p class="desc">Input Date Picker</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <input
+                class="form-input is-datepicker start-date"
+                type="text"
+                style="width: 280px"
+                placeholder="시작일"
+              />
+
+              ~
+              <input
+                class="form-input is-datepicker end-date"
+                type="text"
+                style="width: 280px"
+                placeholder="종료일"
+              />
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<input type="text" placeholder="시작일" class="is-datepicker start-date" /> ~ <input type="text" placeholder="종료일" class="is-datepicker end-date" />
+</script>
+		</code></pre>
+            </div>
+            <div class="example-code">
+              <div class="title">Nunjucks CODE</div>
+              <pre class="theme-atom-one-dark"><code class="language-html">
+{{ components(&#39;input&#39;, {
+	type: 'text',                                 // Input Type  
+	placeholder: 'Placeholder',                   // placeholder  
+	size: '280px',                                // Width  
+	class: 'is-datepicker start-date',            // Add Class  
+	readonly: true,                               // readonly  
+	disabled: true                                // disabled  
+}) }}
+~
+{{ components(&#39;input&#39;, {
+	type: 'text',                                 // Input Type  
+	placeholder: 'Placeholder',                   // placeholder  
+	size: '280px',                                // Width  
+	class: 'is-datepicker end-date',              // Add Class  
+	readonly: true,                               // readonly  
+	disabled: true                                // disabled  
+}) }}
+</code></pre>
+            </div>
+            <div class="example-code">
+              <div class="title">Javascript CODE</div>
+              <pre
+                class="theme-atom-one-dark"
+              ><code class="language-javascript">
+const startInput = document.querySelector('.start-date');
+const endInput = document.querySelector('.end-date');
+
+const startDatepicker = new Datepicker(startInput, {
+	autohide: true,
+	format: 'yyyy-mm-dd'
+});
+
+const endDatepicker = new Datepicker(endInput, {
+	autohide: true,
+	format: 'yyyy-mm-dd'
+});
+
+// 시작일 선택 시 종료일의 최소 날짜를 설정
+startInput.addEventListener('changeDate', (e) => {
+	const startDate = startDatepicker.getDate();
+	endDatepicker.setOptions({
+		minDate: startDate
+	});
+});
+
+// 종료일 선택 시 시작일의 최대 날짜를 설정
+endInput.addEventListener('changeDate', (e) => {
+	const endDate = endDatepicker.getDate();
+	startDatepicker.setOptions({
+		maxDate: endDate
+	});
+});
+</code></pre>
+            </div>
+          </div>
+          <h3>Input - checkbox</h3>
+          <p class="desc">Input checkbox Single</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <span class="checkbox">
+                <input type="checkbox" id="c1" class="checkbox-input" />
+                <label class="checkbox-label is-single" for="c1">
+                  <span class="checkbox-text"></span>
+                </label>
+              </span>
+              <span class="checkbox">
+                <input type="checkbox" id="c2" class="checkbox-input" />
+                <label class="checkbox-label is-single" for="c2">
+                  <span class="checkbox-text"></span>
+                </label>
+              </span>
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<span class="checkbox">
+  <input type="checkbox" id="c1" class="checkbox-input" />
+  <label class="checkbox-label is-single" for="c1"><span class="checkbox-text"></span></label>
+</span>
+</script>
+		</code></pre>
+            </div>
+            <div class="example-code">
+              <div class="title">Nunjucks CODE</div>
+              <pre class="theme-atom-one-dark"><code class="language-html">
+{{ components(&#39;checkbox&#39;, {
+	id: 'c1',            // ID  
+	readonly: true,      // readonly  
+	disabled: true       // disabled  
+	checked: true        // checked
+	text: ''             // label name
+}) }}
+</code></pre>
+            </div>
+          </div>
+          <h3>Select</h3>
+          <p class="desc">Default Select</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <select>
+                <option value="s1">전체1</option>
+                <option value="s2">전체2</option>
+              </select>
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<select>
+	<option value="s1">전체1</option>
+	<option value="s2">전체2</option>
+</select>
+</script>
+		</code></pre>
+            </div>
+            <div class="example-code">
+              <div class="title">Nunjucks CODE</div>
+              <pre class="theme-atom-one-dark"><code class="language-html">
+{{ components(&#39;selectbox&#39;, {
+	id: 'c1',            // ID  
+	readonly: true,      // readonly  
+	disabled: true       // disabled  
+	checked: true        // checked
+	size: '280px'        // Width  
+	options: [           // options
+		{
+			value: 's1',     // option value
+			text: '선택1'    // option text
+		}
+	]           
+}) }}
+</code></pre>
+            </div>
+          </div>
+          <h3>Design Select</h3>
+          <p class="desc">Default Design Select</p>
+          <div class="example-button">
+            <button type="button" class="btn btn-primary set-select">
+              <span>Set Select</span>
+            </button>
+            <button type="button" class="btn btn-primary get-select-index">
+              <span>Get Select Index</span>
+            </button>
+            <button type="button" class="btn btn-primary get-select-value">
+              <span>Get Select Value</span>
+            </button>
+          </div>
+          <div class="example-grid">
+            <div class="example-sample">
+              <div class="design-select">
+                <div class="design-select-selected">
+                  <button type="button">
+                    <span>선택해주세요.</span>
+                  </button>
+                </div>
+                <div class="design-select-options">
+                  <ul class="design-select-options-wrap">
+                    <li class="design-select-option">
+                      <button
+                        type="button"
+                        class="design-select-option-button"
+                        data-value="s1"
+                      >
+                        <span class="design-select-option-text">전체1</span>
+                      </button>
+                    </li>
+                    <li class="design-select-option">
+                      <button
+                        type="button"
+                        class="design-select-option-button"
+                        data-value="s2"
+                      >
+                        <span class="design-select-option-text">전체2</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<div class="design-select">
+	<div class="design-select-selected">
+		<button type="button">
+			<span>선택해주세요.</span>
+		</button>
+	</div>
+	<div class="design-select-options">
+		<ul class="design-select-options-wrap">
+			<li class="design-select-option">
+				<button type="button" class="design-select-option-button" data-value="s1">
+					<span class="design-select-option-text">전체1</span>
+				</button>
+			</li>
+			<li class="design-select-option">
+				<button type="button" class="design-select-option-button" data-value="s2">
+					<span class="design-select-option-text">전체2</span>
+				</button>
+			</li>
+		</ul>
+	</div>
+</div>
+</script>
+		</code></pre>
+            </div>
+            <div class="example-code">
+              <div class="title">Nunjucks CODE</div>
+              <pre class="theme-atom-one-dark"><code class="language-html">
+{{ components(&#39;design-select&#39;, {
+	id: 'c1',            					// ID  
+	readonly: true,      					// readonly  
+	disabled: true       					// disabled  
+	checked: true       					// checked
+	size: '280px'       					// Width  
+	defaultText: '선택해주세요.'	// Default Text
+	options: [          					// options
+		{
+			value: 's1',    					// option value
+			text: '선택1' 					  // option text
+		}
+	]           
+}) }}
+</code></pre>
+            </div>
+            <div class="example-code">
+              <div class="title">Javascript CODE</div>
+              <pre
+                class="theme-atom-one-dark"
+              ><code class="language-javascript">
+/**
+ * 디자인 셀렉트 박스 함수
+ * @param {String} selector - 셀렉트 박스 선택자
+ * @param {String} viewTarget - 옵션 내부 표시용 선택자 (예: ".design-select-option-text")
+ * @param {Number} defaultIndex - 초기 선택할 옵션 인덱스 (0부터 시작)
+ * @param {Function} afterEvent - 이벤트 이후 실행 함수 (e, value)
+ */
+
+selectBoxs({
+	selector: '.design-select',
+	afterEvent: (e, value) => {
+		console.log('선택된 값:', value);
+	}
+});
+
+/**
+ * 셀렉트 박스의 선택값을 인덱스로 변경하는 함수
+ * @param {string} selector - 셀렉트 박스 최상위 요소 선택자 (예: '.design-select')
+ * @param {number} index - 선택할 옵션의 인덱스 (0부터 시작)
+ * @param {function} [afterEvent] - 선택 후 호출할 콜백 함수 (e, value)
+ */
+
+setSelectValueByIndex('.design-select', 1, (e, value) => {
+	alert('선택된 값: ' + value); // 문자열 + 변수
+});
+
+/**
+ * 셀렉트 박스에서 현재 선택된 옵션의 인덱스를 반환
+ * @param {string} selector - 셀렉트 박스 최상위 요소 선택자
+ * @returns {number} 선택된 옵션 인덱스, 없으면 -1 반환
+ */
+
+ const selectedIndex = getSelectedIndex('.design-select');
+
+ /**
+ * 셀렉트 박스에서 현재 선택된 옵션의 data-value 값을 반환
+ * @param {string} selector - 셀렉트 박스 최상위 요소 선택자
+ * @returns {string|null} 선택된 옵션의 data-value, 없으면 null 반환
+ */
+
+const selectedValue = getSelectValue('.design-select');
+</code></pre>
+            </div>
+          </div>
+          <h3>Radio</h3>
+          <p class="desc">Default Radio</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <span class="radio">
+                <input
+                  type="radio"
+                  id="radio1-1"
+                  name="r-1"
+                  class="radio-input"
+                />
+                <label class="radio-label" for="radio1-1">
+                  <span class="radio-text">검토중</span>
+                </label>
+              </span>
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<span class="radio">
+  <input type="radio" id="radio1-1" name="r-1" class="radio-input">
+  <label class="radio-label" for="radio1-1"><span class="radio-text">검토중</span></label>
+</span>
+</script>
+		</code></pre>
+            </div>
+            <div class="example-code">
+              <div class="title">Nunjucks CODE</div>
+              <pre class="theme-atom-one-dark"><code class="language-html">
+{{ components(&#39;radio&#39;, {
+	id: 'radio1-1',      // ID  
+	name: 'r-1',         // name  
+	disabled: true       // disabled  
+	checked: true        // checked
+	text: '검토중'       // text
+}) }}
+</code></pre>
+            </div>
+          </div>
+          <p class="desc">Direction Row</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <div class="radio-group is-row">
+                <ul class="radio-group-wrap">
+                  <li>
+                    <span class="radio">
+                      <input
+                        type="radio"
+                        id="radio2-1"
+                        name="r-2"
+                        class="radio-input"
+                      />
+                      <label class="radio-label" for="radio2-1">
+                        <span class="radio-text">검토중</span>
+                      </label>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="radio">
+                      <input
+                        type="radio"
+                        id="radio2-2"
+                        name="r-2"
+                        class="radio-input"
+                      />
+                      <label class="radio-label" for="radio2-2">
+                        <span class="radio-text">승인</span>
+                      </label>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="radio">
+                      <input
+                        type="radio"
+                        id="radio2-3"
+                        name="r-2"
+                        class="radio-input"
+                      />
+                      <label class="radio-label" for="radio2-3">
+                        <span class="radio-text">반려</span>
+                      </label>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<div class="radio-group is-row">
+	<ul class="radio-group-wrap">
+		<li><span class="radio">
+  <input 
+		type="radio"
+		id="radio2-1"
+		name="r-2"
+		class="radio-input"
+		
+		
+	/>
+  <label class="radio-label" for="radio2-1"><span class="radio-text">검토중</span></label>
+</span></li>
+		<li><span class="radio">
+  <input 
+		type="radio"
+		id="radio2-2"
+		name="r-2"
+		class="radio-input"
+		
+		
+	/>
+  <label class="radio-label" for="radio2-2"><span class="radio-text">승인</span></label>
+</span></li>
+		<li><span class="radio">
+  <input 
+		type="radio"
+		id="radio2-3"
+		name="r-2"
+		class="radio-input"
+		
+		
+	/>
+  <label class="radio-label" for="radio2-3"><span class="radio-text">반려</span></label>
+</span></li>
+	</ul>
+</div>
+</script>
+		</code></pre>
+            </div>
+          </div>
+          <p class="desc">Direction Column</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <div class="radio-group is-Column">
+                <ul class="radio-group-wrap">
+                  <li>
+                    <span class="radio">
+                      <input
+                        type="radio"
+                        id="radio3-1"
+                        name="r-3"
+                        class="radio-input"
+                      />
+                      <label class="radio-label" for="radio3-1">
+                        <span class="radio-text">검토중</span>
+                      </label>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="radio">
+                      <input
+                        type="radio"
+                        id="radio3-2"
+                        name="r-3"
+                        class="radio-input"
+                      />
+                      <label class="radio-label" for="radio3-2">
+                        <span class="radio-text">승인</span>
+                      </label>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="radio">
+                      <input
+                        type="radio"
+                        id="radio3-3"
+                        name="r-3"
+                        class="radio-input"
+                      />
+                      <label class="radio-label" for="radio3-3">
+                        <span class="radio-text">반려</span>
+                      </label>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<div class="radio-group is-Column">
+	<ul class="radio-group-wrap">
+		<li><span class="radio">
+  <input 
+		type="radio"
+		id="radio3-1"
+		name="r-3"
+		class="radio-input"
+		
+		
+	/>
+  <label class="radio-label" for="radio3-1"><span class="radio-text">검토중</span></label>
+</span></li>
+		<li><span class="radio">
+  <input 
+		type="radio"
+		id="radio3-2"
+		name="r-3"
+		class="radio-input"
+		
+		
+	/>
+  <label class="radio-label" for="radio3-2"><span class="radio-text">승인</span></label>
+</span></li>
+		<li><span class="radio">
+  <input 
+		type="radio"
+		id="radio3-3"
+		name="r-3"
+		class="radio-input"
+		
+		
+	/>
+  <label class="radio-label" for="radio3-3"><span class="radio-text">반려</span></label>
+</span></li>
+	</ul>
+</div>
+</script>
+		</code></pre>
+            </div>
+          </div>
+          <h3>Textarea</h3>
+          <p class="desc">Default Textarea</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <div class="text-area">
+                <textarea class="form-textarea" rows="5"></textarea>
+              </div>
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<div class="text-area">
+	<textarea class="form-textarea" rows="5"></textarea>
+</div>
+</script>
+		</code></pre>
+            </div>
+            <div class="example-code">
+              <div class="title">Nunjucks CODE</div>
+              <pre class="theme-atom-one-dark"><code class="language-html">
+{{ components(&#39;textarea&#39;, {
+	placeholder: '답변을 입력해주세요.',      // placeholder  
+	readonly: true,                          // readonly  
+	disabled: true                           // disabled  
+	rows: 5                                  // row (number)
+	size: '100px'                            // width
+	maxlength: 100                           // max-length (number)
+}) }}
+</code></pre>
+            </div>
+          </div>
+
+          <!-- // 본문 시작 -->
+        </div>
+      </div>
+    </div>
+    <script src="/sh-monitoring/resources/js/ui.js"></script>
+
+    <script src="/resources/js/datepicker-full.min.js"></script>
+    <script>
+      const startInput = document.querySelector(".start-date");
+      const endInput = document.querySelector(".end-date");
+
+      const startDatepicker = new Datepicker(startInput, {
+        autohide: true,
+        format: "yyyy-mm-dd",
+      });
+
+      const endDatepicker = new Datepicker(endInput, {
+        autohide: true,
+        format: "yyyy-mm-dd",
+      });
+
+      // 시작일 선택 시 종료일의 최소 날짜를 설정
+      startInput.addEventListener("changeDate", (e) => {
+        const startDate = startDatepicker.getDate();
+        endDatepicker.setOptions({
+          minDate: startDate,
+        });
+      });
+
+      // 종료일 선택 시 시작일의 최대 날짜를 설정
+      endInput.addEventListener("changeDate", (e) => {
+        const endDate = endDatepicker.getDate();
+        startDatepicker.setOptions({
+          maxDate: endDate,
+        });
+      });
+
+      // Design Selctet
+      selectBoxs({
+        selector: ".design-select",
+        // defaultIndex: 1,
+        afterEvent: (e, value) => {
+          console.log("선택된 값:", value);
+        },
+      });
+
+      document.querySelector(".set-select").addEventListener("click", () => {
+        setSelectValueByIndex(".design-select", 1, (e, value) => {
+          alert("선택된 값: " + value); // 문자열 + 변수
+        });
+      });
+
+      document
+        .querySelector(".get-select-index")
+        .addEventListener("click", () => {
+          const selectedIndex = getSelectedIndex(".design-select");
+          alert("선택된 값: " + selectedIndex); // 문자열 + 변수
+        });
+
+      document
+        .querySelector(".get-select-value")
+        .addEventListener("click", () => {
+          const selectedValue = getSelectValue(".design-select");
+          alert("선택된 값: " + selectedValue); // 문자열 + 변수
+        });
+    </script>
+  </body>
+</html>
