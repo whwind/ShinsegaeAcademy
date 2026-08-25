@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Form Guide</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../resources/guide.css" />
+    <link rel="stylesheet" href="../resources/datepicker.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </head>
+  <body>
+    <div class="wrap is-guide">
+      <div class="container">
+        <!-- Lnb -->
+
+        <aside class="aside">
+          <nav>
+            <dl>
+              <dt>
+                <a href="./worksheet.html">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="3"
+                      y="4"
+                      width="18"
+                      height="16"
+                      rx="2"
+                      ry="2"
+                      stroke="#007bff"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                    <line
+                      x1="3"
+                      y1="10"
+                      x2="21"
+                      y2="10"
+                      stroke="#007bff"
+                      stroke-width="2"
+                    />
+                    <line
+                      x1="9"
+                      y1="4"
+                      x2="9"
+                      y2="20"
+                      stroke="#007bff"
+                      stroke-width="2"
+                    />
+                  </svg>
+
+                  Worksheet
+                </a>
+              </dt>
+              <dd>
+                <ul>
+                  <li></li>
+                </ul>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <a href="./form.html">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 5C4 4.44772 4.44772 4 5 4H11C11.5523 4 12 4.44772 12 5V19C12 19.5523 11.5523 20 11 20H5C4.44772 20 4 19.5523 4 19V5Z"
+                      stroke="#007bff"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                    <path
+                      d="M12 5C12 4.44772 12.4477 4 13 4H19C19.5523 4 20 4.44772 20 5V19C20 19.5523 19.5523 20 19 20H13C12.4477 20 12 19.5523 12 19V5Z"
+                      stroke="#007bff"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                    <line
+                      x1="7"
+                      y1="8"
+                      x2="10"
+                      y2="8"
+                      stroke="#007bff"
+                      stroke-width="2"
+                    />
+                    <line
+                      x1="7"
+                      y1="12"
+                      x2="10"
+                      y2="12"
+                      stroke="#007bff"
+                      stroke-width="2"
+                    />
+                    <line
+                      x1="14"
+                      y1="8"
+                      x2="17"
+                      y2="8"
+                      stroke="#007bff"
+                      stroke-width="2"
+                    />
+                  </svg>
+
+                  Guide
+                </a>
+              </dt>
+              <dd>
+                <ul>
+                  <li class="">
+                    <a href="./form.html">Form</a>
+                  </li>
+
+                  <li class="">
+                    <a href="./system-popup.html">System Popup</a>
+                  </li>
+
+                  <li class="">
+                    <a href="./chart.html">Chart</a>
+                  </li>
+
+                  <li class="is-active">
+                    <a href="./button.html">Button</a>
+                  </li>
+
+                  <li class="">
+                    <a href="./font.html">Font</a>
+                  </li>
+
+                  <li class="">
+                    <a href="./tag.html">Tag</a>
+                  </li>
+
+                  <li class="">
+                    <a href="./pagination.html">Pagination</a>
+                  </li>
+
+                  <li class="">
+                    <a href="./loading.html">loading</a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+          </nav>
+        </aside>
+
+        <!-- // Lnb -->
+        <div id="contents" class="contents">
+          <!-- 본문 시작 -->
+
+          <h2>Button</h2>
+          <h3>Button - Defualt</h3>
+          <p class="desc">Button Type</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <button type="button" class="btn btn-primary">
+                <span>버튼</span>
+              </button>
+
+              <button type="button" class="btn btn-secondary">
+                <span>버튼</span>
+              </button>
+
+              <button type="button" class="btn btn-request">
+                <span>버튼</span>
+              </button>
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<button type="button" class="btn btn-primary"><span>버튼</span></button>
+<button type="button" class="btn btn-secondary"><span>버튼</span></button>
+<button type="button" class="btn btn-request"><span>버튼</span></button>
+</script>
+		</code></pre>
+            </div>
+            <div class="example-code">
+              <div class="title">Nunjucks CODE</div>
+              <pre><code class="language-html">
+{{ components(&#39;button&#39;, {
+	type: 'button',               // Input Type
+	buttonType: 'primary',        // primary, secondary, request
+	text: '텍스트',               // 'button name'
+}) }}
+</code></pre>
+            </div>
+          </div>
+          <p class="desc">A Tag Type</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <a href="" class="btn btn-primary">
+                <span>버튼</span>
+              </a>
+
+              <a href="" class="btn btn-secondary">
+                <span>버튼</span>
+              </a>
+
+              <a href="" class="btn btn-request">
+                <span>버튼</span>
+              </a>
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<a href="#" class="btn btn-primary"><span>버튼</span></a>
+<a href="#" class="btn btn-secondary"><span>버튼</span></a>
+<a href="#" class="btn btn-request"><span>버튼</span></a>
+</script>
+		</code></pre>
+            </div>
+            <div class="example-code">
+              <div class="title">Nunjucks CODE</div>
+              <pre><code class="language-html">
+{{ components(&#39;button&#39;, {
+	type: 'a',                    // Input Type
+	buttonType: 'primary',        // primary, secondary, request
+	text: '텍스트',               // 'button name'
+}) }}
+</code></pre>
+            </div>
+          </div>
+          <h3>Button - Disabled</h3>
+          <p class="desc">Button Type</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <button type="button" class="btn btn-primary" disabled>
+                <span>버튼</span>
+              </button>
+
+              <button type="button" class="btn btn-secondary" disabled>
+                <span>버튼</span>
+              </button>
+
+              <button type="button" class="btn btn-request" disabled>
+                <span>버튼</span>
+              </button>
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<button type="button" class="btn btn-primary"><span>버튼</span></button>
+<button type="button" class="btn btn-secondary"><span>버튼</span></button>
+<button type="button" class="btn btn-request"><span>버튼</span></button>
+</script>
+		</code></pre>
+            </div>
+            <div class="example-code">
+              <div class="title">Nunjucks CODE</div>
+              <pre><code class="language-html">
+{{ components(&#39;button&#39;, {
+	type: 'button',               // Input Type
+	buttonType: 'primary',        // primary, secondary, request
+	text: '텍스트',               // 'button name'
+	disabled: true,               // 'disabled'
+}) }}
+</code></pre>
+            </div>
+          </div>
+          <p class="desc">A Tag Type</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <a href="" class="btn btn-primary is-disabled">
+                <span>버튼</span>
+              </a>
+
+              <a href="" class="btn btn-secondary is-disabled">
+                <span>버튼</span>
+              </a>
+
+              <a href="" class="btn btn-request is-disabled">
+                <span>버튼</span>
+              </a>
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<a href="#" class="btn btn-primary is-disabled"><span>버튼</span></a>
+<a href="#" class="btn btn-secondary is-disabled"><span>버튼</span></a>
+<a href="#" class="btn btn-request is-disabled"><span>버튼</span></a>
+</script>
+		</code></pre>
+            </div>
+            <div class="example-code">
+              <div class="title">Nunjucks CODE</div>
+              <pre><code class="language-html">
+{{ components(&#39;button&#39;, {
+	type: 'a',                    // Input Type
+	buttonType: 'primary',        // primary, secondary, request
+	text: '텍스트',               // 'button name'
+	disabled: true,               // 'disabled'
+}) }}
+</code></pre>
+            </div>
+          </div>
+          <h3>Button - Small</h3>
+          <p class="desc">Button Type</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <button type="button" class="btn btn-primary is-small">
+                <span>버튼</span>
+              </button>
+
+              <button type="button" class="btn btn-secondary is-small">
+                <span>버튼</span>
+              </button>
+
+              <button type="button" class="btn btn-request is-small">
+                <span>버튼</span>
+              </button>
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<button type="button" class="btn btn-primary is-small"><span>버튼</span></button>
+<button type="button" class="btn btn-secondary is-small"><span>버튼</span></button>
+<button type="button" class="btn btn-request is-small"><span>버튼</span></button>
+</script>
+		</code></pre>
+            </div>
+            <div class="example-code">
+              <div class="title">Nunjucks CODE</div>
+              <pre><code class="language-html">
+{{ components(&#39;button&#39;, {
+	type: 'button',               // Input Type
+	buttonType: 'primary',        // primary, secondary, request
+	text: '텍스트',               // 'button name'
+	class: 'is-small',            // 'class add'
+}) }}
+</code></pre>
+            </div>
+          </div>
+          <p class="desc">A Tag Type</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <a href="" class="btn btn-primary is-small">
+                <span>버튼</span>
+              </a>
+
+              <a href="" class="btn btn-secondary is-small">
+                <span>버튼</span>
+              </a>
+
+              <a href="" class="btn btn-request is-small">
+                <span>버튼</span>
+              </a>
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<a href="#" class="btn btn-primary is-small"><span>버튼</span></a>
+<a href="#" class="btn btn-secondary is-small"><span>버튼</span></a>
+<a href="#" class="btn btn-request is-small"><span>버튼</span></a>
+</script>
+		</code></pre>
+            </div>
+            <div class="example-code">
+              <div class="title">Nunjucks CODE</div>
+              <pre><code class="language-html">
+{{ components(&#39;button&#39;, {
+	type: 'a',                    // Input Type
+	buttonType: 'primary',        // primary, secondary, request
+	text: '텍스트',               // 'button name'
+	class: 'is-small',            // 'class add'
+}) }}
+</code></pre>
+            </div>
+          </div>
+          <h3>Button - Large</h3>
+          <p class="desc">Button Type</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <button type="button" class="btn btn-primary is-large">
+                <span>버튼</span>
+              </button>
+
+              <button type="button" class="btn btn-secondary is-large">
+                <span>버튼</span>
+              </button>
+
+              <button type="button" class="btn btn-request is-large">
+                <span>버튼</span>
+              </button>
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<button type="button" class="btn btn-primary is-large"><span>버튼</span></button>
+<button type="button" class="btn btn-secondary is-large"><span>버튼</span></button>
+<button type="button" class="btn btn-request is-large"><span>버튼</span></button>
+</script>
+		</code></pre>
+            </div>
+            <div class="example-code">
+              <div class="title">Nunjucks CODE</div>
+              <pre><code class="language-html">
+{{ components(&#39;button&#39;, {
+	type: 'button',               // Input Type
+	buttonType: 'primary',        // primary, secondary, request
+	text: '텍스트',               // 'button name'
+	class: 'is-large',            // 'class add'
+}) }}
+</code></pre>
+            </div>
+          </div>
+          <p class="desc">A Tag Type</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <a href="" class="btn btn-primary is-large">
+                <span>버튼</span>
+              </a>
+
+              <a href="" class="btn btn-secondary is-large">
+                <span>버튼</span>
+              </a>
+
+              <a href="" class="btn btn-request is-large">
+                <span>버튼</span>
+              </a>
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<a href="#" class="btn btn-primary is-large"><span>버튼</span></a>
+<a href="#" class="btn btn-secondary is-large"><span>버튼</span></a>
+<a href="#" class="btn btn-request is-large"><span>버튼</span></a>
+</script>
+		</code></pre>
+            </div>
+            <div class="example-code">
+              <div class="title">Nunjucks CODE</div>
+              <pre><code class="language-html">
+{{ components(&#39;button&#39;, {
+	type: 'a',                    // Input Type
+	buttonType: 'primary',        // primary, secondary, request
+	text: '텍스트',               // 'button name'
+	class: 'is-large',            // 'class add'
+}) }}
+</code></pre>
+            </div>
+          </div>
+          <h3>Button - Full</h3>
+          <p class="desc">Button Type</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <button type="button" class="btn btn-primary is-large is-full">
+                <span>버튼</span>
+              </button>
+
+              <button type="button" class="btn btn-secondary is-large is-full">
+                <span>버튼</span>
+              </button>
+
+              <button type="button" class="btn btn-request is-large is-full">
+                <span>버튼</span>
+              </button>
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<button type="button" class="btn btn-primary is-large is-full"><span>버튼</span></button>
+<button type="button" class="btn btn-secondary is-large is-full"><span>버튼</span></button>
+<button type="button" class="btn btn-request is-large is-full"><span>버튼</span></button>
+</script>
+		</code></pre>
+            </div>
+            <div class="example-code">
+              <div class="title">Nunjucks CODE</div>
+              <pre><code class="language-html">
+{{ components(&#39;button&#39;, {
+	type: 'button',               // Input Type
+	buttonType: 'primary',        // primary, secondary, request
+	text: '텍스트',               // 'button name'
+	class: 'is-large is-full',    // 'class add'
+}) }}
+</code></pre>
+            </div>
+          </div>
+          <p class="desc">A Tag Type</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <a href="" class="btn btn-primary is-large is-full">
+                <span>버튼</span>
+              </a>
+
+              <a href="" class="btn btn-secondary is-large is-full">
+                <span>버튼</span>
+              </a>
+
+              <a href="" class="btn btn-request is-large is-full">
+                <span>버튼</span>
+              </a>
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<a href="#" class="btn btn-primary is-large is-full"><span>버튼</span></a>
+<a href="#" class="btn btn-secondary is-large is-full"><span>버튼</span></a>
+<a href="#" class="btn btn-request is-large is-full"><span>버튼</span></a>
+</script>
+		</code></pre>
+            </div>
+            <div class="example-code">
+              <div class="title">Nunjucks CODE</div>
+              <pre><code class="language-html">
+{{ components(&#39;button&#39;, {
+	type: 'a',                    // Input Type
+	buttonType: 'primary',        // primary, secondary, request
+	text: '텍스트',               // 'button name'
+	class: 'is-large is-full',    // 'class add'
+}) }}
+</code></pre>
+            </div>
+          </div>
+          <h3>Button - Button Area</h3>
+          <p class="desc">Align Default</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <div class="btn-area">
+                <button type="button" class="btn btn-secondary is-large">
+                  <span>취소</span>
+                </button>
+
+                <button type="button" class="btn btn-primary is-large">
+                  <span>확인</span>
+                </button>
+              </div>
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<div class="btn-area">			
+	<button type="button" class="btn btn-secondary is-large">
+		<span>취소</span>
+	</button>			
+	<button type="button" class="btn btn-primary is-large">
+		<span>확인</span>
+	</button>
+</div>
+</script>
+		</code></pre>
+            </div>
+          </div>
+          <p class="desc">Align Right</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <div class="btn-area is-right">
+                <button type="button" class="btn btn-secondary is-large">
+                  <span>취소</span>
+                </button>
+
+                <button type="button" class="btn btn-primary is-large">
+                  <span>확인</span>
+                </button>
+              </div>
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<div class="btn-area is-right">			
+	<button type="button" class="btn btn-secondary is-large">
+		<span>취소</span>
+	</button>			
+	<button type="button" class="btn btn-primary is-large">
+		<span>확인</span>
+	</button>
+</div>
+</script>
+		</code></pre>
+            </div>
+          </div>
+          <p class="desc">Align Left</p>
+          <div class="example-grid">
+            <div class="example-sample">
+              <div class="btn-area is-left">
+                <button type="button" class="btn btn-secondary is-large">
+                  <span>취소</span>
+                </button>
+
+                <button type="button" class="btn btn-primary is-large">
+                  <span>확인</span>
+                </button>
+              </div>
+            </div>
+            <div class="example-code">
+              <div class="title">HTML CODE</div>
+              <pre class="theme-atom-one-dark"><code>
+<script type="text/plain" class="language-html">
+<div class="btn-area is-left">			
+	<button type="button" class="btn btn-secondary is-large">
+		<span>취소</span>
+	</button>			
+	<button type="button" class="btn btn-primary is-large">
+		<span>확인</span>
+	</button>
+</div>
+</script>
+		</code></pre>
+            </div>
+          </div>
+
+          <!-- // 본문 시작 -->
+        </div>
+      </div>
+    </div>
+    <script src="/sh-monitoring/resources/js/ui.js"></script>
+  </body>
+</html>
