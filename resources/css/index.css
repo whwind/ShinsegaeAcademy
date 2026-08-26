@@ -593,7 +593,9 @@ section .featured ul li dl dt {
 	line-height:29px;
 }
 section .featured ul li dl dd {
-	margin-top:16px;
+	margin-top:4px;
+	font-size:14px;
+	line-height:17px;
 }
 section .featured ul li .choice {
 }
