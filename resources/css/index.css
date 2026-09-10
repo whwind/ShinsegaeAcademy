@@ -37,19 +37,6 @@ table {
 	border-collapse:collapse;
 	border-spacing:0;
 }
-select {
-
-}
-input[type=text] {
-
-}
-input[type=radio] {
-
-}
-input[type=checkbox] {
-
-}
-
 button {
 	cursor:pointer;
 }
