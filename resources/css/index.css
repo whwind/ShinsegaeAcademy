@@ -194,8 +194,8 @@ header > div ul a:before {
 	}
 }
 
-/**************************** .video ****************************/
-.video {
+/**************************** .swiper ****************************/
+.swiper {
 	position:absolute;
 	top:0;
 	left:50%;
@@ -205,7 +205,92 @@ header > div ul a:before {
 	max-width:2560px;
 	height:100vh;
 	margin:0 auto;
-	background:url(../images/sample_video.png) no-repeat 50% 50%;
+}
+.swiper-wrapper {
+	display:flex;
+}
+.swiper-slide {
+	position:relative;
+	width:100%;
+	height:100vh;
+}
+.pagination_wrap {
+	position:absolute;
+	top:45%;
+	left:60px;
+	display:flex;
+	align-items:center;
+}
+section .moments .pagination_wrap {
+	top:auto;
+	left:50%;
+	bottom:80px;
+	transform:translateX(-50%);
+}
+.pagination_wrap > ul {
+	display:flex;
+	align-items:center;
+	gap:10px;
+	margin-top:40px;
+	gap:10px;
+}
+.pagination_wrap > ul li {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	gap:10px;
+}
+.pagination_wrap > ul li a {
+	color:#a38348;
+	font-size:12px;
+}
+.pagination_wrap > ul li.swiper-pagination-bullet-active a {
+	color:#F22C2D;
+}
+.pagination_wrap > ul li div {
+	position:absolute;
+	left:-9999em;
+	width:88px;
+	height:4px;
+	text-indent:-9999px;
+	border-radius:2px;
+	background:rgba(45, 45, 45, 0.3);
+}
+.pagination_wrap > ul li.swiper-pagination-bullet-active div {
+	position:relative;
+	left:0;
+}
+.pagination_wrap > ul li div:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	width:var(--progress, 0%);
+	height: 100%;
+	border-radius: 2px;
+	background: #F22C2E;
+}
+.pagination_wrap > ul li button {
+	display:none;
+	width:5px;
+	height:7px;
+	text-indent:-9999px;
+	background:url(../images/btn_video.png) no-repeat 50% 50%;
+	background-size:cover;
+}
+.pagination_wrap > ul li.swiper-pagination-bullet-active button {
+	display:block;
+}
+
+/**************************** .video ****************************/
+.video {
+	position:relative;
+	overflow:hidden;
+	width:100vw;
+	max-width:2560px;
+	height:100vh;
+	margin:0 auto;
 	background-size:cover;
 }
 .video:after {
@@ -242,60 +327,6 @@ header > div ul a:before {
 .video > div dl dd {
 	font-size:32px;
 	line-height:44px;
-}
-.video > div ul {
-	display:flex;
-	align-items:center;
-	gap:10px;
-	margin-top:40px;
-	gap:10px;
-}
-.video > div ul li {
-	display:flex;
-	justify-content:space-between;
-	align-items:center;
-	gap:10px;
-}
-.video > div ul li a {
-	color:#a38348;
-	font-size:12px;
-}
-.video > div ul li.on a {
-	color:#F22C2D;
-}
-.video > div ul li div {
-	display:none;
-	position:relative;
-	width:88px;
-	height:4px;
-	text-indent:-9999px;
-	border-radius:2px;
-	background:rgba(45, 45, 45, 0.3);
-}
-.video > div ul li div:after {
-	content:'';
-	position:absolute;
-	top:0;
-	left:0;
-	display:block;
-	width:50%;
-	height:100%;
-	background:#F22C2E;
-	border-radius:2px;
-}
-.video > div ul li.on div {
-	display:block;
-}
-.video > div ul li button {
-	display:none;
-	width:5px;
-	height:7px;
-	text-indent:-9999px;
-	background:url(../images/btn_video.png) no-repeat 50% 50%;
-	background-size:cover;
-}
-.video > div ul li.on button {
-	display:block;
 }
 
 /**************************** main ****************************/
@@ -676,10 +707,18 @@ section .featured > a:after {
 section .moments {
 	position:relative;
 	overflow:hidden;
+	max-width:2560px;
+	height:872px;
 }
 section .moments > div {
+	position:absolute;
+	top:0;
+	left:50%;
+	transform:translateX(-50%);
+	overflow:hidden;
+	width:100%;
+	margin:0 auto;
 	height:872px;
-	background:url(../images/sample_moments.png) no-repeat 50% 50%;
 }
 section .moments > div p {
 	color:#fff;
@@ -689,63 +728,30 @@ section .moments > div p {
 section .moments > div p em {
 	color:#F22C2D;
 }
-section .moments ul {
-	position:absolute;
-	bottom:26px;
-	left:50%;
-	transform:translateX(-50%);
-	display:flex;
-	align-items:center;
-	gap:10px;
-	margin-top:40px;
-	gap:10px;
+section .moments > div > ul {
+	position:relative;
+	height:100%;
+	height:100%;
 }
-section .moments ul li {
-	display:flex;
-	justify-content:space-between;
-	align-items:center;
-	gap:10px;
+section .moments > div > ul li {
+	position:relative;
+	flex-shrink:0;
+	width:100%;
+	height:100%;
+	/*background:url(../images/sample_moments.png) no-repeat 50% 50%;*/
 }
-section .moments ul li a {
+section .moments > div > ul li:nth-child(1) {
+	background:url(../images/sample_moments.png) no-repeat 50% 50%;
+}
+section .moments > div > ul li:nth-child(2) {
+	background:#594fb4;
+}
+section .moments > div > ul li:nth-child(3) {
+	background:#a87933;
+}
+section .moments > div > ul li a {
 	color:#a38348;
 	font-size:12px;
-}
-section .moments ul li.on a {
-	color:#F22C2D;
-}
-section .moments ul li div {
-	display:none;
-	position:relative;
-	width:88px;
-	height:4px;
-	text-indent:-9999px;
-	border-radius:2px;
-	background:rgba(45, 45, 45, 0.3);
-}
-section .moments ul li div:after {
-	content:'';
-	position:absolute;
-	top:0;
-	left:0;
-	display:block;
-	width:50%;
-	height:100%;
-	background:#F22C2E;
-	border-radius:2px;
-}
-section .moments ul li.on div {
-	display:block;
-}
-section .moments ul li button {
-	display:none;
-	width:5px;
-	height:7px;
-	text-indent:-9999px;
-	background:url(../images/btn_video.png) no-repeat 50% 50%;
-	background-size:cover;
-}
-section .moments ul li.on button {
-	display:block;
 }
 
 /**************************** section .every ****************************/
@@ -889,14 +895,14 @@ footer > div > div > ul li a.red {
 }
 footer > div > div .family {
 	position:relative;
-	height:23px;
+	height:25px;
 	margin-right:50px;
 	border-bottom:1px solid #828282;
 }
 footer > div > div .family button {
 	position:relative;
 	width:160px;
-	height:23px;
+	height:20px;
 	color:#999;
 	font-size: 12px;
 	text-align:left;
@@ -905,7 +911,7 @@ footer > div > div .family button {
 footer > div > div .family button:after {
 	content:'';
 	position:absolute;
-	top:4px;
+	top:7px;
 	right:1px;
 	width:5px;
 	height:5px;
@@ -914,19 +920,22 @@ footer > div > div .family button:after {
 	transform:rotate(-45deg);
 }
 footer > div > div .family ul {
-	bottom:32px;
+	position:absolute;
+	bottom:31px;
 	left:0;
 	width:100%;
-	border:1px solid #828282;
+	border:none;
 	color:#949494;
 	font-size:12px;
-	position:absolute;
 	background:#232323;
-	box-sizing:border-box;
 	text-align:left;
+	height:0;
+	overflow:hidden;
+	transition:height .5s;
 }
-footer > div > div .family ul.on {
-	display:block;
+footer > div > div .family button.on + ul {
+	border:1px solid #828282;
+	height:866px;
 }
 footer > div > div .family ul li a {
 	display:block;
