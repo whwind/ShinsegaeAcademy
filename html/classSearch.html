@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="../resources/css/common.css" />
+	<link rel="stylesheet" href="../resources/css/layout.css" />
+
+	<title>신세계 아카데미</title>
+</head>
+
+<body>
+	<div id="wrap">
+		<header>
+			<div>
+				<h1><img src="../resources/images/logo_sub.png" alt="신세계 아카데미"></h1>
+				<nav>
+					<ul>
+						<li><a href="#">수강신청</a></li>
+						<li><a href="#">카탈로그</a></li>
+						<li><a href="#">아카데미 소개</a></li>
+						<li><a href="#">이용안내</a></li>
+					</ul>
+				</nav>
+				<ul>
+					<li><a href="#" class="login">로그인</a></li>
+					<li><a href="#" class="cart">장바구니</a></li>
+				</ul>
+			</div>
+			<div class="info">
+				<p>
+					<a href="#">이세계 회원님</a>, 환영합니다.
+				</p>
+				<div>
+					<div>
+						<button type="button">펼치기</button>
+						<ul>
+							<li><a href="#">수강 과목 1</a></li>
+							<li><a href="#">수강 과목 2</a></li>
+							<li><a href="#">수강 과목 3</a></li>
+						</ul>
+					</div>
+					<div>
+						<button type="button">강남점</button>
+						<ul>
+							<li><a href="#">강남점</a></li>
+							<li><a href="#">인천점</a></li>
+							<li><a href="#">부산점</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<h2>강좌검색</h2>
+			<fieldset class="classSearch">
+				<div>
+					<div>
+						<div>
+							<label for="branch">지점명</label>
+							<select id="branch">
+								<option>강남점</option>
+								<option>강남점</option>
+								<option>강남점</option>
+								<option>강남점</option>
+								<option>강남점</option>
+							</select>
+						</div>
+						<div>
+							<label for="category">카테고리 (대분류)</label>
+							<select id="category">
+								<option>선택해주세요</option>
+							</select>
+						</div>
+						<div>
+							<label for="subcategory">상세분류</label>
+							<select id="subcategory">
+								<option>선택해주세요</option>
+							</select>
+						</div>
+						<div>
+							<label for="semester">학기</label>
+							<select id="semester">
+								<option>가을학기</option>
+							</select>
+						</div>
+					</div>
+					<div>
+						<dl>
+							<dt>접수 상태</dt>
+							<dd>
+								<input id="allReceipt" class="round" type="radio" name="selectReceipt" checked />
+								<label for="allReceipt">전체</label>
+								<input id="before" class="round" type="radio" name="selectReceipt" />
+								<label for="before">접수전</label>
+								<input id="during" class="round" type="radio" name="selectReceipt" />
+								<label for="during">접수중</label>
+								<input id="closed" class="round" type="radio" name="selectReceipt" />
+								<label for="closed">접수마감</label>
+								<input id="awaiting" class="round" type="radio" name="selectReceipt" />
+								<label for="awaiting">대기등록</label>
+							</dd>
+						</dl>
+						<dl>
+							<dt>요일</dt>
+							<dd>
+								<input id="allDays" class="round" type="radio" name="selectDay" checked />
+								<label for="allDays">전체</label>
+								<input id="monday" class="round" type="radio" name="selectDay" />
+								<label for="monday">월요일</label>
+								<input id="tuesday" class="round" type="radio" name="selectDay" />
+								<label for="tuesday">화요일</label>
+								<input id="wednesday" class="round" type="radio" name="selectDay" />
+								<label for="wednesday">수요일</label>
+								<input id="thursday" class="round" type="radio" name="selectDay" />
+								<label for="thursday">목요일</label>
+								<input id="friday" class="round" type="radio" name="selectDay" />
+								<label for="friday">금요일</label>
+								<input id="saturday" class="round" type="radio" name="selectDay" />
+								<label for="saturday">토요일</label>
+								<input id="sunday" class="round" type="radio" name="selectDay" />
+								<label for="sunday">일요일</label>
+							</dd>
+						</dl>
+					</div>
+					<div>
+						<dl>
+							<dt>시작시간</dt>
+							<dd>
+								<input id="allTime" class="round" type="radio" name="selectTime" checked />
+								<label for="allTime">전체</label>
+								<input id="time1" class="round" type="radio" name="selectTime" />
+								<label for="time1">09:00~11:59</label>
+								<input id="time2" class="round" type="radio" name="selectTime" />
+								<label for="time2">12:00~16:59</label>
+								<input id="time3" class="round" type="radio" name="selectTime" />
+								<label for="time3">17:00~20:00</label>
+							</dd>
+						</dl>
+						<dl>
+							<dt>수강대상</dt>
+							<dd>
+								<input id="allTarget" class="round" type="radio" name="selectTarget" checked />
+								<label for="allTarget">전체</label>
+								<input id="pregnant" class="round" type="radio" name="selectTarget" />
+								<label for="pregnant">임산부</label>
+								<input id="senior" class="round" type="radio" name="selectTarget" />
+								<label for="senior">시니어</label>
+								<input id="teenager" class="round" type="radio" name="selectTarget" />
+								<label for="teenager">청소년</label>
+								<input id="other" class="round" type="radio" name="selectTarget" />
+								<label for="other">기타</label>
+								<input id="withmom" class="round" type="radio" name="selectTarget" />
+								<label for="withmom">위드맘(대디)</label>
+								<input id="kids" class="round" type="radio" name="selectTarget" />
+								<label for="kids">키즈</label>
+								<input id="family" class="round" type="radio" name="selectTarget" />
+								<label for="family">패밀리</label>
+								<input id="couple" class="round" type="radio" name="selectTarget" />
+								<label for="couple">커플</label>
+								<input id="adult" class="round" type="radio" name="selectTarget" />
+								<label for="adult">성인</label>
+							</dd>
+						</dl>
+					</div>
+					<div class="searchBox">
+						<label for="searchInput">검색어</label>
+						<input id="searchInput" type="text" />
+					</div>
+				</div>
+				<div>
+					<button type="button">초기화</button>
+					<button type="button">강좌찾기</button>
+				</div>
+			</fieldset>
+		</main>
+
+		<footer>
+			<div>
+				<div>
+					<ul>
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">법인영업</a></li>
+						<li><a href="#">백화점 신문고</a></li>
+						<li><a href="#">사이트맵</a></li>
+						<li><a href="#" class="teacher">강사지원</a></li>
+						<li><a href="#" class="teacher">강사전용페이지</a></li>
+						<li></li>
+						<li><a href="#" class="red">개인정보처리방침</a></li>
+						<li><a href="#" class="red">영상정보처리기기 운영·관리방침</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">신백멤버스 회원약관</a></li>
+						<li><a href="#">신세계포인트 이용약관</a></li>
+					</ul>
+					<div class="family">
+						<button type="button">패밀리 사이트</button>
+						<ul>
+							<li><a href="https://www.shinsegaegroupnewsroom.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계그룹</a></li>
+							<li><a href="https://www.shinsegaepoint.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계포인트</a></li>
+							<li><a href="https://store.emart.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">이마트</a></li>
+							<li><a href="http://www.traders.co.kr/" target="_blank" rel="noopener noreferrer" title="새 창 열림">이마트 트레이더스</a></li>
+							<li><a href="http://www.emarteveryday.co.kr/" target="_blank" rel="noopener noreferrer" title="새 창 열림">이마트 에브리데이</a></li>
+							<li><a href="https://www.emart24.co.kr/" target="_blank" rel="noopener noreferrer" title="새 창 열림">이마트24</a></li>
+							<li><a href="http://www.shinsegaetvshopping.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계라이브쇼핑</a></li>
+							<li><a href="https://www.premiumoutlets.co.kr/" target="_blank" rel="noopener noreferrer" title="새 창 열림">프리미엄아울렛</a></li>
+							<li><a href="https://www.starfield.co.kr/" target="_blank" rel="noopener noreferrer" title="새 창 열림">스타필드</a></li>
+							<li><a href="http://www.ssgdfm.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계면세점</a></li>
+							<li><a href="http://www.sikorea.co.kr/main" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계인터내셔날</a></li>
+							<li><a href="http://www.shinsegaefood.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계푸드</a></li>
+							<li><a href="http://www.shinsegae-lnb.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계 L&amp;B</a></li>
+							<li><a href="http://www.istarbucks.co.kr/" target="_blank" rel="noopener noreferrer" title="새 창 열림">스타벅스커피 코리아</a></li>
+							<li><a href="https://www.josunhotel.com" target="_blank" rel="noopener noreferrer" title="새 창 열림">조선호텔앤리조트</a></li>
+							<li><a href="https://www.shinsegae-enc.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계건설</a></li>
+							<li><a href="http://www.sinc.co.kr/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계아이앤씨</a></li>
+							<li><a href="https://business.ssgpay.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">에스에스지페이먼츠</a></li>
+						</ul>
+					</div>
+					<div class="sns">
+						<a href="#" class="insta" title="새 창 열림">인스타그램</a>
+						<a href="#" class="youtube" title="새 창 열림">유투브</a>
+						<a href="#" class="sbot">신세계 에스봇</a>
+					</div>
+				</div>
+				<ul>
+					<li>(주)신세계 대표이사 : 박주형</li>
+					<li><adress>주소 : 서울특별시 중구 소공로 63(충무로 1가)</adress></li>
+					<li>개인정보보호책임자 : 이성환 상무</li>
+					<li>대표전화 : 1588-1234 (유료)</li>
+					<li>사업자등록번호 : 201-81-32195</li>
+					<li>통신판매업신고번호 : 1996-서울중구-0291</li>
+					<li>COPYRIGHT © 2019 SHINSEGAE. ALL RIGHTS RESERVED.</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+
+</body>
+
+</html>

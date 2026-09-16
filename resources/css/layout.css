@@ -1,0 +1,48 @@
+
+
+.classSearch {
+	margin-top:64px;
+}
+.classSearch > div > div {
+	display:flex;
+	align-items:center;
+	margin-top:64px;
+}
+.classSearch > div > div:first-child {
+	align-items:center;
+	justify-content:space-between;
+	gap:0 64px;
+	margin-top:0;
+}
+.classSearch > div > div label {
+	display:block;
+	margin-bottom:10px;
+	color:#888;
+	font-size:18px;
+}
+.classSearch > div > div select {
+	width:352px;
+	height:56px;
+	line-height:56px;
+}
+.classSearch > div > div dl {
+	width:50%;
+}
+.classSearch > div > div dl dt {
+	color:#888;
+	font-size:18px;
+	margin-bottom:10px;
+}
+.classSearch > div > div dl dd {
+	display:flex;
+	align-items:center;
+	gap:8px;
+}
+.classSearch > div > div.searchBox {
+	align-items:flex-start;
+	flex-wrap:wrap;
+	flex-direction:column;
+}
+.classSearch > div > div.searchBox input[type=text] {
+	width:100%;
+}
