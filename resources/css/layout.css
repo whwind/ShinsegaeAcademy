@@ -1,48 +1,303 @@
 
 
+/**************************** .classSearch ****************************/
 .classSearch {
 	margin-top:64px;
+	&> div > div {
+		display:flex;
+		align-items:center;
+		margin-top:64px;
+		&:first-child {
+			align-items:center;
+			justify-content:space-between;
+			gap:0 64px;
+			margin-top:0;
+		}
+		label {
+			display:block;
+			margin-bottom:10px;
+			color:#888;
+			font-size:18px;
+		}
+		select {
+			width:352px;
+			height:56px;
+			line-height:56px;
+		}
+		dl {
+			width:50%;
+			dt {
+				color:#888;
+				font-size:18px;
+				margin-bottom:10px;
+			}
+			dd {
+				display:flex;
+				align-items:center;
+				gap:8px;
+			}
+		}
+		&.searchBox {
+			align-items:flex-start;
+			flex-wrap:wrap;
+			flex-direction:column;
+			input[type=text] {
+				width:100%;
+			}
+		}
+	}
+	.close {
+		position:relative;
+		display:block;
+		width:100%;
+		height:54px;
+		margin-top:64px;
+		color:#A38348;
+		font-size:15px;
+		text-align:center;
+		line-height:54px;
+		border-bottom:1px solid #dbdbdb;
+		&:after {
+			content:'';
+			position:absolute;
+			top:55%;
+			right:48%;
+			display:block;
+			width:7px;
+			height:7px;
+			border-left:1px solid #A8843C;
+			border-bottom:1px solid #A8843C;
+			transform:translateY(-50%) rotate(135deg);
+		}
+	}
+	.btnWrap {
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		gap:0 24px;
+		margin-top:40px;
+		button {
+			width:98px;
+			height:48px;
+			border:1px solid #DBDBDB;
+			border-radius:8px;
+			&.searchBtn {
+				color:#fff;
+				border:1px solid #2D2D2D;
+				background:#2D2D2D;
+			}
+		}
+	}
 }
-.classSearch > div > div {
+
+/**************************** .featured ****************************/
+.featured {
+	margin-top:80px;
+	ul {
+		display:flex;
+		justify-content:space-between;
+		flex-wrap:wrap;
+		align-items:flex-start;
+		gap:40px;
+		li {
+			display:flex;
+			flex-direction:column;
+			justify-content:space-between;
+			width:500px;
+			height:320px;
+			padding:24px 24px 31px;
+			border:1px solid #DBDBDB;
+			.flag {
+				display:flex;
+				align-items:center;
+				strong {
+					position:relative;
+					padding-right:13px;
+					font-size:14px;
+					line-height:24px;
+					&:before {
+						content:'';
+						position:absolute;
+						top:50%;
+						right:0;
+						width:1px;
+						height:12px;
+						background:#E1DBD1;
+						transform:translateY(-50%);
+					}
+					&.wellness {
+						color:#689570;
+					}
+					&.kids {
+						color:#C99A18;
+					}
+					&.culinary {
+						color:#E2820C;
+					}
+					&.arts {
+						color:#C60000;
+					}
+					&.liberal {
+						color:#587DA8;
+					}
+				}
+				em {
+					height:20px;
+					padding:0 6px;
+					margin-left:12px;
+					color:#fff;
+					font-size:10px;
+					line-height:20px;
+					background:#4E7256;
+					border-radius:10px;
+					&[data=receipt] {
+						background:#4E7256;
+					}
+					&[data=whit] {
+						background:#587DA8;
+					}
+					&[data=inquiry] {
+						background:#635335;
+					}
+					&[data=new] {
+						background:#F22C2D;
+					}
+				}
+				span {
+					width:18px;
+					height:18px;
+					margin-left:auto;
+					text-indent:-9999em;
+					background:url(../images/icon_heart.png) no-repeat 50% 50%;
+				}
+			}
+			dl {
+				margin:16px 0;
+				dt {
+					margin-bottom:16px;
+					color:#222;
+					font-size:24px;
+					line-height:29px;
+				}
+				dd {
+					margin-top:4px;
+					padding-left:24px;
+					color:#666;
+					font-size:14px;
+					font-weight:400;
+					line-height:19px;
+					&:nth-child(2) {
+						background:url(../images/icon_calendar.png) no-repeat 0 50%;
+					}
+					&:nth-child(3) {
+						background:url(../images/icon_person.png) no-repeat 0 50%;
+					}
+					&:nth-child(4) {
+						background:url(../images/icon_clock.png) no-repeat 0 50%;
+					}
+				}
+			}
+			.choice {
+				display:flex;
+				justify-content:space-between;
+				align-items:center;
+				padding:21px 0 8px;
+				margin-top:auto;
+				border-top:1px solid #F6F3EB;
+				strong {
+					color:#222;
+					font-size:18px;
+					line-height:27px;
+				}
+				span {
+					width:27px;
+					height:27px;
+					margin-left:auto;
+					text-indent:-9999em;
+					background:url(../images/btn_bag02.png) no-repeat 50% 50%;
+				}
+				a {
+					position:relative;
+					margin-left:20px;
+					color:#A38348;
+					font-size:16px;
+					line-height:27px;
+					text-decoration:underline;
+				}
+				em {
+					position:relative;
+					margin-left:20px;
+					color:#888;
+					font-size:16px;
+					line-height:27px;
+				}
+			}
+		}
+	}
+	&> a {
+		position:relative;
+		left:50%;
+		transform:translateX(-50%);
+		display:inline-block;
+		margin-top:74px;
+		padding-right:20px;
+		color:#222;
+		font-size:18px;
+		line-height:25px;
+		&:after {
+			content:'';
+			position:absolute;
+			top:10px;
+			right:0;
+			width:5px;
+			height:5px;
+			border-left:1px solid #A38348;
+			border-bottom:1px solid #A38348;
+			transform:rotate(-45deg);
+		}
+	}
+}
+
+.paging {
 	display:flex;
+	justify-content:center;
 	align-items:center;
-	margin-top:64px;
-}
-.classSearch > div > div:first-child {
-	align-items:center;
-	justify-content:space-between;
-	gap:0 64px;
-	margin-top:0;
-}
-.classSearch > div > div label {
-	display:block;
-	margin-bottom:10px;
-	color:#888;
-	font-size:18px;
-}
-.classSearch > div > div select {
-	width:352px;
-	height:56px;
-	line-height:56px;
-}
-.classSearch > div > div dl {
-	width:50%;
-}
-.classSearch > div > div dl dt {
-	color:#888;
-	font-size:18px;
-	margin-bottom:10px;
-}
-.classSearch > div > div dl dd {
-	display:flex;
-	align-items:center;
-	gap:8px;
-}
-.classSearch > div > div.searchBox {
-	align-items:flex-start;
-	flex-wrap:wrap;
-	flex-direction:column;
-}
-.classSearch > div > div.searchBox input[type=text] {
-	width:100%;
+	margin-top:40px;
+	a {
+		width:24px;
+		height:24px;
+		text-indent:-9999em;
+		background:url(../images/icon_picker.png) no-repeat 50% 50%;
+		&:first-child {
+			margin-right:40px;
+			transform:rotate(90deg);
+		}
+		&:last-child {
+			margin-left:40px;
+			transform:rotate(-90deg);
+		}
+	}
+	span {
+		display:flex;
+		align-items:center;
+		width:32px;
+		height:50px;
+		text-align:center;
+		line-height:50px;
+		border-radius:50%;
+		em {
+			padding-left:5px;
+		}
+	}
+	input[type=text] {
+		width:70px;
+		height:50px;
+		margin:0 16px;
+		text-align:center;
+		line-height:48px;
+		font-size:16px;
+		font-weight:400;
+		border:1px solid #DBDBDB;
+		border-radius:8px;
+	}
 }
