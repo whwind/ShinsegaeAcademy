@@ -92,14 +92,16 @@
 
 /**************************** .featured ****************************/
 .featured {
+	position:relative;
 	margin-top:80px;
-	ul {
+	> ul {
 		display:flex;
 		justify-content:space-between;
 		flex-wrap:wrap;
 		align-items:flex-start;
 		gap:40px;
-		li {
+		margin-top:88px;
+		> li {
 			display:flex;
 			flex-direction:column;
 			justify-content:space-between;
@@ -174,6 +176,7 @@
 			dl {
 				margin:16px 0;
 				dt {
+					height:55px;
 					margin-bottom:16px;
 					color:#222;
 					font-size:24px;
@@ -234,70 +237,32 @@
 			}
 		}
 	}
-	&> a {
-		position:relative;
-		left:50%;
-		transform:translateX(-50%);
-		display:inline-block;
-		margin-top:74px;
-		padding-right:20px;
-		color:#222;
-		font-size:18px;
-		line-height:25px;
-		&:after {
-			content:'';
+	.sort {
+		position:absolute;
+		top:90px;
+		right:0;
+		padding-left:32px;
+		background:url(../images/icon_sort.png) no-repeat 0 50%;
+		> button {
+			position:relative;
+			padding-right:20px;
+			color:#000;
+			font-size:18px;
+			&:after {
+				content:'';
+				position:absolute;
+				top:10px;
+				right:1px;       
+				width:7px;
+				height:7px;
+				border-right:2px solid #A38348;
+				border-top:2px solid #A38348;
+				transform:rotate(-45deg);
+			}
+		}
+		ul {
 			position:absolute;
-			top:10px;
-			right:0;
-			width:5px;
-			height:5px;
-			border-left:1px solid #A38348;
-			border-bottom:1px solid #A38348;
-			transform:rotate(-45deg);
 		}
 	}
 }
 
-.paging {
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	margin-top:40px;
-	a {
-		width:24px;
-		height:24px;
-		text-indent:-9999em;
-		background:url(../images/icon_picker.png) no-repeat 50% 50%;
-		&:first-child {
-			margin-right:40px;
-			transform:rotate(90deg);
-		}
-		&:last-child {
-			margin-left:40px;
-			transform:rotate(-90deg);
-		}
-	}
-	span {
-		display:flex;
-		align-items:center;
-		width:32px;
-		height:50px;
-		text-align:center;
-		line-height:50px;
-		border-radius:50%;
-		em {
-			padding-left:5px;
-		}
-	}
-	input[type=text] {
-		width:70px;
-		height:50px;
-		margin:0 16px;
-		text-align:center;
-		line-height:48px;
-		font-size:16px;
-		font-weight:400;
-		border:1px solid #DBDBDB;
-		border-radius:8px;
-	}
-}
