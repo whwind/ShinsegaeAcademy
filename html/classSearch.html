@@ -15,50 +15,49 @@
 	<title>신세계 아카데미</title>
 </head>
 
-<body>
+<body class="entire">
 	<div id="wrap">
 		<header>
 			<div>
-				<h1><img src="../resources/images/logo_sub.png" alt="신세계 아카데미"></h1>
-				<nav>
-					<ul>
-						<li><a href="#">수강신청</a></li>
-						<li><a href="#">카탈로그</a></li>
-						<li><a href="#">아카데미 소개</a></li>
-						<li><a href="#">이용안내</a></li>
-					</ul>
-				</nav>
-				<ul>
-					<li><a href="#" class="login">로그인</a></li>
-					<li><a href="#" class="cart">장바구니</a></li>
-				</ul>
-			</div>
-			<div class="info">
-				<p>
-					<a href="#">이세계 회원님</a>, 환영합니다.
-				</p>
 				<div>
-					<div>
-						<button type="button">펼치기</button>
+					<h1><img src="../resources/images/logo_sub.png" alt="신세계 아카데미"></h1>
+					<nav>
 						<ul>
-							<li><a href="#">수강 과목 1</a></li>
-							<li><a href="#">수강 과목 2</a></li>
-							<li><a href="#">수강 과목 3</a></li>
+							<li class="active"><a href="#">수강신청</a></li>
+							<li><a href="#">카탈로그</a></li>
+							<li><a href="#">아카데미 소개</a></li>
+							<li><a href="#">이용안내</a></li>
 						</ul>
-					</div>
+					</nav>
+					<ul>
+						<li><a href="#" class="login">로그인</a></li>
+						<li><a href="#" class="cart">장바구니</a></li>
+					</ul>
+				</div>
+				<div class="info">
+					<p>
+						<a href="#">이세계 회원님</a>, 환영합니다.
+					</p>
 					<div>
-						<button type="button">강남점</button>
-						<ul>
-							<li><a href="#">강남점</a></li>
-							<li><a href="#">인천점</a></li>
-							<li><a href="#">부산점</a></li>
-						</ul>
+						<div>
+							<button type="button">펼치기</button>
+						</div>
+						<select>
+							<option>강남점</option>
+							<option>인천점</option>
+							<option>부산점</option>
+						</select>
 					</div>
 				</div>
 			</div>
 		</header>
 
 		<main>
+			<ul class="location">
+				<li>HOME</li>
+				<li>수강신청</li>
+				<li>강좌검색</li>
+			</ul>
 			<h2>강좌검색</h2>
 			<fieldset class="classSearch">
 				<div>
@@ -183,292 +182,159 @@
 			</fieldset>
 			
 			<section class="featured">
-				<div class="tap">
-					<button type="button" class="on">전체</button>
-					<button type="button">추천강좌</button>
-					<button type="button">패밀리</button>
-					<button type="button">온라인</button>
+				<div class="searchTag">
+					<button type="button">강남점</button>
+					<button type="button">화</button>
+					<button type="button">수</button>
+					<button type="button">접수전</button>
+					<button type="button">09:00 ~ 11:59</button>
+					<button type="button">12:00 ~ 16:59</button>
 				</div>
-				<ul>
+				<div class="sort">
+					<p><strong>570</strong>개의 강좌가 있습니다.</p>
+					<select>
+						<option>마감임박순</option>
+						<option>접수중</option>
+						<option>접수대기</option>
+						<option>새강좌</option>
+					</select>
+					<button type="button">보기변경</button>
+				</div>
+				<ul class="cardList">
+				<!--<ul class="blogList">-->
 					<li>
-						<div class="flag">
-							<strong class="wellness">Wellness</strong>
-							<em data="receipt">접수중</em>
-							<span>찜하기</span>
+						<div class="heartToggle">
+							<input type="checkbox" id="heart">
+							<label for="heart"><div>좋아요</div></label>
 						</div>
-						<dl>
-							<dt>Cello & Guitar Strings Duo Concert: 3 Colors & More</dt>
-							<dd>2026.09.01~2026.11.10 (총 10회)</dd>
-							<dd>김서연 셰프</dd>
-							<dd>화 10:30~12:00</dd>
-						</dl> 
-						<div class="choice">
-							<strong>87,000원</strong>
-							<span>담기</span>
-							<a href="#">수강신청</a>
+						<div class="imgBox">
+							<img src="#" alt="강의 사진"/>
+						</div>
+						<div class="lecture">
+							<div class="state">
+								<strong>접수중<span>Wellness</span></strong>
+							</div>
+							<dl class="info">
+								<dt>Cello & Guitar Strings Duo Concert: 3 Colors & More</dt>
+								<dd class="lector">김서연 셰프</dd>
+								<dd>2026.09.01~2026.11.10 (총 10회)</dd>
+								<dd>화 10:30~12:00</dd>
+							</dl>
+						</div>
+						<div class="price">
+							<dl>
+								<dt>수강료</dt>
+								<dd>87,000원</dd>
+							</dl>
+							<div class="appli">
+								<span>담기</span>
+								<a href="#">수강신청</a>
+							</div>
+						</div>
+						<div class="compare">
+							<label for="check01"><input type="checkbox" id="check01">비교함 담기</label>
 						</div>
 					</li>
 					<li>
-						<div class="flag">
-							<strong class="kids">Family &amp; Kids</strong>
-							<em data="inquiry">지점문의</em>
-							<span>찜하기</span>
+						<div class="heartToggle">
+							<input type="checkbox" id="heart">
+							<label for="heart"><div>좋아요</div></label>
 						</div>
-						<dl>
-							<dt>감성 수채화 클래스</dt>
-							<dd>2026.09.01~2026.11.10 (총 10회)</dd>
-							<dd>김서연 셰프</dd>
-							<dd>화 10:30~12:00</dd>
-						</dl>
-						<div class="choice">
-							<strong>87,000원</strong>
-							<span>담기</span>
-							<em>지점문의</em>
+						<div class="imgBox">
+							<img src="#" alt="강의 사진"/>
 						</div>
-					</li>
-					<li>
-						<div class="flag">
-							<strong class="culinary"> Arts &amp; Culture</strong>
-							<em data="whit">접수대기</em>
-							<span>찜하기</span>
+						<div class="lecture">
+							<div class="state">
+								<strong>접수중<span>Wellness</span></strong>
+							</div>
+							<dl class="info">
+								<dt>Cello & Guitar Strings Duo Concert: 3 Colors & More</dt>
+								<dd class="lector">김서연 셰프</dd>
+								<dd>2026.09.01~2026.11.10 (총 10회)</dd>
+								<dd>화 10:30~12:00</dd>
+							</dl>
 						</div>
-						<dl>
-							<dt>감성 수채화 클래스</dt>
-							<dd>2026.09.01~2026.11.10 (총 10회)</dd>
-							<dd>김서연 셰프</dd>
-							<dd>화 10:30~12:00</dd>
-						</dl>
-						<div class="choice">
-							<strong>87,000원</strong>
-							<span>담기</span>
-							<a href="#">대기신청</a>
+						<div class="price">
+							<dl>
+								<dt>수강료</dt>
+								<dd>87,000원</dd>
+							</dl>
+							<div class="appli">
+								<span>담기</span>
+								<a href="#">수강신청</a>
+							</div>
+						</div>
+						<div class="compare">
+							<label for="check01"><input type="checkbox" id="check01">비교함 담기</label>
 						</div>
 					</li>
 					<li>
-						<div class="flag">
-							<strong class="liberal">Liberal Arts</strong>
-							<em data="new">NEW</em>
-							<span>찜하기</span>
+						<div class="heartToggle">
+							<input type="checkbox" id="heart">
+							<label for="heart"><div>좋아요</div></label>
 						</div>
-						<dl>
-							<dt>감성 수채화 클래스</dt>
-							<dd>2026.09.01~2026.11.10 (총 10회)</dd>
-							<dd>김서연 셰프</dd>
-							<dd>화 10:30~12:00</dd>
-						</dl>
-						<div class="choice">
-							<strong>87,000원</strong>
-							<span>담기</span>
-							<a href="#">수강신청</a>
+						<div class="imgBox">
+							<img src="#" alt="강의 사진"/>
 						</div>
-					</li>
-					<li>
-						<div class="flag">
-							<strong class="arts">Liberal Arts</strong>
-							<em data="receipt">접수중</em>
-							<span>찜하기</span>
+						<div class="lecture">
+							<div class="state">
+								<strong>접수중<span>Wellness</span></strong>
+							</div>
+							<dl class="info">
+								<dt>Cello & Guitar Strings Duo Concert: 3 Colors & More</dt>
+								<dd class="lector">김서연 셰프</dd>
+								<dd>2026.09.01~2026.11.10 (총 10회)</dd>
+								<dd>화 10:30~12:00</dd>
+							</dl>
 						</div>
-						<dl>
-							<dt>감성 수채화 클래스</dt>
-							<dd>2026.09.01~2026.11.10 (총 10회)</dd>
-							<dd>김서연 셰프</dd>
-							<dd>화 10:30~12:00</dd>
-						</dl>
-						<div class="choice">
-							<strong>87,000원</strong>
-							<span>담기</span>
-							<a href="#">수강신청</a>
+						<div class="price">
+							<dl>
+								<dt>수강료</dt>
+								<dd>87,000원</dd>
+							</dl>
+							<div class="appli">
+								<span>담기</span>
+								<a href="#">수강신청</a>
+							</div>
+						</div>
+						<div class="compare">
+							<label for="check01"><input type="checkbox" id="check01">비교함 담기</label>
 						</div>
 					</li>
 					<li>
-						<div class="flag">
-							<strong class="culinary">Culinary</strong>
-							<em data="receipt">접수중</em>
-							<span>찜하기</span>
+						<div class="heartToggle">
+							<input type="checkbox" id="heart">
+							<label for="heart"><div>좋아요</div></label>
 						</div>
-						<dl>
-							<dt>감성 수채화 클래스</dt>
-							<dd>2026.09.01~2026.11.10 (총 10회)</dd>
-							<dd>김서연 셰프</dd>
-							<dd>화 10:30~12:00</dd>
-						</dl>
-						<div class="choice">
-							<strong>87,000원</strong>
-							<span>담기</span>
-							<a href="#">수강신청</a>
+						<div class="imgBox">
+							<img src="#" alt="강의 사진"/>
 						</div>
-					</li>
-					<li>
-						<div class="flag">
-							<strong class="wellness">Wellness</strong>
-							<em data="receipt">접수중</em>
-							<span>찜하기</span>
+						<div class="lecture">
+							<div class="state">
+								<strong>접수중<span>Wellness</span></strong>
+							</div>
+							<dl class="info">
+								<dt>Cello & Guitar Strings Duo Concert: 3 Colors & More</dt>
+								<dd class="lector">김서연 셰프</dd>
+								<dd>2026.09.01~2026.11.10 (총 10회)</dd>
+								<dd>화 10:30~12:00</dd>
+							</dl>
 						</div>
-						<dl>
-							<dt>Cello & Guitar Strings Duo Concert: 3 Colors & More</dt>
-							<dd>2026.09.01~2026.11.10 (총 10회)</dd>
-							<dd>김서연 셰프</dd>
-							<dd>화 10:30~12:00</dd>
-						</dl> 
-						<div class="choice">
-							<strong>87,000원</strong>
-							<span>담기</span>
-							<a href="#">수강신청</a>
+						<div class="price">
+							<dl>
+								<dt>수강료</dt>
+								<dd>87,000원</dd>
+							</dl>
+							<div class="appli">
+								<span>담기</span>
+								<a href="#">수강신청</a>
+							</div>
 						</div>
-					</li>
-					<li>
-						<div class="flag">
-							<strong class="kids">Family &amp; Kids</strong>
-							<em data="inquiry">지점문의</em>
-							<span>찜하기</span>
-						</div>
-						<dl>
-							<dt>감성 수채화 클래스</dt>
-							<dd>2026.09.01~2026.11.10 (총 10회)</dd>
-							<dd>김서연 셰프</dd>
-							<dd>화 10:30~12:00</dd>
-						</dl>
-						<div class="choice">
-							<strong>87,000원</strong>
-							<span>담기</span>
-							<em>지점문의</em>
-						</div>
-					</li>
-					<li>
-						<div class="flag">
-							<strong class="culinary"> Arts &amp; Culture</strong>
-							<em data="whit">접수대기</em>
-							<span>찜하기</span>
-						</div>
-						<dl>
-							<dt>감성 수채화 클래스</dt>
-							<dd>2026.09.01~2026.11.10 (총 10회)</dd>
-							<dd>김서연 셰프</dd>
-							<dd>화 10:30~12:00</dd>
-						</dl>
-						<div class="choice">
-							<strong>87,000원</strong>
-							<span>담기</span>
-							<a href="#">대기신청</a>
-						</div>
-					</li>
-					<li>
-						<div class="flag">
-							<strong class="liberal">Liberal Arts</strong>
-							<em data="new">NEW</em>
-							<span>찜하기</span>
-						</div>
-						<dl>
-							<dt>감성 수채화 클래스</dt>
-							<dd>2026.09.01~2026.11.10 (총 10회)</dd>
-							<dd>김서연 셰프</dd>
-							<dd>화 10:30~12:00</dd>
-						</dl>
-						<div class="choice">
-							<strong>87,000원</strong>
-							<span>담기</span>
-							<a href="#">수강신청</a>
-						</div>
-					</li>
-					<li>
-						<div class="flag">
-							<strong class="arts">Liberal Arts</strong>
-							<em data="receipt">접수중</em>
-							<span>찜하기</span>
-						</div>
-						<dl>
-							<dt>감성 수채화 클래스</dt>
-							<dd>2026.09.01~2026.11.10 (총 10회)</dd>
-							<dd>김서연 셰프</dd>
-							<dd>화 10:30~12:00</dd>
-						</dl>
-						<div class="choice">
-							<strong>87,000원</strong>
-							<span>담기</span>
-							<a href="#">수강신청</a>
-						</div>
-					</li>
-					<li>
-						<div class="flag">
-							<strong class="culinary">Culinary</strong>
-							<em data="receipt">접수중</em>
-							<span>찜하기</span>
-						</div>
-						<dl>
-							<dt>감성 수채화 클래스</dt>
-							<dd>2026.09.01~2026.11.10 (총 10회)</dd>
-							<dd>김서연 셰프</dd>
-							<dd>화 10:30~12:00</dd>
-						</dl>
-						<div class="choice">
-							<strong>87,000원</strong>
-							<span>담기</span>
-							<a href="#">수강신청</a>
-						</div>
-					</li>
-					<li>
-						<div class="flag">
-							<strong class="liberal">Liberal Arts</strong>
-							<em data="new">NEW</em>
-							<span>찜하기</span>
-						</div>
-						<dl>
-							<dt>감성 수채화 클래스</dt>
-							<dd>2026.09.01~2026.11.10 (총 10회)</dd>
-							<dd>김서연 셰프</dd>
-							<dd>화 10:30~12:00</dd>
-						</dl>
-						<div class="choice">
-							<strong>87,000원</strong>
-							<span>담기</span>
-							<a href="#">수강신청</a>
-						</div>
-					</li>
-					<li>
-						<div class="flag">
-							<strong class="arts">Liberal Arts</strong>
-							<em data="receipt">접수중</em>
-							<span>찜하기</span>
-						</div>
-						<dl>
-							<dt>감성 수채화 클래스</dt>
-							<dd>2026.09.01~2026.11.10 (총 10회)</dd>
-							<dd>김서연 셰프</dd>
-							<dd>화 10:30~12:00</dd>
-						</dl>
-						<div class="choice">
-							<strong>87,000원</strong>
-							<span>담기</span>
-							<a href="#">수강신청</a>
-						</div>
-					</li>
-					<li>
-						<div class="flag">
-							<strong class="culinary">Culinary</strong>
-							<em data="receipt">접수중</em>
-							<span>찜하기</span>
-						</div>
-						<dl>
-							<dt>감성 수채화 클래스</dt>
-							<dd>2026.09.01~2026.11.10 (총 10회)</dd>
-							<dd>김서연 셰프</dd>
-							<dd>화 10:30~12:00</dd>
-						</dl>
-						<div class="choice">
-							<strong>87,000원</strong>
-							<span>담기</span>
-							<a href="#">수강신청</a>
+						<div class="compare">
+							<label for="check01"><input type="checkbox" id="check01">비교함 담기</label>
 						</div>
 					</li>
 				</ul>
-				<div class="sort">
-					<button type="button">마감임박순</button>
-					<ul>
-						<li><button type="button">접수중</button></li>
-						<li><button type="button">접수대기</button></li>
-						<li><button type="button">새강좌</button></li>
-					</ul>
-				</div>
 				<div class="paging">
 					<a href="#" class="prev">이전</a>
 					<span>Page</span>
