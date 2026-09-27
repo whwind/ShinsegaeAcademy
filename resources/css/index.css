@@ -863,15 +863,15 @@ footer {
 				li:nth-child(7) {
 					height:0px;
 					flex-basis:100%;
-					a {
-						color:#949494;
-						font-size:14px;
-						&.teacher {
-							color:#A38348;
-						}
-						&.red {
-							color:#f22c2d;
-						}
+				}
+				a {
+					color:#949494;
+					font-size:14px;
+					&.teacher {
+						color:#A38348;
+					}
+					&.red {
+						color:#f22c2d;
 					}
 				}
 			}
