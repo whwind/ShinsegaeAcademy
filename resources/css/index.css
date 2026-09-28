@@ -541,7 +541,7 @@ main {
 					&:open::picker(select) {
 						opacity:1;
 						height:calc-size(auto, size);
-						overflow:auto;
+						overflow:hidden;
 						@starting-style {
 							opacity:0;
 							height:0;
