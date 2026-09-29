@@ -815,8 +815,9 @@ main {
 /**************************** section .explore ****************************/
 section .explore {
 	position:relative;
-	width:100%;
+	width:1920px;
 	padding:240px 160px;
+	margin:0 auto;
 	h3 {
 		margin-bottom:40px;
 		font-size:72px;
@@ -856,11 +857,36 @@ section .explore {
 	}
 }
 
+/**************************** section .banner ****************************/
+.banner {
+	position:relative;
+	background:url(../images/sample_banner01.png) no-repeat 50% 50%;
+	background-size:cover;
+	a {
+		position:relative;
+		z-index:2;
+		display:block;
+		width:1920px;
+		margin:0 auto;
+	}
+	&:after {
+		content:'';
+		position:absolute;
+		top:0;
+		left:0;
+		z-index:1;
+		width:100%;
+		height:100%;
+		backdrop-filter:blur(20px);
+	}
+}
+
 /**************************** section .wine ****************************/
 section .wine {
 	position:relative;
-	width:100%;
+	width:1920px;
 	height:1403px;
+	margin:0 auto;
 	padding:240px 160px;
 	background:url(../images/img_wine.png) no-repeat 100% 50%;
 	h3 {
@@ -915,16 +941,19 @@ section .wine {
 
 /**************************** section .featured ****************************/
 section .featured {
-	padding:240px 160px;
+	padding:240px 0;
 	background:#FFFBF2;
 	h3 {
-		margin-bottom:40px;
+		width:1920px;
+		margin:0 auto 40px auto;
 		color:#222;
 		font-size:72px;
 		line-height:74px;
 		text-align:center;
 	}
 	p {
+		width:1920px;
+		margin:0 auto 64px auto;
 		margin-bottom:64px;
 		color:#444;
 		font-size:32px;
@@ -937,6 +966,8 @@ section .featured {
 		flex-wrap:wrap;
 		align-items:flex-start;
 		gap:20px;
+		width:1820px;
+		margin:0 auto;
 		li {
 			display:flex;
 			flex-direction:column;
@@ -1078,8 +1109,9 @@ section .featured {
 section .moments {
 	position:relative;
 	overflow:hidden;
-	max-width:2560px;
+	width:1920px;
 	height:872px;
+	margin:0 auto;
 	> div {
 		position:absolute;
 		top:0;
@@ -1147,13 +1179,14 @@ section .every {
 /**************************** section .notice ****************************/
 section .notice {
 	overflow:hidden;
-	padding:80px 320px;
+	padding:80px 0;
 	background:#FFFBF2;
 	> div {
 		display:flex;
 		justify-content:space-between;
 		align-items:center;
-		margin-bottom:20px;
+		width:1500px;
+		margin:0 auto;
 		h3 {
 			color:#222;
 			font-size:40px;
@@ -1188,6 +1221,8 @@ section .notice {
 	}
 	ul {
 		overflow:hidden;
+		width:1500px;
+		margin:20px auto 0;
 		li {
 			display:flex;
 			justify-content:space-between;
