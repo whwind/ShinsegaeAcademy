@@ -112,6 +112,8 @@ stopEl2.forEach(function (el) {
 	});
 });
 
+// 스크롤 시 첫 화면에서 두 번째 화면으로 이동
+/*
 var scrollCheck = true;
 var vh = window.innerHeight;
 window.addEventListener('scroll', function(){
@@ -123,6 +125,7 @@ window.addEventListener('scroll', function(){
 		scrollCheck = false;
 	}
 });
+*/
 
 var familyBtn = document.querySelector('footer .family button');
 familyBtn.addEventListener('click', function(e){
