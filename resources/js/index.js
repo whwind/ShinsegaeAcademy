@@ -141,12 +141,14 @@ window.addEventListener('scroll', function(){
 });
 */
 
+// 패밀리 사이트
 var familyBtn = document.querySelector('footer .family button');
 familyBtn.addEventListener('click', function(e){
 	e.preventDefault();
 	this.classList.toggle('on');
 });
 
+//플로팅 메뉴
 var flotingBtn = document.querySelector('.floting .close');
 flotingBtn.addEventListener('click', function(e){
 	e.preventDefault();

@@ -188,7 +188,7 @@ header {
 	z-index:100;
 	width:100vw;
 	max-width:2560px;
-	padding:40px 60px 40px 40px;
+	padding:100px 60px 40px 40px;
 	backdrop-filter:blur(5px);
 	> a {
 		position:absolute;
@@ -886,24 +886,44 @@ section .explore {
 		line-height:34px;
 	}
 	ul {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		column-gap: 2px;
-		grid-auto-rows: 10px;
+		display:grid;
+		grid-template-columns: 410px 350px 228px 246px 32px 323px;
+		grid-template-rows:360px 169px 307px;
+		gap:2px;
+		grid-template-areas:
+			"grid01 grid02 grid02 grid05 grid05 grid06"
+			"grid01 grid03 grid04 grid07 grid07 grid07"
+			"grid01 grid03 grid04 grid08 grid09 grid09";
+		width:1599px;
+		height:840px;
+		margin:0 auto;
 		li {
-			margin: 0;
-			display: grid;
-			grid-template-rows: 1fr auto;
-			margin-bottom: 2px;
-			break-inside: avoid;
-			a {
-				grid-row: 1 / -1;
-				grid-column: 1;
-				color:white;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				background:#ddd;
+			&.grid01 {
+				grid-area:grid01;
+			}
+			&.grid02 {
+				grid-area:grid02;
+			}
+			&.grid03 {
+				grid-area:grid03;
+			}
+			&.grid04 {
+				grid-area:grid04;
+			}
+			&.grid05 {
+				grid-area:grid05;
+			}
+			&.grid06 {
+				grid-area:grid06;
+			}
+			&.grid07 {
+				grid-area:grid07;
+			}
+			&.grid08 {
+				grid-area:grid08;
+			}
+			&.grid09 {
+				grid-area:grid09;
 			}
 		}
 	}
