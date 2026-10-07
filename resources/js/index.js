@@ -112,6 +112,20 @@ stopEl2.forEach(function (el) {
 	});
 });
 
+
+// 세 번째 Swiper
+var swiper3 = new Swiper('.swiper03', {
+	slidesPerView: 'auto',
+	pagination: {
+		el: '.swiperPage',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiperNext',
+		prevEl: '.swiperPrev',
+	},
+});
+
 // 스크롤 시 첫 화면에서 두 번째 화면으로 이동
 /*
 var scrollCheck = true;
