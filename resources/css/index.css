@@ -763,20 +763,26 @@ main {
 	justify-content:flex-start;
 	align-items:flex-end;
 	transform:translateX(810px);
-	a {
-		width:120px;
-		height:48px;
-		padding:0 14px 0 34px;
-		margin-bottom:8px;
-		font-size:12px;
-		line-height:48px;
-		border-radius:24px;
-		box-shadow:3px 3px 3px rgba(100, 100, 100, .1);
-		&:nth-child(1) {
-			background:#FAF4E9 url(../images/icon_check01.png) no-repeat 14px 50%;
-		}
-		&:nth-child(2) {
-			background:#FAF4E9 url(../images/icon_catalog.png) no-repeat 14px 50%;
+	div {
+		display:flex;
+		flex-direction:column;
+		justify-content:flex-start;
+		align-items:flex-end;
+		a {
+			width:120px;
+			height:48px;
+			padding:0 14px 0 34px;
+			margin-bottom:8px;
+			font-size:12px;
+			line-height:48px;
+			border-radius:24px;
+			box-shadow:3px 3px 3px rgba(100, 100, 100, .1);
+			&:nth-child(1) {
+				background:#FAF4E9 url(../images/icon_check01.png) no-repeat 14px 50%;
+			}
+			&:nth-child(2) {
+				background:#FAF4E9 url(../images/icon_catalog.png) no-repeat 14px 50%;
+			}
 		}
 	}
 	button {
@@ -796,7 +802,7 @@ main {
 				left:50%;
 				width:1px;
 				height:24px;
-				background:#fff;
+				border-right:1px solid #fff;
 				transform:rotate(-45deg);
 			}
 			&:after {
@@ -806,7 +812,7 @@ main {
 				left:50%;
 				width:1px;
 				height:24px;
-				background:#fff;
+				border-right:1px solid #fff;
 				transform:rotate(45deg);
 			}
 		}
@@ -832,6 +838,27 @@ main {
 				width:1px;
 				height:24px;
 				background:#000;
+			}
+		}
+	}
+	&.off {
+		div {
+			display:none;
+		}
+		button {
+			&.close {
+				&:before {
+					transform:rotate(90deg);
+				}
+				&:after {
+					top:23px;
+					width:24px;
+					height:16px;
+					border-right:0;
+					border-top:1px solid #fff;
+					border-bottom:1px solid #fff;
+					transform:translateX(-50%) rotate(0deg);
+				}
 			}
 		}
 	}

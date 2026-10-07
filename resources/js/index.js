@@ -146,3 +146,9 @@ familyBtn.addEventListener('click', function(e){
 	e.preventDefault();
 	this.classList.toggle('on');
 });
+
+var flotingBtn = document.querySelector('.floting .close');
+flotingBtn.addEventListener('click', function(e){
+	e.preventDefault();
+	document.querySelector('.floting').classList.toggle('off');
+});
