@@ -455,10 +455,16 @@ section .moments .pagination_wrap {
 		top:40%;
 		left:60px;
 		color:#fff;
-		p {
-			margin-bottom:20px;
-			font-size:64px;
-			line-height:64px;
+		dl {
+			dt {
+				margin-bottom:20px;
+				font-size:64px;
+				line-height:64px;
+			}
+			dd {
+				font-size:32px;
+				line-height:44px;
+			}
 		}
 	}
 }
