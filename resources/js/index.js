@@ -154,3 +154,23 @@ flotingBtn.addEventListener('click', function(e){
 	e.preventDefault();
 	document.querySelector('.floting').classList.toggle('off');
 });
+
+//나의 수강현황 접기
+var infoBtn = document.querySelector('.info .infoOpen');
+infoBtn.addEventListener('click', function(e){
+	e.preventDefault();
+	this.classList.toggle('on');
+	document.querySelector('.info .myList').classList.toggle('on');
+	if (infoBtn.classList.contains('on')) {
+		infoBtn.innerText = '나의 수강현황 접기';
+	} else {
+		infoBtn.innerText = '나의 수강현황 펼치기';
+	}
+});
+
+var state = document.querySelectorAll('.state');
+state.forEach(function(el) {
+	el.addEventListener('click', function (e) {
+		this.classList.toggle('on');
+	});
+});
