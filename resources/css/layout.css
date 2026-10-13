@@ -370,12 +370,12 @@
 			}
 		}
 		.sortWrap {
+			margin-top:80px;
 			.hash {
 				display:flex;
 				justify-content:flex-start;
 				align-items:center;
 				gap:0 8px;
-				margin-top:80px;
 				button {
 					position:relative;
 					height:42px;

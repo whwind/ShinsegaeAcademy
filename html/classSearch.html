@@ -15,17 +15,23 @@
 	<title>신세계 아카데미</title>
 </head>
 
-<body class="entire">
+<body>
 	<div id="wrap">
 		<header>
 			<div>
 				<div class="nav">
-					<h1><img src="../resources/images/logo_sub.png" alt="신세계 아카데미"></h1>
+					<h1><img src="../resources/images/logo_sub.png" alt="신세계 아카데미" class="webHidden"><span class="blind">강좌검색</span></h1>
 					<nav>
+						<div class="blind">
+							<button type="button" class="back">뒤로가기</button>
+							<button type="button" class="home">메인으로</button>
+							<button type="button" class="history">히스토리</button>
+							<button type="button" class="menu">메뉴열기</button>
+						</div>
 						<ul>
-							<li class="active"><a href="#">수강신청</a></li>
+							<li><a href="#">수강신청</a></li>
 							<li><a href="#">카탈로그</a></li>
-							<li><a href="#">아카데미 소개</a></li>
+							<li><a href="#"> 아카데미 소개</a></li>
 							<li><a href="#">이용안내</a></li>
 						</ul>
 					</nav>
@@ -140,17 +146,17 @@
 					</div>
 				</div>
 			</div>
-			<ul class="location">
+			<ul class="location webHidden">
 				<li>HOME</li>
 				<li>수강신청</li>
 				<li>강좌검색</li>
 			</ul>
-			<h2>
+			<h2 class="webHidden">
 				강좌검색
 				<span>DISCOVER YOUR EVERYDAY</span>
 				<p>취향을 발견하고, 일상에 깊이를 더하는 시간.<br>신세계 아카데미에서 나에게 맞는 배움을 찾아보세요.</p>
 			</h2>
-			<section class="searchWrap">
+			<section class="searchWrap on">
 				<div class="search">
 					<fieldset>
 						<div class="searchBox">
@@ -159,7 +165,7 @@
 							<button type="submit">검색</button>
 						</div>
 						<div class="title">
-							<p>필터</p>
+							<p><span class="webHidden">필터</span><span class="blind">강좌검색</span></p>
 							<button type="button">초기화</button>
 						</div>
 						<div>
@@ -226,7 +232,7 @@
 							</dd>
 						</dl>
 						<button type="button">조건 적용</button>
-						<button type="button" class="open blind">필터 펼치기</button>
+						<button type="button" class="open blind">필터 접기</button>
 					</fieldset>
 				</div>
 				<div class="list">
@@ -384,7 +390,7 @@
 						</div>
 						<div class="sort">
 							<p><strong>570</strong>개의 강좌가 있습니다.</p>
-							<button type="button" class="fillter blindm">필터 접기</button>
+							<button type="button" class="fillter webHidden">필터 접기</button>
 							<select>
 								<option>마감임박순</option>
 								<option>접수중</option>
@@ -576,6 +582,7 @@
 					<li>COPYRIGHT © 2019 SHINSEGAE. ALL RIGHTS RESERVED.</li>
 				</ul>
 			</div>
+			<a href="#" class="blind">TOP</a>
 		</footer>
 	</div>
 	
@@ -593,6 +600,18 @@
 			searchWrap.classList.toggle('on');
 			if (searchWrap.classList.contains('on')) {
 				this.innerText = '필터 펼치기';
+			} else {
+				this.innerText = '필터 접기';
+			}
+		});
+
+		var fillter = document.querySelector('.searchWrap .open');
+		var searchWrap = document.querySelector('.searchWrap');
+		fillter.addEventListener('click', function (e) {
+			searchWrap.classList.toggle('on');
+			if (searchWrap.classList.contains('on')) {
+				this.innerText = '필터 펼치기';
+			console.log('a');
 			} else {
 				this.innerText = '필터 접기';
 			}

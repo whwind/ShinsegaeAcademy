@@ -1,34 +1,30 @@
 
 /**************************** .featured ****************************/
 .searchWrap {
-	display:flex;
-	justify-content:space-between;
-	gap:0 40px;
 	position:relative;
-	width:1600px;
-	margin:80px auto 0;
+	width:100vw;
 	.search {
 		overflow:hidden;
-		width:400px;
-		transition:.5s;
 		fieldset {
 			display:flex;
 			flex-direction:column;
-			gap:40px 0;
-			width:400px;
-			padding:40px 24px;
+			gap:24px 0;
+			position:relative;
+			height:calc-size(auto, size);
+			padding:74px 24px 30px;
 			border:1px solid #EEE6D8;
 			background-color:#FFFBF2;
+			transition:height .5s;;
 			> div {
 				> label {
 					display:block;
 					margin-bottom:15px;
 					color:#888;
-					font-size:14px;
+					font-size:15px;
 					line-height:16px;
 				}
 				select {
-					height:56px;
+					height:48px;
 				}
 			}
 			dl {
@@ -46,17 +42,9 @@
 				dd {
 					display:flex;
 					flex-wrap:wrap;
-					justify-content:space-between;
+					justify-content:flex-start;
 					align-items:center;
 					gap:8px;
-					label {
-						width:81px;
-					}
-					&.half {
-						label {
-							width:171px;
-						}
-					}
 				}
 			}
 			.searchBox {
@@ -69,16 +57,21 @@
 					position:absolute;
 					right:0;
 					bottom:0;
-					width:56px;
-					height:56px;
+					width:48px;
+					height:48px;
 					text-indent:-9999em;
 					background:url(../images/btn_serch02.png) no-repeat 50% 50%;
 				}
 			}
 			.title {
+				position:absolute;
+				top:0;
+				left:0;
+				width:100vw;
 				display:flex;
 				justify-content:space-between;
 				align-items:center;
+				padding:25px;
 				p {
 					color:#222;
 					font-size:24px;
@@ -108,36 +101,63 @@
 			> button {
 				width:100%;
 				height:56px;
+				margin-bottom:20px;
 				color:#fff;
 				font-size:16px;
 				line-height:56px;
 				background:#222;
 				border-radius:8px;
+				&.open {
+					position:absolute;
+					bottom:18px;
+					left:0;
+					height:16px;
+					margin-bottom:0;
+					color:#A38348;
+					font-size:12px;
+					line-height:16px;
+					background:none;
+					&::after {
+						content:'';
+						display:inline-block;
+						width:6px;
+						height:6px;
+						margin-left:5px;
+						border-top:1px solid #A38348;
+						border-left:1px solid #A38348;
+						transform:translateY(2px) rotate(45deg);
+					}
+				}
 			}
 		}
 	}
 	&.on {
-		gap:0;
-		.search {
-			width:0;
-		}
-		.list {
-			width:1600px;
+		fieldset {
+			height:104px;
+			.searchBox {
+				opacity:0;
+			}
+			> button {
+				&.open {
+					&::after {
+						transform:translateY(-3px) rotate(225deg);
+					}
+				}
+			}
 		}
 	}
 	.list {
 		overflow:hidden;
-		width:1160px;
-		transition:.5s;
+		width:100vw;
+		padding:40px 24px 64px;
 		h4 {
-			font-size:32px;
+			font-size:20px;
 			font-weight:600;
-			line-height:36px;
+			line-height:22px;
 		}
 		.swiper {
 			position:relative;
 			margin-top:24px;
-			clip-path:inset(0 -1000% 0 0);
 			ul {
 				display:flex;
 				justify-content:flex-start;
@@ -147,8 +167,8 @@
 					flex-direction:column;
 					justify-content:space-between;
 					position:relative;
-					width:340px !important;
-					height:446px;
+					width:288px !important;
+					height:368px;
 					margin-left:32px;
 					border:1px solid #EEE6D8;
 					background:#FFFBF2;
@@ -189,9 +209,13 @@
 					}
 					figure {
 						overflow:hidden;
-						width:100%;
-						height:184px;
+						width:288px;
+						height:148px;
+						border-radius:8px 8px 0 0;
 						img {
+							width:100%;
+							height:100%;
+							object-fit:cover;
 							transition:.5s ease;
 						}
 						&:hover {
@@ -203,26 +227,10 @@
 					h6 {
 						overflow:hidden;
 						width:100%;
-						height:60px;
-						padding:0 16px;
-						font-size:24px;
-						font-weight:600;
-						line-height:28px;
-						text-overflow:ellipsis;
-						line-clamp:2;
-						-webkit-line-clamp:2;
-						display: -webkit-box;
-						-webkit-box-orient: vertical;
-					}
-					p {
-						overflow:hidden;
-						width:100%;
 						height:40px;
 						padding:0 16px;
-						margin-top:8px;
-						color:#222;
 						font-size:16px;
-						font-weight:500;
+						font-weight:600;
 						line-height:20px;
 						text-overflow:ellipsis;
 						line-clamp:2;
@@ -248,13 +256,13 @@
 							overflow:hidden;
 							width:100%;
 							color:#666;
-							font-size:16px;
+							font-size:12px;
 							line-height:18px;
 						}
 						dd {
-							margin-top:8px;
+							margin-top:2px;
 							color:#666;
-							font-size:14px;
+							font-size:12px;
 							line-height:20px;
 							letter-spacing:-0.5px;
 						}
@@ -270,24 +278,26 @@
 						border-top:1px solid #ECECEC;
 						strong {
 							color:#222;
-							font-size:24px;
+							font-size:18px;
 							font-weight:600;
 						}
 						button {
 							position:relative;
-							width:44px;
-							height:44px;
+							width:40px;
+							height:40px;
 							margin-left:auto;
 							text-indent:-9999em;
 							background:url(../images/btn_bag02.png) no-repeat 50% 50%;
+							background-size:100% 100%;
 							&:after {
 								content:'';
 								position:absolute;
 								top:0;
 								left:0;
-								width:44px;
-								height:44px;
+								width:40px;
+								height:40px;
 								background:url(../images/btn_bag02on.png) no-repeat 50% 50%;
+								background-size:100% 100%;
 								opacity:0;
 								transition:opacity .5s ease;
 							}
@@ -298,7 +308,7 @@
 							}
 						}
 						a {
-							height:44px;
+							height:40px;
 							padding:0 26px;
 							color:#fff;
 							font-size:15px;
@@ -370,19 +380,21 @@
 			}
 		}
 		.sortWrap {
+			margin-top:40px;
 			.hash {
 				display:flex;
 				justify-content:flex-start;
 				align-items:center;
-				gap:0 8px;
-				margin-top:80px;
+				flex-wrap:wrap;
+				gap:8px;
 				button {
 					position:relative;
-					height:42px;
-					padding:0 40px 0 16px;
-					font-size:16px;
-					line-height:42px;
+					height:27px;
+					padding:0 26px 0 10px;
+					font-size:12px;
+					line-height:27px;
 					background:#FFFBF2 url(../images/icon_xmark.png) no-repeat 90% 50%;
+					background-size:14px;
 					border:1px solid #EEE6D8;
 					&:after {
 						content:'';
@@ -398,13 +410,13 @@
 				justify-content:space-between;
 				align-items:center;
 				gap:0 5px;
-				margin-top:24px;
+				margin-top:16px;
 				p {
-					font-size:16px;
-					font-weight:400;
+					font-size:12px;
+					font-weight:500;
 					strong {
 						color:#F22C2D;
-						font-weight:600;
+						font-weight:700;
 					}
 				}
 				button {
@@ -424,7 +436,7 @@
 					height:24px;
 					padding:0 9px;
 					color:#000;
-					font-size:16px;
+					font-size:12px;
 					font-weight:400;
 					line-height:24px;
 					border-radius:19px;
@@ -443,7 +455,7 @@
 							transition:rotate 0.2s ease-out;
 						}
 						&:open::picker-icon {
-							rotate: 180deg;
+							rotate:180deg;
 						}
 						&::picker(select) {
 							padding:0;
@@ -467,7 +479,7 @@
 							}
 						}
 						option {
-							height:38px;
+							height:24px;
 							cursor:pointer;
 							&:where(:hover, :focus, :active) {
 								background:#FFF7E5;
@@ -494,12 +506,12 @@
 			flex-wrap:wrap;
 			flex-direction:column;
 			gap:16px 0;
-			margin-top:24px;
+			margin-top:17px;
 			> li {
 				position:relative;
 				overflow:hidden ;
-				height:186px;
-				padding:24px;
+				height:191px;
+				padding:12px 16px 16px;
 				border:1px solid #EEE6D8;
 				background:#FFFBF2;
 				border-radius:8px;
@@ -518,48 +530,30 @@
 					flex-direction:column;
 					justify-content:space-between;
 					align-self:flex-start;
-					.state {
-						display:flex;
-						align-items:center;
-						strong {
-							position:relative;
-							font-size:14px;
-							line-height:24px;
-							color:#A38348;
-							span {
-								margin-left:8px;
-								color:#A38348;
-								&:before {
-									content:'';
-									display:inline-block;
-									width:1px;
-									height:12px;
-									margin-right:8px;
-									background:#ECECEC;
-								}
-							}
-						}
-					}
+					margin-top:5px;
 					dl {
-						margin-top:4px;
 						dt {
-							margin-bottom:14px;
+							display:block;
+							overflow:hidden;
+							width:calc(100vw - 80px);
+							margin-bottom:6px;
 							color:#222;
-							font-size:24px;
+							font-size:16px;
 							font-weight:600;
-							line-height:29px;
+							line-height:20px;
+							text-overflow:ellipsis;
+							white-space:nowrap;
 						}
 						dd{
-							margin-bottom:14px;
-							color:#222;
-							font-size:18px;
+							margin-bottom:5px;
+							color:#666;
+							font-size:14px;
 							font-weight:400;
 							line-height:20px;
 							em, span {
-								color:#666;
-								font-size:14px;
+								font-size:12px;
 								font-weight:400;
-								line-height:20px;
+								line-height:14px;
 							}
 							span {
 								&:before {
@@ -574,31 +568,31 @@
 					justify-content:flex-end;
 					align-items:center;
 					gap:0 8px;
-					position:absolute;
-					bottom:24px;
-					right:24px;
-					height:44px;
+					padding-top:16px;
+					border-top:1px solid #ECECEC;
 					strong {
 						margin-right:16px;
 						color:#222;
-						font-size:24px;
+						font-size:18px;
 						font-weight:600;
 					}
 					button {
 						position:relative;
-						width:44px;
-						height:44px;
+						width:40px;
+						height:40px;
 						margin-left:auto;
 						text-indent:-9999em;
 						background:url(../images/btn_bag02.png) no-repeat 50% 50%;
+						background-size:100%;
 						&:after {
 							content:'';
 							position:absolute;
 							top:0;
 							left:0;
-							width:44px;
-							height:44px;
+							width:40px;
+							height:40px;
 							background:url(../images/btn_bag02on.png) no-repeat 50% 50%;
+						background-size:100%;
 							opacity:0;
 							transition:opacity .5s ease;
 						}
@@ -609,11 +603,11 @@
 						}
 					}
 					a {
-						height:44px;
+						height:40px;
 						padding:0 26px;
 						color:#fff;
 						font-size:15px;
-						line-height:44px;
+						line-height:40px;
 						background:#6A4F37;
 						border-radius:8px;
 						transition:background .5s ease;
@@ -625,12 +619,13 @@
 			}
 		}
 		> p {
-			height:400px;
-			padding-top:235px;
+			height:320px;
+			padding-top:210px;
 			color:#999;
-			font-size:18px;
+			font-size:15px;
 			text-align:center;
 			background:url(../images/icon_no_search.png) no-repeat 50% 140px;
+			background-size:64px;
 		}
 	}
 }
