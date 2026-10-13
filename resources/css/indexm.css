@@ -1882,23 +1882,29 @@ section .notice {
 
 /**************************** footer ****************************/
 footer {
+	position:relative;
 	background:#232323;
 	> div {
 		width:100%;
 		padding-top:30px;
 		margin:0 auto;
-		background:url(../images/footer_logo_m.png) no-repeat 25px 30px;
-		background-size:132px 15px;
+		background:url(../images/footer_logo.png) no-repeat 25px 32px;
+		background-size:104px 43px;
 		> div {
-			padding:35px 25px 15px;
+			padding:72px 25px 15px;
 			> ul {
 				display:flex;
 				flex-wrap:wrap;
 				align-content:flex-start;
 				gap:0 20px;
-				li:nth-child(7) {
-					height:0px;
-					flex-basis:100%;
+				li {
+					&:nth-child(7) {
+						height:0px;
+						flex-basis:100%;
+					}
+					&:nth-child(n+7) {
+						display:none;
+					}
 				}
 				a {
 					color:#888;
@@ -2004,6 +2010,25 @@ footer {
 					margin-top:20px;
 				}
 			}
+		}
+	}
+	> a {
+		position:absolute;
+		top:45px;
+		right:25px;
+		padding-right:20px;
+		color:#fff;
+		font-size:10px;
+		&:after {
+			content:'';
+			position:absolute;
+			top:11px;
+			right:2px;
+			width:8px;
+			height:8px;
+			border-top:1px solid #fff;
+			border-right:1px solid #fff;
+			transform:rotate(-45deg);
 		}
 	}
 }

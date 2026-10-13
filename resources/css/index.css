@@ -837,10 +837,13 @@ main {
 			border-radius:24px;
 			box-shadow:3px 3px 3px rgba(100, 100, 100, .1);
 			&:nth-child(1) {
-				background:#FAF4E9 url(../images/icon_check01.png) no-repeat 14px 50%;
+				background:#fff url(../images/icon_check01.png) no-repeat 14px 50%;
 			}
 			&:nth-child(2) {
-				background:#FAF4E9 url(../images/icon_catalog.png) no-repeat 14px 50%;
+				background:#fff url(../images/icon_catalog.png) no-repeat 14px 50%;
+			}
+			&:hover {
+				background-color:#EEE6D8;
 			}
 		}
 	}
@@ -857,8 +860,8 @@ main {
 			&:before {
 				content:'';
 				position:absolute;
-				top:32%;
-				left:50%;
+				top:17px;
+				left:29px;
 				width:1px;
 				height:24px;
 				border-right:1px solid #fff;
@@ -867,10 +870,10 @@ main {
 			&:after {
 				content:'';
 				position:absolute;
-				top:32%;
-				left:50%;
+				top:18px;
+				left:29px;
 				width:1px;
-				height:24px;
+				height:25px;
 				border-right:1px solid #fff;
 				transform:rotate(45deg);
 			}
@@ -898,6 +901,9 @@ main {
 				height:24px;
 				background:#000;
 			}
+			&:hover {
+				background-color:#EEE6D8;
+			}
 		}
 	}
 	&.off {
@@ -910,13 +916,14 @@ main {
 					transform:rotate(90deg);
 				}
 				&:after {
-					top:23px;
+					top:20px;
+					left:18px;
 					width:24px;
-					height:16px;
+					height:17px;
 					border-right:0;
 					border-top:1px solid #fff;
 					border-bottom:1px solid #fff;
-					transform:translateX(-50%) rotate(0deg);
+					transform:rotate(0deg);
 				}
 			}
 		}

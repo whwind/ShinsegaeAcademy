@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="../resources/css/common_mobile.css" />
+	<link rel="stylesheet" href="../resources/css/layout_mobile.css" />
+
+	<title>신세계 아카데미</title>
+</head>
+
+<body class="entire">
+	<div id="wrap">
+		<header>
+			<div>
+				<div class="nav">
+					<h1><img src="../resources/images/logo_sub.png" alt="신세계 아카데미"></h1>
+					<nav>
+						<ul>
+							<li class="active"><a href="#">수강신청</a></li>
+							<li><a href="#">카탈로그</a></li>
+							<li><a href="#">아카데미 소개</a></li>
+							<li><a href="#">이용안내</a></li>
+						</ul>
+					</nav>
+					<ul>
+						<li><a href="#" class="login">로그인</a></li>
+						<li><a href="#" class="cart">장바구니</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="info">
+				<div>
+					<div class="welcome">
+						<p><a href="#">이세계 회원님</a>, 환영합니다.</p>
+						<div>
+							<div>
+								<button type="button" class="infoOpen webHidden">나의 수강현황 펼치기</button>
+							</div>
+							<select title="지점선택">
+								<option>강남점</option>
+								<option>인천점</option>
+								<option>부산점</option>
+							</select>
+						</div>
+					</div>
+					<div class="myList">
+						<button type="button" class="infoOpen blind">회원님의 강좌 정보를 확인하세요.</button>
+						<h3>오늘도 배움을 이어가 볼까요,</h3>
+						<div class="listWrap">
+							<div class="list">
+								<div>
+									<dl class="state">
+										<dd>999</dd>
+										<dt>수강중</dt>
+									</dl>
+									<dl class="state">
+										<dd>999</dd>
+										<dt>수강예정</dt>
+									</dl>
+									<dl class="state">
+										<dd>999</dd>
+										<dt>대기</dt>
+									</dl>
+									<dl class="state">
+										<dd>999</dd>
+										<dt>찜</dt>
+									</dl>
+								</div>
+								<ul>
+									<li>
+										<a href="#">
+											<dl>
+												<dt>주말 내추럴 와인 입문</dt>
+												<dd><span>Community</span><em>화 19:00~20:00</em></dd>
+											</dl>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<dl>
+												<dt>주말 내추럴 와인 입문</dt>
+												<dd><span>Community</span><em>화 19:00~20:00</em></dd>
+											</dl>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<dl>
+												<dt>주말 내추럴 와인 입문</dt>
+												<dd><span>Community</span><em>화 19:00~20:00</em></dd>
+											</dl>
+										</a>
+									</li>
+								</ul>
+								<a href="#">마이페이지</a>
+							</div>
+							<div class="blog">
+								<h3>회원님의 취향에 어울리는 강좌</h3>
+								<ul>
+									<li>
+										<figure><img src="../resources/images/sample_01.png" alt="강좌 이미지"></figure>
+										<dl>
+											<dd class="tiny">Community</dd>
+											<dt>주말 내추럴 와인 입문</dt>
+											<dd><span>김미영</span><em>화 19:00~20:00 (총 8회)</em></dd>
+										</dl>
+										<strong>35,000원</strong>
+									</li>
+									<li>
+										<figure><img src="../resources/images/sample_01.png" alt="강좌 이미지"></figure>
+										<dl>
+											<dd class="tiny">Community</dd>
+											<dt>주말 내추럴 와인 입문</dt>
+											<dd><span>김미영</span><em>화 19:00~20:00 (총 8회)</em></dd>
+										</dl>
+										<strong>35,000원</strong>
+									</li>
+									<li>
+										<figure><img src="../resources/images/sample_01.png" alt="강좌 이미지"></figure>
+										<dl>
+											<dd class="tiny"><span>2026 autumn</span><em>본점</em></dd>
+											<dt>주말 내추럴 와인 입문</dt>
+											<dd><span>김미영</span><em>화 19:00~20:00 (총 8회)</em></dd>
+										</dl>
+										<strong>35,000원</strong>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<ul class="location">
+				<li>HOME</li>
+				<li>수강신청</li>
+				<li>강좌검색</li>
+			</ul>
+			<h2>
+				강좌검색
+				<span>DISCOVER YOUR EVERYDAY</span>
+				<p>취향을 발견하고, 일상에 깊이를 더하는 시간.<br>신세계 아카데미에서 나에게 맞는 배움을 찾아보세요.</p>
+			</h2>
+			<section class="searchWrap">
+				<div class="search">
+					<fieldset>
+						<div class="searchBox">
+							<label for="searchInput">검색어</label>
+							<input id="searchInput" type="text" placeholder="강좌/강사명을 입력해주세요." title="강좌 검색어 입력"/>
+							<button type="submit">검색</button>
+						</div>
+						<div class="title">
+							<p>필터</p>
+							<button type="button">초기화</button>
+						</div>
+						<div>
+							<label for="branch">학기</label>
+							<select id="branch">
+								<option>2027년 봄학기</option>
+								<option>2027년 봄학기</option>
+								<option>2027년 봄학기</option>
+								<option>2027년 봄학기</option>
+								<option>2027년 봄학기</option>
+							</select>
+						</div>
+						<div>
+							<label for="category">카테고리 (대분류)</label>
+							<select id="category">
+								<option>선택해주세요</option>
+							</select>
+						</div>
+						<dl>
+							<dt>요일<strong>999</strong></dt>
+							<dd>
+								<input id="allDays" class="round" type="checkbox" checked />
+								<label for="allDays">전체</label>
+								<input id="monday" class="round" type="checkbox" />
+								<label for="monday">월요일</label>
+								<input id="tuesday" class="round" type="checkbox" />
+								<label for="tuesday">화요일</label>
+								<input id="wednesday" class="round" type="checkbox" />
+								<label for="wednesday">수요일</label>
+								<input id="thursday" class="round" type="checkbox" />
+								<label for="thursday">목요일</label>
+								<input id="friday" class="round" type="checkbox" />
+								<label for="friday">금요일</label>
+								<input id="saturday" class="round" type="checkbox" />
+								<label for="saturday">토요일</label>
+								<input id="sunday" class="round" type="checkbox" />
+								<label for="sunday">일요일</label>
+							</dd>
+						</dl>
+						<dl>
+							<dt>시간<strong>999</strong></dt>
+							<dd class="half">
+								<input id="allTime" class="round" type="checkbox" checked />
+								<label for="allTime">전체</label>
+								<input id="time1" class="round" type="checkbox" />
+								<label for="time1">오전</label>
+								<input id="time2" class="round" type="checkbox" />
+								<label for="time2">오후</label>
+								<input id="time3" class="round" type="checkbox" />
+								<label for="time3">저녁 (18시 이후)</label>
+							</dd>
+						</dl>
+						<dl>
+							<dt>수강대상<strong>999</strong></dt>
+							<dd class="half">
+								<input id="allTarget" class="round" type="checkbox" checked />
+								<label for="allTarget">전체</label>
+								<input id="adult" class="round" type="checkbox" />
+								<label for="adult">성인</label>
+								<input id="kids" class="round" type="checkbox" />
+								<label for="kids">키즈</label>
+								<input id="family" class="round" type="checkbox" />
+								<label for="family">패밀리</label>
+							</dd>
+						</dl>
+						<button type="button">조건 적용</button>
+						<button type="button" class="open blind">필터 펼치기</button>
+					</fieldset>
+				</div>
+				<div class="list">
+					<h4>먼저 보시면 좋을 강좌</h4>
+					<div class="swiper">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<figure><img src="../resources/images/sample_featu02.png" alt="강좌 이미지" /></figure>
+								<div class="class">
+									<strong>Cooking</strong>
+									<div class="heartToggle">
+										<input type="checkbox" id="heart01">
+										<label for="heart01"><div>좋아요</div></label>
+									</div>
+								</div>
+								<h6>손으로 빚는 우리 떡과 다과</h6>
+								<dl>
+									<dt>김하늘  </dt>
+									<dd>2026.09.01~2026.11.10 (총 10회) · 화 10:30~12:00</dd>
+								</dl>
+								<div class="choice">
+									<strong>87,000원</strong>
+									<button type="button">담기</button>
+									<a href="#">수강신청</a>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<figure><img src="../resources/images/sample_featu02.png" alt="강좌 이미지" /></figure>
+								<div class="class">
+									<strong>Cooking</strong>
+									<div class="heartToggle">
+										<input type="checkbox" id="heart02">
+										<label for="heart02"><div>좋아요</div></label>
+									</div>
+								</div>
+								<h6>손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과</h6>
+								<dl>
+									<dt>김하늘  </dt>
+									<dd>2026.09.01~2026.11.10 (총 10회) · 화 10:30~12:00</dd>
+								</dl>
+								<div class="choice">
+									<strong>87,000원</strong>
+									<button type="button">담기</button>
+									<a href="#">신청하기</a>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<figure><img src="../resources/images/sample_featu02.png" alt="강좌 이미지" /></figure>
+								<div class="class">
+									<strong>Cooking</strong>
+									<div class="heartToggle">
+										<input type="checkbox" id="heart03">
+										<label for="heart03"><div>좋아요</div></label>
+									</div>
+								</div>
+								<h6>손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과</h6>
+								<dl>
+									<dt>김하늘  </dt>
+									<dd>2026.09.01~2026.11.10 (총 10회) · 화 10:30~12:00</dd>
+								</dl>
+								<div class="choice">
+									<strong>87,000원</strong>
+									<button type="button">담기</button>
+									<a href="#">신청하기</a>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<figure><img src="../resources/images/sample_featu02.png" alt="강좌 이미지" /></figure>
+								<div class="class">
+									<strong>Cooking</strong>
+									<div class="heartToggle">
+										<input type="checkbox" id="heart04">
+										<label for="heart04"><div>좋아요</div></label>
+									</div>
+								</div>
+								<h6>손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과</h6>
+								<dl>
+									<dt>김하늘  </dt>
+									<dd>2026.09.01~2026.11.10 (총 10회) · 화 10:30~12:00</dd>
+								</dl>
+								<div class="choice">
+									<strong>87,000원</strong>
+									<button type="button">담기</button>
+									<a href="#">신청하기</a>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<figure><img src="../resources/images/sample_featu02.png" alt="강좌 이미지" /></figure>
+								<div class="class">
+									<strong>Cooking</strong>
+									<div class="heartToggle">
+										<input type="checkbox" id="heart05">
+										<label for="heart05"><div>좋아요</div></label>
+									</div>
+								</div>
+								<h6>손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과</h6>
+								<dl>
+									<dt>김하늘  </dt>
+									<dd>2026.09.01~2026.11.10 (총 10회) · 화 10:30~12:00</dd>
+								</dl>
+								<div class="choice">
+									<strong>87,000원</strong>
+									<button type="button">담기</button>
+									<a href="#">신청하기</a>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<figure><img src="../resources/images/sample_featu02.png" alt="강좌 이미지" /></figure>
+								<div class="class">
+									<strong>Cooking</strong>
+									<div class="heartToggle">
+										<input type="checkbox" id="heart06">
+										<label for="heart06"><div>좋아요</div></label>
+									</div>
+								</div>
+								<h6>손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과</h6>
+								<dl>
+									<dt>김하늘  </dt>
+									<dd>2026.09.01~2026.11.10 (총 10회) · 화 10:30~12:00</dd>
+								</dl>
+								<div class="choice">
+									<strong>87,000원</strong>
+									<button type="button">담기</button>
+									<a href="#">신청하기</a>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<figure><img src="../resources/images/sample_featu02.png" alt="강좌 이미지" /></figure>
+								<div class="class">
+									<strong>Cooking</strong>
+									<div class="heartToggle">
+										<input type="checkbox" id="heart07">
+										<label for="heart07"><div>좋아요</div></label>
+									</div>
+								</div>
+								<h6>손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과</h6>
+								<dl>
+									<dt>김하늘  </dt>
+									<dd>2026.09.01~2026.11.10 (총 10회) · 화 10:30~12:00</dd>
+								</dl>
+								<div class="choice">
+									<strong>87,000원</strong>
+									<button type="button">담기</button>
+									<a href="#">신청하기</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="sortWrap">
+						<div class="hash">
+							<button type="button">요일 전체</button>
+							<button type="button">시간 전체</button>
+							<button type="button">성인</button>
+							<button type="button">키즈</button>
+						</div>
+						<div class="sort">
+							<p><strong>570</strong>개의 강좌가 있습니다.</p>
+							<button type="button" class="fillter blindm">필터 접기</button>
+							<select>
+								<option>마감임박순</option>
+								<option>접수중</option>
+								<option>접수대기</option>
+								<option>새강좌</option>
+							</select>
+						</div>
+					</div>
+					<ul class="blogList">
+						<li>
+							<div class="class">
+								<strong>Cooking</strong>
+								<div class="heartToggle">
+									<input type="checkbox" id="heart08">
+									<label for="heart08"><div>좋아요</div></label>
+								</div>
+							</div>
+							<div class="lecture">
+								<dl>
+									<dt>Cello & Guitar Strings Duo Concert: 3 Colors & More</dt>
+									<dd>김서연 셰프</dd>
+									<dd><em>2026.09.01~2026.11.10 (총 10회)</em><span>화 10:30~12:00</span></dd>
+								</dl>
+							</div>
+							<div class="choice">
+								<strong>87,000원</strong>
+								<button>담기</button>
+								<a href="#">수강신청</a>
+							</div>
+						</li>
+						<li>
+							<div class="class">
+								<strong>Cooking</strong>
+								<div class="heartToggle">
+									<input type="checkbox" id="heart08">
+									<label for="heart08"><div>좋아요</div></label>
+								</div>
+							</div>
+							<div class="lecture">
+								<dl>
+									<dt>Cello & Guitar Strings Duo Concert: 3 Colors & More</dt>
+									<dd>김서연 셰프</dd>
+									<dd><em>2026.09.01~2026.11.10 (총 10회)</em><span>화 10:30~12:00</span></dd>
+								</dl>
+							</div>
+							<div class="choice">
+								<strong>87,000원</strong>
+								<button>담기</button>
+								<a href="#">수강신청</a>
+							</div>
+						</li>
+						<li>
+							<div class="class">
+								<strong>Cooking</strong>
+								<div class="heartToggle">
+									<input type="checkbox" id="heart08">
+									<label for="heart08"><div>좋아요</div></label>
+								</div>
+							</div>
+							<div class="lecture">
+								<dl>
+									<dt>Cello & Guitar Strings Duo Concert: 3 Colors & More</dt>
+									<dd>김서연 셰프</dd>
+									<dd><em>2026.09.01~2026.11.10 (총 10회)</em><span>화 10:30~12:00</span></dd>
+								</dl>
+							</div>
+							<div class="choice">
+								<strong>87,000원</strong>
+								<button>담기</button>
+								<a href="#">수강신청</a>
+							</div>
+						</li>
+						<li>
+							<div class="class">
+								<strong>Cooking</strong>
+								<div class="heartToggle">
+									<input type="checkbox" id="heart08">
+									<label for="heart08"><div>좋아요</div></label>
+								</div>
+							</div>
+							<div class="lecture">
+								<dl>
+									<dt>Cello & Guitar Strings Duo Concert: 3 Colors & More</dt>
+									<dd>김서연 셰프</dd>
+									<dd><em>2026.09.01~2026.11.10 (총 10회)</em><span>화 10:30~12:00</span></dd>
+								</dl>
+							</div>
+							<div class="choice">
+								<strong>87,000원</strong>
+								<button>담기</button>
+								<a href="#">수강신청</a>
+							</div>
+						</li>
+						<li>
+							<div class="class">
+								<strong>Cooking</strong>
+								<div class="heartToggle">
+									<input type="checkbox" id="heart08">
+									<label for="heart08"><div>좋아요</div></label>
+								</div>
+							</div>
+							<div class="lecture">
+								<dl>
+									<dt>Cello & Guitar Strings Duo Concert: 3 Colors & More</dt>
+									<dd>김서연 셰프</dd>
+									<dd><em>2026.09.01~2026.11.10 (총 10회)</em><span>화 10:30~12:00</span></dd>
+								</dl>
+							</div>
+							<div class="choice">
+								<strong>87,000원</strong>
+								<button>담기</button>
+								<a href="#">수강신청</a>
+							</div>
+						</li>
+					</ul>
+					<p>검색 결과가 없습니다.</p>
+					<div class="paging">
+						<a href="#" class="prev">이전</a>
+						<span>Page</span>
+						<input type="text" value="1" />
+						<span>of <em>10</em></span>
+						<a href="#" class="next">다음</a>
+					</div>
+				</div>
+			</section>
+			<div class="floting off">
+				<div>
+					<a href="#">수강신청 하기</a>
+					<a href="#">카탈로그 보기</a>
+				</div>
+				<button type="button" class="close">닫기</button>
+				<button type="button" class="top">위로</button>
+			</div>
+		</main>
+
+		<footer>
+			<div>
+				<div>
+					<ul>
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">법인영업</a></li>
+						<li><a href="#">백화점 신문고</a></li>
+						<li><a href="#">사이트맵</a></li>
+						<li><a href="#" class="teacher">강사지원</a></li>
+						<li><a href="#" class="teacher">강사전용페이지</a></li>
+						<li></li>
+						<li><a href="#" class="red">개인정보처리방침</a></li>
+						<li><a href="#" class="red">영상정보처리기기 운영·관리방침</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">신백멤버스 회원약관</a></li>
+						<li><a href="#">신세계포인트 이용약관</a></li>
+					</ul>
+					<div class="family">
+						<button type="button">패밀리 사이트</button>
+						<ul>
+							<li><a href="https://www.shinsegaegroupnewsroom.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계그룹</a></li>
+							<li><a href="https://www.shinsegaepoint.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계포인트</a></li>
+							<li><a href="https://store.emart.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">이마트</a></li>
+							<li><a href="http://www.traders.co.kr/" target="_blank" rel="noopener noreferrer" title="새 창 열림">이마트 트레이더스</a></li>
+							<li><a href="http://www.emarteveryday.co.kr/" target="_blank" rel="noopener noreferrer" title="새 창 열림">이마트 에브리데이</a></li>
+							<li><a href="https://www.emart24.co.kr/" target="_blank" rel="noopener noreferrer" title="새 창 열림">이마트24</a></li>
+							<li><a href="http://www.shinsegaetvshopping.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계라이브쇼핑</a></li>
+							<li><a href="https://www.premiumoutlets.co.kr/" target="_blank" rel="noopener noreferrer" title="새 창 열림">프리미엄아울렛</a></li>
+							<li><a href="https://www.starfield.co.kr/" target="_blank" rel="noopener noreferrer" title="새 창 열림">스타필드</a></li>
+							<li><a href="http://www.ssgdfm.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계면세점</a></li>
+							<li><a href="http://www.sikorea.co.kr/main" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계인터내셔날</a></li>
+							<li><a href="http://www.shinsegaefood.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계푸드</a></li>
+							<li><a href="http://www.shinsegae-lnb.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계 L&amp;B</a></li>
+							<li><a href="http://www.istarbucks.co.kr/" target="_blank" rel="noopener noreferrer" title="새 창 열림">스타벅스커피 코리아</a></li>
+							<li><a href="https://www.josunhotel.com" target="_blank" rel="noopener noreferrer" title="새 창 열림">조선호텔앤리조트</a></li>
+							<li><a href="https://www.shinsegae-enc.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계건설</a></li>
+							<li><a href="http://www.sinc.co.kr/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계아이앤씨</a></li>
+							<li><a href="https://business.ssgpay.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">에스에스지페이먼츠</a></li>
+						</ul>
+					</div>
+					<div class="sns">
+						<a href="#" class="insta" title="새 창 열림">인스타그램</a>
+						<a href="#" class="youtube" title="새 창 열림">유투브</a>
+						<a href="#" class="sbot">신세계 에스봇</a>
+					</div>
+				</div>
+				<ul>
+					<li>(주)신세계 대표이사 : 박주형</li>
+					<li><adress>주소 : 서울특별시 중구 소공로 63(충무로 1가)</adress></li>
+					<li>개인정보보호책임자 : 이성환 상무</li>
+					<li>대표전화 : 1588-1234 (유료)</li>
+					<li>사업자등록번호 : 201-81-32195</li>
+					<li>통신판매업신고번호 : 1996-서울중구-0291</li>
+					<li>COPYRIGHT © 2019 SHINSEGAE. ALL RIGHTS RESERVED.</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+	<script src="../resources/js/common.js"></script>
+	<script>
+		// Swiper
+		var swiper3 = new Swiper('.swiper', {
+			slidesPerView: 'auto',
+		});
+
+		var fillter = document.querySelector('.fillter');
+		var searchWrap = document.querySelector('.searchWrap');
+		fillter.addEventListener('click', function (e) {
+			searchWrap.classList.toggle('on');
+			if (searchWrap.classList.contains('on')) {
+				this.innerText = '필터 펼치기';
+			} else {
+				this.innerText = '필터 접기';
+			}
+		});
+	</script>
+
+</body>
+
+</html>
