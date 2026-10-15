@@ -1,5 +1,6 @@
 
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR:wght@200..900&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -287,7 +288,7 @@ body, a {
 }
 
 .blind {
-	display:none;
+	display:none !important;
 }
 
 #wrap {
@@ -761,33 +762,38 @@ main {
 
 /**************************** location ****************************/
 .location {
-	display:flex;
-	align-items:center;
-	gap:0 8px;
-	width:1600px;
-	margin:0 auto;
-	padding:24px 0;
-	li {
-		position:relative;
-		padding-right:12px;
-		color:#9A958C;
-		font-size:12px;
-		&:after {
-			content:'';
-			position:absolute;
-			top:13px;
-			right:0;
-			width:6px;
-			height:6px;
-			border-right:1px solid #A8843C;
-			border-bottom:1px solid #A8843C;
-			transform:translateY(-50%) rotate(-45deg);
-		}
-		&:last-child {
-			color:#222;
-			font-weight:700;
+	&.fffbf2 {
+		background:#fffbf2;
+	}
+	ul {
+		display:flex;
+		align-items:center;
+		gap:0 8px;
+		width:1600px;
+		margin:0 auto;
+		padding:20px 0;
+		li {
+			position:relative;
+			padding-right:12px;
+			color:#9A958C;
+			font-size:12px;
 			&:after {
-				display:none;
+				content:'';
+				position:absolute;
+				top:13px;
+				right:0;
+				width:6px;
+				height:6px;
+				border-right:1px solid #A8843C;
+				border-bottom:1px solid #A8843C;
+				transform:translateY(-50%) rotate(-45deg);
+			}
+			&:last-child {
+				color:#222;
+				font-weight:700;
+				&:after {
+					display:none;
+				}
 			}
 		}
 	}
@@ -1140,14 +1146,20 @@ footer {
 	}
 }
 
+/**************************** .heartToggle ****************************/
 .heartToggle {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	gap:0 16px;
 	position:relative;
-	width:24px;
 	height:24px;
 	margin-left:auto;
 	border-radius:20px;
 	input[type="checkbox"] {
-		display: none;
+		position:absolute;
+		z-index:-99;
+		visibility:hidden;
 		&:checked {
 			& + label  {
 				&:after {
@@ -1157,9 +1169,6 @@ footer {
 		}
 	}
 	label {
-		position:absolute;
-		top:0;
-		left:0;
 		width:24px;
 		height:24px;
 		text-indent:-9999em;
@@ -1176,6 +1185,12 @@ footer {
 			opacity:0;
 			transition:opacity .5s ease;
 		}
+	}
+	button {
+		width:24px;
+		height:24px;
+		text-indent:-9999em;
+		background:url(../images/icon_share.png) no-repeat 50% 50%;
 	}
 }
 

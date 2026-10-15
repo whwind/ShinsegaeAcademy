@@ -146,11 +146,13 @@
 					</div>
 				</div>
 			</div>
-			<ul class="location webHidden">
-				<li>HOME</li>
-				<li>수강신청</li>
-				<li>강좌검색</li>
-			</ul>
+			<div class="location webHidden">
+				<ul>
+					<li>HOME</li>
+					<li>수강신청</li>
+					<li>강좌검색</li>
+				</ul>
+			</div>
 			<h2 class="webHidden">
 				강좌검색
 				<span>DISCOVER YOUR EVERYDAY</span>
@@ -605,9 +607,9 @@
 			}
 		});
 
-		var fillter = document.querySelector('.searchWrap .open');
+		var fillterM = document.querySelector('.searchWrap .open');
 		var searchWrap = document.querySelector('.searchWrap');
-		fillter.addEventListener('click', function (e) {
+		fillterM.addEventListener('click', function (e) {
 			searchWrap.classList.toggle('on');
 			if (searchWrap.classList.contains('on')) {
 				this.innerText = '필터 펼치기';
