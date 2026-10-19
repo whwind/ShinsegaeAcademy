@@ -1490,7 +1490,7 @@
 							}
 						}
 						.progress {
-							span {
+							> span {
 								display:flex;
 								justify-content:space-between;
 								align-items:center;
@@ -1498,12 +1498,15 @@
 								font-size:11px;
 								line-height:13px;
 								font-weight:400;
-								strong {
+								> strong {
 									color:#222;
 									font-size:13px;
 									font-weight:700;
 									line-height:13px;
 									text-align:right;
+									span {
+										display:none;
+									}
 								}
 							}
 							.bar {
@@ -1524,6 +1527,9 @@
 						}
 						.atten {
 							text-align:right;
+							em {
+								display:none;
+							}
 							strong {
 								display:block;
 								font-size:16px;
@@ -1541,6 +1547,9 @@
 						}
 						.next {
 							text-align:right;
+							em {
+								display:none;
+							}
 							strong {
 								display:block;
 								font-size:16px;
@@ -1788,6 +1797,9 @@
 									font-size:16px;
 									font-weight:600;
 									line-height:16px;
+									span {
+										display:none;
+									}
 								}
 								dd {
 									margin-top:8px;
