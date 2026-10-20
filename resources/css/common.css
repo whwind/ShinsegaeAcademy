@@ -186,6 +186,39 @@ input[type=radio].round {
 	}
 }
 
+input[type=checkbox].default {
+	-webkit-appearance: none;
+	appearance: none;
+	position:relative;
+	width:20px;
+	height:20px;
+	border:1px solid #DBDBDB;
+	background:#fff;
+	border-radius:3px;
+	transition:.5s;
+	+ label {
+		font-size:15px;
+		line-height:20px;
+	}
+	&:after {
+		content:'';
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background:url(../images/checkbox_bg01.png) no-repeat 50% 50%;
+		opacity:0;
+		transition:.5s;
+	}
+	&:checked {
+		border:0;
+		&:after {
+			opacity:1;
+		}
+	}
+}
+
 input[type=checkbox].round {
 	position:absolute;
 	z-index:-1;

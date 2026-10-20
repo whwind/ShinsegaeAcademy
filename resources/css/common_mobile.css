@@ -170,6 +170,39 @@ select {
 	}
 }
 
+input[type=checkbox].default {
+	-webkit-appearance: none;
+	appearance: none;
+	position:relative;
+	width:20px;
+	height:20px;
+	border:1px solid #DBDBDB;
+	background:#fff;
+	border-radius:3px;
+	transition:.5s;
+	+ label {
+		font-size:15px;
+		line-height:20px;
+	}
+	&:after {
+		content:'';
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background:url(../images/checkbox_bg01.png) no-repeat 50% 50%;
+		opacity:0;
+		transition:.5s;
+	}
+	&:checked {
+		border:0;
+		&:after {
+			opacity:1;
+		}
+	}
+}
+
 input[type=radio].round {
 	position:absolute;
 	z-index:-1;
@@ -180,28 +213,6 @@ input[type=radio].round {
 		line-height:38px;
 		border:1px solid #dbdbdb;
 		border-radius:20px;
-		background:#fff;
-		cursor:pointer;
-		transition:.5s;
-	}
-	&:checked + label {
-		color:#fff;
-		background:#222;
-	}
-}
-
-input[type=checkbox].round {
-	position:absolute;
-	z-index:-1;
-	visibility:hidden;
-	+ label {
-		height:40px;
-		padding:0 12px;
-		font-size:15px;
-		text-align:center;
-		line-height:40px;
-		border:1px solid #dbdbdb;
-		border-radius:24px;
 		background:#fff;
 		cursor:pointer;
 		transition:.5s;
