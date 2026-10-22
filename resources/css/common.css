@@ -390,6 +390,7 @@ header {
 							left:0;
 							z-index:2;
 							overflow:hidden;
+							width:100%;
 							height:0;
 							background:#FFFBF2;
 							transition:.5s;
@@ -1483,7 +1484,7 @@ footer {
 		}
 		.todayHide {
 			display:flex;
-			justify-content:space-between;
+			justify-content:space-between; 
 			align-items:center;
 			gap:8px;
 			padding:24px;

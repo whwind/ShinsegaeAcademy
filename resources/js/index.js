@@ -141,6 +141,30 @@ window.addEventListener('scroll', function(){
 });
 */
 
+// 메인 메뉴
+var navBtn = document.querySelectorAll('header .activeSub > li > a');
+var navSub = document.querySelectorAll('header .activeSub > li > div');
+if(document.querySelector('header').scrollWidth >= 1920){
+	navBtn.forEach(function(el, idx) {
+		el.addEventListener('mouseenter', function(e){
+			navSub.forEach(function(e,ix){
+				if(idx == ix) {
+					e.classList.add('on');
+				} else {
+					e.classList.remove('on');
+				}
+			});
+		});
+	});
+
+	document.querySelector('header').addEventListener('mouseleave', function(e){
+		console.log('a');
+		navSub.forEach(function(el){
+			el.classList.remove('on');
+		})
+	});
+}
+
 // 패밀리 사이트
 var familyBtn = document.querySelector('footer .family button');
 familyBtn.addEventListener('click', function(e){
