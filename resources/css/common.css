@@ -361,13 +361,13 @@ header {
 			padding:40px 60px;
 			nav {
 				overflow:hidden;
-				ul {
+				> ul {
 					display:flex;
 					justify-content:space-between;
 					align-items:center;
 					gap:0 120px;
-					li {
-						a {
+					> li {
+						> a {
 							display:block;
 							height:60px;
 							color:#222;
@@ -375,10 +375,113 @@ header {
 							font-weight:600;
 							line-height:60px;
 							text-align:center;
+							&:hover {
+								color:#F22C2D;
+							}
 						}
 						&.active {
-							a {
+							> a {
 								color:#F22C2D;
+							}
+						}
+						> div {
+							position:fixed;
+							top:141px;
+							left:0;
+							z-index:2;
+							overflow:hidden;
+							height:0;
+							background:#FFFBF2;
+							transition:.5s;
+							> div {
+								display:flex;
+								gap:0 140px;
+								width:1920px;
+								min-height:340px;
+								margin:0 auto;
+								padding:40px 160px 0;
+								dl {
+									position:relative;
+									padding-top:42px;
+									dt {
+										font-family:"Noto Serif KR";
+										font-size:48px;
+										font-weight:600;
+										line-height:69px;
+									}
+									dd {
+										margin-top:16px;
+										color:#666;
+										font-size:18px;
+										line-height:26px;
+									}
+									&:before {
+										content:'01';
+										position:absolute;
+										top:0;
+										left:0;
+										font-family:"Noto Serif KR";
+										color:#A38348;
+										font-size:32px;
+										font-weight:500;
+										line-height:38px;
+										letter-spacing:-1px;
+									}
+								}
+								ul {
+									display:flex;
+									flex-direction:column;
+									flex-wrap:wrap;
+									gap:0 96px;
+									height:200px;
+									li {
+										display:flex;
+										align-items:center;
+										height:60px;
+										line-height:60px;
+										a {
+											font-size:20px;
+											font-weight:500;
+											&:hover {
+												color:#F22C2D;
+												text-decoration:underline;
+												text-underline-offset:2px;
+											}
+										}
+									}
+								}
+							}
+							&.on {
+								height:340px;
+								opacity:1;
+							}
+						}
+						&:nth-child(1) {
+							dl {
+								&:before {
+									content:'01';
+								}
+							}
+						}
+						&:nth-child(2) {
+							dl {
+								&:before {
+									content:'02';
+								}
+							}
+						}
+						&:nth-child(3) {
+							dl {
+								&:before {
+									content:'03';
+								}
+							}
+						}
+						&:nth-child(4) {
+							dl {
+								&:before {
+									content:'04';
+								}
 							}
 						}
 					}

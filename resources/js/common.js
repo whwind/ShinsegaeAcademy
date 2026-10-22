@@ -1,4 +1,27 @@
 
+// 메인 메뉴
+var navBtn = document.querySelectorAll('header .activeSub > li > a');
+var navSub = document.querySelectorAll('header .activeSub > li > div');
+if(document.querySelector('header .nav').scrollWidth == 1920){
+	navBtn.forEach(function(el, idx) {
+		el.addEventListener('mouseenter', function(e){
+			navSub.forEach(function(e,ix){
+				if(idx == ix) {
+					e.classList.add('on');
+				} else {
+					e.classList.remove('on');
+				}
+			});
+		});
+	});
+
+	document.querySelector('header').addEventListener('mouseleave', function(e){
+		console.log('a');
+		navSub.forEach(function(el){
+			el.classList.remove('on');
+		})
+	});
+}
 
 // 패밀리 사이트
 var familyBtn = document.querySelector('footer .family button');
@@ -9,10 +32,12 @@ familyBtn.addEventListener('click', function(e){
 
 //플로팅 메뉴
 var flotingBtn = document.querySelector('.floting .close');
-flotingBtn.addEventListener('click', function(e){
-	e.preventDefault();
-	document.querySelector('.floting').classList.toggle('off');
-});
+if(flotingBtn){
+	flotingBtn.addEventListener('click', function(e){
+		e.preventDefault();
+		document.querySelector('.floting').classList.toggle('off');
+	});
+}
 
 //나의 수강현황 접기
 var infoBtn = document.querySelectorAll('.info .infoOpen');

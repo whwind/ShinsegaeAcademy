@@ -28,11 +28,119 @@
 							<button type="button" class="history">히스토리</button>
 							<button type="button" class="menu">메뉴열기</button>
 						</div>
-						<ul>
-							<li><a href="#">수강신청</a></li>
-							<li><a href="#">카탈로그</a></li>
-							<li><a href="#"> 아카데미 소개</a></li>
-							<li><a href="#">이용안내</a></li>
+						<ul class="activeSub">
+							<li class="active">
+								<a href="#">수강신청</a>
+								<div>
+									<div>
+										<dl>
+											<dt>수강신청</dt>
+											<dd>일상을 풍요롭게 채우는 배움의 시간,<br>나에게 맞는 강좌를 만나보세요.</dd>
+										</dl>
+										<ul>
+											<li>
+												<a href="#">강좌찾기</a>
+											</li>
+											<li>
+												<a href="#">추천강좌</a>
+											</li>
+											<li>
+												<a href="#">패밀리</a>
+											</li>
+											<li>
+												<a href="#">온라인</a>
+											</li>
+											<li>
+												<a href="#">강좌스케줄</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#">카탈로그</a>
+								<div>
+									<div>
+										<dl>
+											<dt>카탈로그</dt>
+											<dd>계절의 감각과 새로운 라이프스타일,<br>이번 시즌의 특별한 영감을 만나보세요.</dd>
+										</dl>
+										<ul>
+											<li>
+												<a href="#">본점</a>
+											</li>
+											<li>
+												<a href="#">강남점</a>
+											</li>
+											<li>
+												<a href="#">타임스퀘어 & ON</a>
+											</li>
+											<li>
+												<a href="#">마산점</a>
+											</li>
+											<li>
+												<a href="#">사우스시티</a>
+											</li>
+											<li>
+												<a href="#">센텀시티</a>
+											</li>
+											<li>
+												<a href="#">의정부점</a>
+											</li>
+											<li>
+												<a href="#">김해점</a>
+											</li>
+											<li>
+												<a href="#">천안아산점</a>
+											</li>
+											<li>
+												<a href="#">스타필드 하남점</a>
+											</li>
+											<li>
+												<a href="#">대구신세계</a>
+											</li>
+											<li>
+												<a href="#">대전신세계</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#"> 아카데미 소개</a>
+								<div>
+									<div>
+										<dl>
+											<dt>아카데미 소개</dt>
+											<dd>배움의 즐거움과 삶의 품격을 더하는<br>신세계아카데미의 이야기를 만나보세요.</dd>
+										</dl>
+										<ul>
+											<li>
+												<a href="#">신세계 아카데미 소개</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#">이용안내</a>
+								<div>
+									<div>
+										<dl>
+											<dt>이용안내</dt>
+											<dd>더욱 편리하고 쾌적한 수강을 위해<br>아카데미 이용 가이드를 만나보세요.</dd>
+										</dl>
+										<ul>
+											<li>
+												<a href="#">수강신청 안내</a>
+											</li>
+											<li>
+												<a href="#">수강회원 혜택</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
 						</ul>
 					</nav>
 					<ul>
@@ -128,35 +236,6 @@
 	
 	<script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
 	<script src="../resources/js/common.js"></script>
-	<script>
-		// Swiper
-		var swiper3 = new Swiper('.swiper', {
-			slidesPerView: 'auto',
-		});
-
-		var fillter = document.querySelector('.fillter');
-		var searchWrap = document.querySelector('.searchWrap');
-		fillter.addEventListener('click', function (e) {
-			searchWrap.classList.toggle('on');
-			if (searchWrap.classList.contains('on')) {
-				this.innerText = '필터 펼치기';
-			} else {
-				this.innerText = '필터 접기';
-			}
-		});
-
-		var fillterM = document.querySelector('.searchWrap .open');
-		var searchWrap = document.querySelector('.searchWrap');
-		fillterM.addEventListener('click', function (e) {
-			searchWrap.classList.toggle('on');
-			if (searchWrap.classList.contains('on')) {
-				this.innerText = '필터 펼치기';
-			console.log('a');
-			} else {
-				this.innerText = '필터 접기';
-			}
-		});
-	</script>
 
 </body>
 
