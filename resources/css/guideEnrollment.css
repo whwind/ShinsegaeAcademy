@@ -1,0 +1,55 @@
+
+/**************************** .guide ****************************/
+.guide {
+	margin-top:40px;
+	padding-top:40px;
+	background:#FFFBF2;
+	> div {
+		width:1600px;
+		margin:0 auto;
+		> ol {
+			display:flex;
+			justify-content:space-between;
+			gap:0 24px;
+			li {
+				width:calc(100% / 3);
+				padding:24px 24px 0;
+				border:1px solid #ECECEC;
+				background:#fff;
+				h4 {
+					color:#A38348;
+					font-size:12px;
+					line-height:12px;
+					font-weight:400;
+					letter-spacing:3px;
+				}
+				dl {
+					margin-top:16px;
+					dt {
+						font-family:"Noto Serif KR";;
+						font-size:24px;
+						line-height:34px;
+						font-weight:600;
+					}
+					dd {
+						margin-top:16px;
+						color:#666;
+						font-size:14px;
+						line-height:17px;
+					}
+				}
+				a {
+					position:relative;
+					display:block;
+					height:66px;
+					margin-top:43px;
+					font-size:14px;
+					font-weight:600;
+					line-height:66px;
+					border-top:1px solid #ECECEC;
+					background:url(../images/arrow_right01.png) no-repeat 100% 50%;
+				}
+			}
+		}
+	}
+}

@@ -299,8 +299,11 @@ label:has(input[type=checkbox]:checked) {
 }
 
 input[type=text] {
+	outline:none;
 	height:56px;
 	padding:0 16px;
+	font-size:16px;
+	font-weight:500;
 	line-height:54px;
 	border:1px solid #dbdbdb;
 	background-color:#fff;
@@ -308,7 +311,10 @@ input[type=text] {
 	&::placeholder {
 		font-size:16px;
 		color:#BDBDBD;
-		font-weight:400;
+		font-weight:500;
+	}
+	&:focus {
+		border:1px solid #F22C2D;
 	}
 }
 

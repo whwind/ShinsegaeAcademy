@@ -1,0 +1,96 @@
+
+/**************************** .login ****************************/
+main {
+	margin-top:96px;
+}
+.loginWrap {
+	width:529px;
+	margin:0 auto;
+	h3 {
+		span {
+			display:block;
+			color:#A38348;
+			font-size:12px;
+			font-weight:500;
+			line-height:12px;
+			letter-spacing:3px;
+			text-align:center;
+		}
+		strong {
+			display:block;
+			margin-top:4px;
+			font-family:"Noto Serif KR";
+			font-size:40px;
+			font-weight:600;
+			line-height:57px;
+			letter-spacing:3px;
+			text-align:center;
+		}
+	}
+	fieldset {
+		margin-top:64px;
+		label {
+			display:block;
+			color:#666;
+			font-size:16px;
+			font-weight:500;
+			line-height:19px;
+		}
+		input[type=text] {
+			width:100%;
+			margin-top:12px;
+			+ label {
+				margin-top:24px;
+			}
+		}
+		div {
+			display:flex;
+			justify-content:space-between;
+			align-items:center;
+			gap:0 8px;
+			margin-top:24px;
+			input[type=checkbox].default {
+				border:1px solid #999;
+			}
+			a {
+				margin-left:auto;
+				color:#A38348;
+				font-size:16px;
+				font-weight:500;
+				text-decoration:underline;
+				text-underline-offset:3px;
+			}
+		}
+		p {
+			margin-top:80px;
+			color:#999;
+			font-size:16px;
+			font-weight:400;
+			line-height:23px;
+			text-align:center;
+		}
+		button {
+			width:100%;
+			height:64px;
+			margin-top:40px;
+			color:#fff;
+			font-size:22px;
+			font-weight:500;
+			line-height:64px;
+			text-align:center;
+			border-radius:8px;
+			background:#222;
+		}
+	}
+	> a {
+		display:flex;
+		justify-content:center;
+		margin:40px auto 0;
+		color:#A38348;
+		font-size:18px;
+		font-weight:500;
+		line-height:21px;
+		text-decoration:underline;
+		text-underline-offset:3px;
+	}
+}

@@ -343,7 +343,8 @@ header {
 				gap:0 32px;
 				height:49px;
 				padding:0 24px;
-				background:#ECECEC;
+				border-top:1px solid #ECECEC;
+				background:#fff;
 				button{
 					width:24px;
 					height:24px;
