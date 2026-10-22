@@ -136,35 +136,6 @@
 	
 	<script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
 	<script src="../resources/js/common.js"></script>
-	<script>
-		// Swiper
-		var swiper3 = new Swiper('.swiper', {
-			slidesPerView: 'auto',
-		});
-
-		var fillter = document.querySelector('.fillter');
-		var searchWrap = document.querySelector('.searchWrap');
-		fillter.addEventListener('click', function (e) {
-			searchWrap.classList.toggle('on');
-			if (searchWrap.classList.contains('on')) {
-				this.innerText = '필터 펼치기';
-			} else {
-				this.innerText = '필터 접기';
-			}
-		});
-
-		var fillterM = document.querySelector('.searchWrap .open');
-		var searchWrap = document.querySelector('.searchWrap');
-		fillterM.addEventListener('click', function (e) {
-			searchWrap.classList.toggle('on');
-			if (searchWrap.classList.contains('on')) {
-				this.innerText = '필터 펼치기';
-			console.log('a');
-			} else {
-				this.innerText = '필터 접기';
-			}
-		});
-	</script>
 
 </body>
 
