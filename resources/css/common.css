@@ -923,7 +923,7 @@ main {
 			&:after {
 				content:'';
 				position:absolute;
-				top:13px;
+				top:12px;
 				right:0;
 				width:6px;
 				height:6px;
