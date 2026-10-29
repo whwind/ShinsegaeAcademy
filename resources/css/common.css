@@ -334,6 +334,7 @@ body, a {
 	position:relative;
 	overflow:hidden;
 	width:100%;
+	min-width:1920px;
 	margin:0 auto;
 }
 
@@ -475,6 +476,34 @@ header {
 					&.cart {
 						position:relative;
 						background:url(../images/icon_cart.png) no-repeat 50% 50%;
+						&:before {
+							content:'';
+							display:block;
+							position:absolute;
+							top:5px;
+							left:-13px;
+							width:1px;
+							height:16px;
+							background:#ececec;
+						}
+						span {
+							position:absolute;
+							bottom:0;
+							right:0;
+							width:11px;
+							height:11px;
+							color:#fff;
+							font-size:9px;
+							line-height:11px;
+							text-align:center;
+							text-indent:0;
+							border-radius:7px;
+							background:#F22C2D;
+						}
+					}
+					&.logout {
+						position:relative;
+						background:url(../images/icon_logout.png) no-repeat 50% 50%;
 						&:before {
 							content:'';
 							display:block;
