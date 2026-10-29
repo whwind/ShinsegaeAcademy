@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="../resources/css/common.css" />
+	<link rel="stylesheet" href="../resources/css/paymentCheck.css" />
+
+	<title>신세계 아카데미</title>
+</head>
+
+<body>
+	<div id="wrap">
+		<header>
+			<div>
+				<div class="nav">
+					<h1><img src="../resources/images/logo_sub.png" alt="신세계 아카데미" class="webHidden"><span class="blind">강좌검색</span></h1>
+					<nav>
+						<div class="blind">
+							<button type="button" class="back">뒤로가기</button>
+							<button type="button" class="home">메인으로</button>
+							<button type="button" class="history">히스토리</button>
+							<button type="button" class="menu">메뉴열기</button>
+						</div>
+						<ul>
+							<li><a href="#">수강신청</a></li>
+							<li><a href="#">카탈로그</a></li>
+							<li><a href="#"> 아카데미 소개</a></li>
+							<li><a href="#">이용안내</a></li>
+						</ul>
+					</nav>
+					<ul>
+						<li><a href="#" class="login">로그인</a></li>
+						<li><a href="#" class="cart">장바구니</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="info">
+				<div>
+					<div class="welcome">
+						<p><a href="#">이세계 회원님</a>, 환영합니다.</p>
+						<div>
+							<div>
+								<button type="button" class="infoOpen webHidden">나의 수강현황 펼치기</button>
+							</div>
+							<select title="지점선택">
+								<option>강남점</option>
+								<option>인천점</option>
+								<option>부산점</option>
+							</select>
+						</div>
+					</div>
+					<div class="myList">
+						<button type="button" class="infoOpen blind">회원님의 강좌 정보를 확인하세요.</button>
+						<h3>오늘도 배움을 이어가 볼까요,</h3>
+						<div class="listWrap">
+							<div class="list">
+								<div>
+									<dl class="state">
+										<dd>999</dd>
+										<dt>수강중</dt>
+									</dl>
+									<dl class="state">
+										<dd>999</dd>
+										<dt>수강예정</dt>
+									</dl>
+									<dl class="state">
+										<dd>999</dd>
+										<dt>대기</dt>
+									</dl>
+									<dl class="state">
+										<dd>999</dd>
+										<dt>찜</dt>
+									</dl>
+								</div>
+								<ul>
+									<li>
+										<a href="#">
+											<dl>
+												<dt>주말 내추럴 와인 입문</dt>
+												<dd><span>Community</span><em>화 19:00~20:00</em></dd>
+											</dl>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<dl>
+												<dt>주말 내추럴 와인 입문</dt>
+												<dd><span>Community</span><em>화 19:00~20:00</em></dd>
+											</dl>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<dl>
+												<dt>주말 내추럴 와인 입문</dt>
+												<dd><span>Community</span><em>화 19:00~20:00</em></dd>
+											</dl>
+										</a>
+									</li>
+								</ul>
+								<a href="#">마이페이지</a>
+							</div>
+							<div class="blog">
+								<h3>회원님의 취향에 어울리는 강좌</h3>
+								<ul>
+									<li>
+										<figure><img src="../resources/images/sample_01.png" alt="강좌 이미지"></figure>
+										<dl>
+											<dd class="tiny">Community</dd>
+											<dt>주말 내추럴 와인 입문</dt>
+											<dd><span>김미영</span><em>화 19:00~20:00 (총 8회)</em></dd>
+										</dl>
+										<strong>35,000원</strong>
+									</li>
+									<li>
+										<figure><img src="../resources/images/sample_01.png" alt="강좌 이미지"></figure>
+										<dl>
+											<dd class="tiny">Community</dd>
+											<dt>주말 내추럴 와인 입문</dt>
+											<dd><span>김미영</span><em>화 19:00~20:00 (총 8회)</em></dd>
+										</dl>
+										<strong>35,000원</strong>
+									</li>
+									<li>
+										<figure><img src="../resources/images/sample_01.png" alt="강좌 이미지"></figure>
+										<dl>
+											<dd class="tiny"><span>2026 autumn</span><em>본점</em></dd>
+											<dt>주말 내추럴 와인 입문</dt>
+											<dd><span>김미영</span><em>화 19:00~20:00 (총 8회)</em></dd>
+										</dl>
+										<strong>35,000원</strong>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="location webHidden">
+				<ul>
+					<li>HOME</li>
+					<li>수강신청</li>
+					<li>콘텐츠 검색</li>
+				</ul>
+			</div>
+			<h2 class="webHidden">
+				콘텐츠 결제하기
+				<span>START YOUR JOURNEY</span>
+				<p>나에게 맞는 배움으로 일상을 더 넓히는 시간<br>안전한 결제를 통해 당신만의 클래스를 시작해보세요</p>
+			</h2>
+			<div class="paymentCheck">
+				<ul class="flow">
+					<li class="on">신청정보 확인</li>
+					<li>결제 정보 입력</li>
+					<li>신청완료</li>
+				</ul>
+				<div>
+					<div class="list">
+						<ul>
+							<li>
+								<span>Art</span>
+								<dl>
+									<dt>[10/18]돈의 흐름은 멈추지 않는다. 화폐가치 폭락을 방어하는 서울 핵심 가치 분석</dt>
+									<dd>김명민</dd>
+									<dd><em>본점</em><em>겨울학기</em></dd>
+									<dd><em>2026.09.03 ~ 2026.11.26</em><em>목 11:00~13:00, 총 12회</em></dd>
+									<dd><em>수강료 <span>30,000원</span></em><em>재료비 <span>10,000원</span></em></dd>
+								</dl>
+								<div>
+									<dl>
+										<dt>신청고객</dt>
+										<dd>이세계</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<span>Art</span>
+								<dl>
+									<dt>[10/18]돈의 흐름은 멈추지 않는다. 화폐가치 폭락을 방어하는 서울 핵심 가치 분석</dt>
+									<dd>김명민</dd>
+									<dd><em>본점</em><em>겨울학기</em></dd>
+									<dd><em>2026.09.03 ~ 2026.11.26</em><em>목 11:00~13:00, 총 12회</em></dd>
+									<dd><em>수강료 <span>30,000원</span></em><em>재료비 <span>10,000원</span></em></dd>
+								</dl>
+								<div>
+									<dl>
+										<dt>신청고객</dt>
+										<dd>이세계</dd>
+									</dl>
+									<dl>
+										<dt>동반고객</dt>
+										<dd>선택해 주세요.</dd>
+									</dl>
+									<button type="button">동반회원 선택</button>
+								</div>
+							</li>
+							<li>
+								<span>Art</span>
+								<dl>
+									<dt>[10/18]돈의 흐름은 멈추지 않는다. 화폐가치 폭락을 방어하는 서울 핵심 가치 분석</dt>
+									<dd>김명민</dd>
+									<dd><em>본점</em><em>겨울학기</em></dd>
+									<dd><em>2026.09.03 ~ 2026.11.26</em><em>목 11:00~13:00, 총 12회</em></dd>
+									<dd><em>수강료 <span>30,000원</span></em><em>재료비 <span>10,000원</span></em></dd>
+								</dl>
+								<div>
+									<dl>
+										<dt>신청고객</dt>
+										<dd>이세계</dd>
+									</dl>
+									<dl>
+										<dt>자녀회원</dt>
+										<dd>선택해 주세요.</dd>
+									</dl>
+									<button type="button">자녀회원 선택</button>
+									<a href="#">자녀회원 등록</a>
+								</div>
+							</li>
+						</ul>
+						<div class="guide">
+							<ul>
+								<li>개인정보 오류 및 부재, 문자 수신거부등록으로 문화센터 강좌 변경, 공지 등의 연락이 되지 않을 수 있습니다.</li>
+								<li>정확한 정보입력 및 문자 수신허용등록 바랍니다.</li>
+								<li>수강자 본인 또는 동반 수강자 변경/추가를 원하시면 실제 수강회원 옆 버튼 [수강회원 선택]을선택하세요.</li>
+								<li>영·유아, 아동 강좌의 실수강자를 등록하시려면 [자녀회원 선택]을 선택하세요.</li>
+								<li>신청하신 강좌는 최소 정원에 미달되거나 사정에 의해 폐강 될 수 있으니 양해 바랍니다.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="lastPrice">
+						<h6>결제예정금액</h6>
+						<dl>
+							<dt>수강료</dt>
+							<dd>999,999,999원</dd>
+						</dl>
+						<dl>
+							<dt>재료비</dt>
+							<dd>999,999,999원</dd>
+						</dl>
+						<dl class="total">
+							<dt>총 결제예정 금액</dt>
+							<dd><strong>999,999,999원</strong></dd>
+						</dl>
+						<button type="button">999,999,999원 결제하기</button>
+					</div>
+				</div>
+			</div>
+			<div class="floting off">
+				<div>
+					<a href="#">수강신청 하기</a>
+					<a href="#">카탈로그 보기</a>
+				</div>
+				<button type="button" class="close">닫기</button>
+				<button type="button" class="top">위로</button>
+			</div>
+		</main>
+
+		<footer>
+			<div>
+				<div>
+					<ul>
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">법인영업</a></li>
+						<li><a href="#">백화점 신문고</a></li>
+						<li><a href="#">사이트맵</a></li>
+						<li><a href="#" class="teacher">강사지원</a></li>
+						<li><a href="#" class="teacher">강사전용페이지</a></li>
+						<li></li>
+						<li><a href="#" class="red">개인정보처리방침</a></li>
+						<li><a href="#" class="red">영상정보처리기기 운영·관리방침</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">신백멤버스 회원약관</a></li>
+						<li><a href="#">신세계포인트 이용약관</a></li>
+					</ul>
+					<div class="family">
+						<button type="button">패밀리 사이트</button>
+						<ul>
+							<li><a href="https://www.shinsegaegroupnewsroom.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계그룹</a></li>
+							<li><a href="https://www.shinsegaepoint.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계포인트</a></li>
+							<li><a href="https://store.emart.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">이마트</a></li>
+							<li><a href="http://www.traders.co.kr/" target="_blank" rel="noopener noreferrer" title="새 창 열림">이마트 트레이더스</a></li>
+							<li><a href="http://www.emarteveryday.co.kr/" target="_blank" rel="noopener noreferrer" title="새 창 열림">이마트 에브리데이</a></li>
+							<li><a href="https://www.emart24.co.kr/" target="_blank" rel="noopener noreferrer" title="새 창 열림">이마트24</a></li>
+							<li><a href="http://www.shinsegaetvshopping.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계라이브쇼핑</a></li>
+							<li><a href="https://www.premiumoutlets.co.kr/" target="_blank" rel="noopener noreferrer" title="새 창 열림">프리미엄아울렛</a></li>
+							<li><a href="https://www.starfield.co.kr/" target="_blank" rel="noopener noreferrer" title="새 창 열림">스타필드</a></li>
+							<li><a href="http://www.ssgdfm.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계면세점</a></li>
+							<li><a href="http://www.sikorea.co.kr/main" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계인터내셔날</a></li>
+							<li><a href="http://www.shinsegaefood.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계푸드</a></li>
+							<li><a href="http://www.shinsegae-lnb.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계 L&amp;B</a></li>
+							<li><a href="http://www.istarbucks.co.kr/" target="_blank" rel="noopener noreferrer" title="새 창 열림">스타벅스커피 코리아</a></li>
+							<li><a href="https://www.josunhotel.com" target="_blank" rel="noopener noreferrer" title="새 창 열림">조선호텔앤리조트</a></li>
+							<li><a href="https://www.shinsegae-enc.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계건설</a></li>
+							<li><a href="http://www.sinc.co.kr/" target="_blank" rel="noopener noreferrer" title="새 창 열림">신세계아이앤씨</a></li>
+							<li><a href="https://business.ssgpay.com/" target="_blank" rel="noopener noreferrer" title="새 창 열림">에스에스지페이먼츠</a></li>
+						</ul>
+					</div>
+					<div class="sns">
+						<a href="#" class="insta" title="새 창 열림">인스타그램</a>
+						<a href="#" class="youtube" title="새 창 열림">유투브</a>
+						<a href="#" class="sbot">신세계 에스봇</a>
+					</div>
+				</div>
+				<ul>
+					<li>(주)신세계 대표이사 : 박주형</li>
+					<li><adress>주소 : 서울특별시 중구 소공로 63(충무로 1가)</adress></li>
+					<li>개인정보보호책임자 : 이성환 상무</li>
+					<li>대표전화 : 1588-1234 (유료)</li>
+					<li>사업자등록번호 : 201-81-32195</li>
+					<li>통신판매업신고번호 : 1996-서울중구-0291</li>
+					<li>COPYRIGHT © 2019 SHINSEGAE. ALL RIGHTS RESERVED.</li>
+				</ul>
+			</div>
+			<a href="#" class="blind">TOP</a>
+		</footer>
+	</div>
+
+	<div class="popup style01" style="width:400px; top:100px; left:100px;">
+		<div class="popContents">
+			<h5>수강회원 선택하기</h5>
+			<p>실제 수강하실 회원을 선택해 주세요</p>
+			<div class="table">
+				<table>
+					<colgroup>
+						<col width="20%">
+						<col width="40%">
+						<col width="40%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>선택</th>
+							<th>성명</th>
+							<th>관계/인원</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="center"><input type="checkbox" class="default" title="수강회원 선택"></td>
+							<td>홍길동</td>
+							<td>본인</td>
+						</tr>
+						<tr>
+							<td class="center"><input type="checkbox" class="default" title="수강회원 선택"></td>
+							<td>동반인</td>
+							<td><input type="number" value="1"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="btnWrap line">
+			<button type="button" class="cancel">취소</button>
+			<button type="button">확인</button>
+		</div>
+		<button type="button">닫기</button>
+	</div>
+	
+	<div class="popup style01" style="width:400px; top:500px; left:100px;">
+		<div class="popContents">
+			<h5>자녀회원 선택하기</h5>
+			<p>실제 수강하실 회원을 선택해 주세요</p>
+			<div class="table">
+				<table>
+					<colgroup>
+						<col width="14%">
+						<col width="28%">
+						<col width="29%">
+						<col width="29%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>선택</th>
+							<th>성명</th>
+							<th>관계</th>
+							<th>생년</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="center"><input type="checkbox" class="default" title="수강회원 선택"></td>
+							<td>홍길동</td>
+							<td>자녀</td>
+							<td>2019년</td>
+						</tr>
+						<tr>
+							<td class="center"><input type="checkbox" class="default" title="수강회원 선택"></td>
+							<td>홍길동</td>
+							<td>자녀</td>
+							<td>2019년</td>
+						</tr>
+						<tr>
+							<td class="center"><input type="checkbox" class="default" title="수강회원 선택"></td>
+							<td>홍길동</td>
+							<td>자녀</td>
+							<td>2019년</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="btnWrap line">
+			<button type="button" class="cancel">취소</button>
+			<button type="button">확인</button>
+		</div>
+		<button type="button">닫기</button>
+	</div>
+
+	<div class="popup style01" style="width:460px; top:100px; left:600px;">
+		<div class="popContents noPad">
+			<h5>자녀회원 등록하기</h5>
+			<div class="consent">
+				<ul>
+					<li>신세계포인트 회원의 만 14세 미만 자녀의경우, 법정 대리인(부모)의 서명으로 대체하여 별도 회원가입 절차 없이 강좌를 수강하실 수 있습니다.</li>
+					<li>회원님의 동의를 통해 수집된 개인정보는 수강신청 확인 및 관리 용도로만 사용 됩니다.</li>
+					<li class="none">
+						<ul>
+							<li>수집항목 : 관계, 성명, 성별, 생년 </li>
+							<li>활용목적 : 수강신청 및 취소, 수강 내역 확인</li>
+							<li>보유/이용기간 : 수강신청 후 6개월(학기 종료 시 까지) 또는 직접 자녀회원 정보 삭제 시</li>
+						</ul>
+					</li>
+					<li class="point">*개인정보 수집 동의에 거부 하실 수 있으며, 다만 이 경우 수강신청이 제한 됩니다.</li>
+				</ul>
+				<div>
+					<input type="radio" class="default" id="yes" name="consent" checked>
+					<label for="yes">동의합니다.</label>
+					<input type="radio" class="default" id="no" name="consent">
+					<label for="no">동의하지 않습니다.</label>
+				</div>
+			</div>
+			<div class="children">
+				<dl>
+					<dt>관계</dt>
+					<dd>자녀</dd>
+				</dl>
+				<dl>
+					<dt>성별</dt>
+					<dd class="person">
+						<input type="radio" class="default" id="yes" name="consent" checked>
+						<label for="yes">남</label>
+						<input type="radio" class="default" id="no" name="consent">
+						<label for="no">여</label>
+					</dd>
+				</dl>
+				<dl>
+					<dt>이름</dt>
+					<dd>
+						<input type="text" placeholder="이름을 입력해 주세요.">
+					</dd>
+				</dl>
+				<dl>
+					<dt>생년</dt>
+					<dd>
+						<select>
+							<option>선택하세요.</option>
+							<option>선택하세요.</option>
+							<option>선택하세요.</option>
+						</select>
+						<span>년 생</span>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="btnWrap line">
+			<button type="button" class="cancel">취소</button>
+			<button type="button">확인</button>
+		</div>
+		<button type="button">닫기</button>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+	<script src="../resources/js/common.js"></script>
+	<script>
+		// Swiper
+		var swiper = new Swiper('.swiper', {
+			slidesPerView: 'auto',
+		});
+
+		
+		// 세 번째 Swiper
+		var swiper1 = new Swiper('.swiper01', {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
+			loop: true,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false
+			},
+			pagination: {
+				el: '.swiperPage',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiperNext',
+				prevEl: '.swiperPrev',
+			},
+		});
+	</script>
+
+</body>
+
+</html>
