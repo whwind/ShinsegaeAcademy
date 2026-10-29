@@ -112,6 +112,15 @@
 						margin-top:10px;
 					}
 				}
+				> p {
+					height:400px;
+					color:#999;
+					font-size:18px;
+					font-weight:500;
+					line-height:480px;
+					text-align:center;
+					background:url(../images/icon_no_search.png) no-repeat 50% 40%;
+				}
 				> ul {
 					display:flex;
 					flex-direction:column;
@@ -320,6 +329,10 @@
 				text-align:center;
 				border-radius:8px;
 				background:#F22C2D;
+				&:disabled {
+					background:#DBDBDB;
+					cursor:auto;
+				}
 			}
 		}
 	}
