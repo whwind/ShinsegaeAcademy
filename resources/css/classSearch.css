@@ -504,7 +504,7 @@
 			> li {
 				position:relative;
 				overflow:hidden ;
-				height:186px;
+				height:152px;
 				padding:24px;
 				border:1px solid #EEE6D8;
 				background:#FFFBF2;
@@ -549,18 +549,34 @@
 					dl {
 						margin-top:4px;
 						dt {
-							margin-bottom:14px;
+							margin-bottom:20px;
 							color:#222;
 							font-size:24px;
 							font-weight:600;
 							line-height:29px;
 						}
 						dd{
-							margin-bottom:14px;
 							color:#222;
 							font-size:18px;
 							font-weight:400;
 							line-height:20px;
+							strong {
+								position:relative;
+								padding-right:17px;
+								font-size:14px;
+								font-weight:400;
+								line-height:20px;
+								&:after {
+									content:'';
+									position:absolute;
+									top:50%;
+									right:8px;
+									width:1px;
+									height:12px;
+									background:#ECECEC;
+									transform:translateY(-50%);
+								}
+							}
 							em, span {
 								color:#666;
 								font-size:14px;
@@ -577,24 +593,24 @@
 				}
 				.choice {
 					display:flex;
+					flex-wrap:wrap;
 					justify-content:flex-end;
 					align-items:center;
-					gap:0 8px;
+					gap:8px;
 					position:absolute;
-					bottom:24px;
+					bottom:16px;
 					right:24px;
-					height:44px;
 					strong {
-						margin-right:16px;
+						width:100%;
 						color:#222;
 						font-size:24px;
 						font-weight:600;
+						text-align:right;
 					}
 					button {
 						position:relative;
 						width:44px;
 						height:44px;
-						margin-left:auto;
 						text-indent:-9999em;
 						background:url(../images/btn_bag02.png) no-repeat 50% 50%;
 						&:after {
