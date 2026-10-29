@@ -220,7 +220,15 @@
 								<strong>D-2</strong>
 								<span class="webHidden">until class</span>
 							</div>
-							<button type="button">수업 상세</button>
+							<button type="button">수업 상세 보기</button>
+						</div>
+						<div class="coming">
+							<div class="comingInfo none">
+								<dl>
+									<dt>다음 수업</dt>
+									<dd>예정된 콘텐츠가 없습니다</dd>
+								</dl>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -234,16 +242,19 @@
 								<h4>내 강좌</h4>
 								<ul class="mapageNav">
 									<li>
-										<a href="#">강의일정<span>1</span></a>
+										<a href="#">콘텐츠 일정<span>1</span></a>
 									</li>
 									<li class="on">
-										<a href="#">책가방<span>2</span></a>
+										<a href="#">나의 컬렉션<span>2</span></a>
 									</li>
 									<li>
-										<a href="#">책가방<span>3</span></a>
+										<a href="#">신청중 콘텐츠<span>3</span></a>
 									</li>
 									<li>
-										<a href="#">수강내역<span>99</span></a>
+										<a href="#">대기중 콘텐츠<span>99</span></a>
+									</li>
+									<li>
+										<a href="#">완료한 콘텐츠<span>99</span></a>
 									</li>
 									<li>
 										<a href="#">문의하기</a>
@@ -252,7 +263,7 @@
 								<h4>회원 정보</h4>
 								<ul>
 									<li>
-										<a href="#">회원정보 수정</a>
+										<a href="#">고객정보 수정</a>
 									</li>
 									<li>
 										<a href="#">자녀회원 관리<em>99명</em></a>
@@ -261,7 +272,7 @@
 										<a href="#">결제 내역</a>
 									</li>
 									<li>
-										<a href="#">알림 설정</a>
+										<a href="#">로그인 보안설정</a>
 									</li>
 								</ul>
 								<a href="#" class="blind">마이페이지 홈</a>
@@ -279,7 +290,7 @@
 					<div class="infoContent">
 						<h4>수강 중인 강좌<span>99</span></h4>
 						<p>이번 학기 등록 강좌의 진도와 출석을 한 표에서 확인합니다.</p>
-						<a href="#">전체관리</a>
+						<a href="#">상세</a>
 						<div class="lectureList">
 							<div class="tableTitle webHidden">
 								<span>분류</span>
@@ -318,7 +329,7 @@
 								<li>
 									<span>Wellness</span>
 									<dl>
-										<dt>Cello & Guitar Strings Duo Concert</dt>
+										<dt>Cello & Guitar Strings Duo Concert<strong>임시휴강</strong></dt>
 										<dd>김명민 · 본점 502 · 수 11:00 ~ 13:00</dd>
 									</dl>
 									<div class="progress">
@@ -481,39 +492,36 @@
 								</ul>
 							</div>
 							<div class="alarm">
-								<h5>알림함<em>새알림</em></h5>
-								<button type="button">모두 읽음</button>
+								<h5>나의 문의 내역<em>새알림</em></h5>
+								<a href="#">상세</a>
+								<p>등록한 문의내용이 없습니다</p>
 								<ul>
 									<li class="feel">
 										<span>10분 전</span>
 										<dl>
-											<dt>
-												<span>환불 안내</span>환불 가능 기한 D-2</dt>
-											<dd>이탈리아 가정식 12주 · 09.17까지 100% 환불 가능</dd>
+											<dt>환불 가능 기한에 대해 궁금합니다.</dt>
+											<dd>답변대기</dd>
 										</dl>
 									</li>
 									<li class="star">
 										<span>10분 전</span>
 										<dl>
-											<dt>
-												<span>신규 강좌</span>본점에 신규 강좌 3개</dt>
-											<dd>즐겨찾는 지점 · 음악·언어 카테고리 큐레이션</dd>
+											<dt>환불 가능 기한에 대해 궁금합니다.</dt>
+											<dd>답변대기</dd>
 										</dl>
 									</li>
 									<li class="paper">
 										<span>10분 전</span>
 										<dl>
-											<dt>
-												<span>후기 요청</span>봄학기 수채화 후기 요청</dt>
-											<dd>완강 후 12일 남음 · 작성 시 1,000P 적립!</dd>
+											<dt>환불 가능 기한에 대해 궁금합니다.</dt>
+											<dd>답변대기</dd>
 										</dl>
 									</li>
 									<li class="paper">
 										<span>10분 전</span>
 										<dl>
-											<dt>
-												<span>결제 완료</span>2026 가을학기 결제 완료</dt>
-											<dd>신한카드 · 5강좌 · 213,750원</dd>
+											<dt>환불 가능 기한에 대해 궁금합니다.</dt>
+											<dd>답변대기</dd>
 										</dl>
 									</li>
 								</ul>
@@ -598,7 +606,7 @@
 		</footer>
 	</div>
 
-	<div class="popup modal" style="width:400px; top:100px; left:100px;">
+	<div class="popup modal" style="width:400px; top:100px; left:100px; display:none;">
 		<div class="popContents">
 			<p>아이디/패스워드를 확인하시고<br>다시 로그인 해 주세요.</p>
 		</div>
@@ -608,7 +616,7 @@
 		<button type="button">닫기</button>
 	</div>
 
-	<div class="popup style01" style="width:480px; top:400px; left:100px;">
+	<div class="popup style01" style="width:480px; top:400px; left:100px; display:none;">
 		<div class="popContents">
 			<h5>점포 선택</h5>
 			<p>신세계 아카데미를 이용하기 위해서는 먼저 원하시는 점포를 선택해주세요.<br>신세계 아카데미 회원이신 경우, 로그인 후 이용해 주시기 바랍니다.</p>
@@ -645,7 +653,7 @@
 		<button type="button">닫기</button>
 	</div>
 
-	<div class="popup style02" style="width:560px; top:100px; left:700px;">
+	<div class="popup style02" style="width:560px; top:100px; left:700px; display:none;">
 		<div class="popContents">
 			<figure>
 				<img src="../resources/images/sample_pop01.png" alt="해피뉴이어">
@@ -659,7 +667,7 @@
 		<button type="button">닫기</button>
 	</div>
 
-	<div class="popup style01" style="width:400px; top:100px; left:1300px;">
+	<div class="popup style01" style="width:400px; top:100px; left:1300px; display:none;">
 		<div class="popContents">
 			<h5>타이틀</h5>
 			<figure>
