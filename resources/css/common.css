@@ -1918,6 +1918,78 @@ footer {
 				}
 			}
 		}
+		.content {
+			margin-top:40px;
+			h6 {
+				font-size:18px;
+				line-height:28px;
+				font-weight:600;
+				text-align:center;
+				strong {
+					color:#F22C2D;
+					font-weight:600;
+				}
+			}
+			p {
+				margin-top:4px;
+				color:#666;
+				font-size:14px;
+				line-height:20px;
+				font-weight:400;
+				text-align:center;
+			}
+			.vipInfo {
+				padding:16px;
+				background:#F8F7F5;
+				dl {
+					display:flex;
+					justify-content:space-between;
+					align-items:center;
+					&:last-of-type {
+						margin-top:12px;
+						padding-top:12px;
+						border-top:1px solid #ECECEC;
+					}
+					dt {
+						color:#666;
+						font-size:15px;
+						line-height:20px;
+						font-weight:400;
+					}
+					dd {
+						color:#A38348;
+						font-size:16px;
+						line-height:20px;
+						font-weight:500;
+					}
+				}
+			}
+			> ul {
+				margin-top:16px;
+				padding:16px;
+				background:#F8F7F5;
+				li {
+					font-size:15px;
+					line-height:20px;
+					font-weight:400;
+					&:last-of-type {
+						margin-top:12px;
+						padding-top:12px;
+						border-top:1px solid #ECECEC;
+					}
+					&:before {
+						content:'ㆍ';
+						font-weight:800;
+					}
+				}
+			}
+			.small {
+				margin-top:16px;
+				color:#666;
+				font-size:12px;
+				line-height:20px;
+			}
+		}
 	}
 	&.style02 {
 		.popContents {
