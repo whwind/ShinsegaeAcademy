@@ -107,6 +107,10 @@ select {
 	border:1px solid #dbdbdb;
 	background-color:#fff;
 	cursor:pointer;
+	&:disabled {
+		background-color:#ECECEC;
+		cursor:auto;
+	}
 
 	@supports (appearance: base-select) {
 		padding-inline:20px;
@@ -385,6 +389,30 @@ input[type=number] {
 	border-radius:8px;
 	&:focus {
 		border:1px solid #F22C2D;
+	}
+}
+textarea {
+	outline:none;
+	padding:0 16px;
+	font-family:"Pretendard Variable", Pretendard, "Helvetica Neue", "Malgun Gothic";
+	font-size:16px;
+	font-weight:500;
+	line-height:24px;
+	border:1px solid #dbdbdb;
+	background-color:#fff;
+	border-radius:8px;
+	&::placeholder {
+		color:#BDBDBD;
+		font-size:16px;
+		font-weight:500;
+	}
+	&:focus {
+		border:1px solid #F22C2D;
+	}
+	&:disabled {
+		border:#DBDBDB;
+		background:#ECECEC;
+		cursor:auto;
 	}
 }
 
@@ -1538,6 +1566,10 @@ footer {
 		display:flex;
 		justify-content:center;
 		align-items:center;
+		&:not(:has(+ button)) {
+			padding-right:115px;
+			margin-right:auto;
+		}
 	}
 	> button {
 		height:44px;
