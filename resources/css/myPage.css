@@ -73,9 +73,17 @@
 					font-size:12px;
 				}
 				dd {
-					color:#fff;
-					font-size:20px;
-					font-weight:600;
+					display:flex;
+					justify-content:flex-end;
+					select {
+						gap:0 2px;
+						height:24px;
+						padding:0;
+						padding-inline:0;
+						color:#fff;
+						border:none;
+						background:none;
+					}
 				}
 			}
 		}
