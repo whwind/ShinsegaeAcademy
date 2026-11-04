@@ -1534,6 +1534,36 @@ footer {
 		border-radius:8px;
 		background:#fff;
 	}
+	> div {
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	> button {
+		height:44px;
+		margin-left:auto;
+		font-size:15px;
+		font-weight:500;
+		line-height:44px;
+		border:1px solid #DBDBDB;
+		border-radius:8px;
+		&:first-of-type {
+			margin-left:0;
+			margin-right:auto;
+		}
+		&.delete {
+			padding:0 16px 0 42px;
+			background:url(../images/icon_delete.png) no-repeat 16px 50%;
+		}
+		&.add {
+			padding:0 16px 0 42px;
+			background:url(../images/btn_bag04.png) no-repeat 16px 50%;
+		}
+		&:disabled {
+			opacity:.5;
+			pointer-events:none;
+		}
+	}
 }
 
 /**************************** popup ****************************/
