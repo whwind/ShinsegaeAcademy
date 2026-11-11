@@ -516,7 +516,7 @@ header {
 			align-items:center;
 			width:1920px;
 			margin:0 auto;
-			padding:40px 60px;
+			padding:23px 60px;
 			nav {
 				overflow:hidden;
 				> ul {
@@ -529,8 +529,8 @@ header {
 							display:block;
 							height:60px;
 							color:#222;
-							font-size:20px;
-							font-weight:600;
+							font-size:15px;
+							font-weight:500;
 							line-height:60px;
 							text-align:center;
 							&:hover {
@@ -647,8 +647,8 @@ header {
 							position:absolute;
 							bottom:0;
 							right:0;
-							width:11px;
 							height:11px;
+							padding:0 2px;
 							color:#fff;
 							font-size:9px;
 							line-height:11px;
@@ -718,15 +718,16 @@ main {
 	> div {
 		width:1920px;
 		margin:0 auto;
-		padding:16px 160px;
+		padding:8px 160px;
 		.welcome {
 			position:relative;
 			display:flex;
 			justify-content:space-between;
 			align-items:center;
 			p {
-				font-size:24px;
+				font-size:20px;
 				line-height:26px;
+				font-weight:500;
 				a {
 					font-size:24px;
 					color:#A8843C;
@@ -1071,7 +1072,7 @@ main {
 		gap:0 8px;
 		width:1600px;
 		margin:0 auto;
-		padding:20px 0;
+		padding:17px 0;
 		li {
 			position:relative;
 			padding-right:12px;

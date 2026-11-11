@@ -188,49 +188,57 @@
 						</div>
 						<dl>
 							<dt>요일<strong>999</strong></dt>
-							<dd>
-								<input id="allDays" class="round" type="checkbox" checked />
+							<dd class="wide">
+								<input id="allDays" type="checkbox" checked />
 								<label for="allDays">전체</label>
-								<input id="monday" class="round" type="checkbox" />
-								<label for="monday">월요일</label>
-								<input id="tuesday" class="round" type="checkbox" />
-								<label for="tuesday">화요일</label>
-								<input id="wednesday" class="round" type="checkbox" />
-								<label for="wednesday">수요일</label>
-								<input id="thursday" class="round" type="checkbox" />
-								<label for="thursday">목요일</label>
-								<input id="friday" class="round" type="checkbox" />
-								<label for="friday">금요일</label>
-								<input id="saturday" class="round" type="checkbox" />
-								<label for="saturday">토요일</label>
-								<input id="sunday" class="round" type="checkbox" />
-								<label for="sunday">일요일</label>
+								<input id="monday" type="checkbox" />
+								<label for="monday">월</label>
+								<input id="tuesday" type="checkbox" />
+								<label for="tuesday">화</label>
+								<input id="wednesday" type="checkbox" />
+								<label for="wednesday">수</label>
+								<input id="thursday" type="checkbox" />
+								<label for="thursday">목</label>
+								<input id="friday" type="checkbox" />
+								<label for="friday">금</label>
+								<input id="saturday" type="checkbox" />
+								<label for="saturday">토</label>
+								<input id="sunday" type="checkbox" />
+								<label for="sunday">일</label>
 							</dd>
 						</dl>
 						<dl>
 							<dt>시간<strong>999</strong></dt>
-							<dd class="half">
-								<input id="allTime" class="round" type="checkbox" checked />
+							<dd class="wide">
+								<input id="allTime" type="checkbox" checked />
 								<label for="allTime">전체</label>
-								<input id="time1" class="round" type="checkbox" />
+								<input id="time1" type="checkbox" />
 								<label for="time1">오전</label>
-								<input id="time2" class="round" type="checkbox" />
+								<input id="time2" type="checkbox" />
 								<label for="time2">오후</label>
-								<input id="time3" class="round" type="checkbox" />
-								<label for="time3">저녁 (18시 이후)</label>
+								<input id="time3" type="checkbox" />
+								<label for="time3">저녁<br>(18시 이후)</label>
 							</dd>
 						</dl>
 						<dl>
 							<dt>수강대상<strong>999</strong></dt>
 							<dd class="half">
-								<input id="allTarget" class="round" type="checkbox" checked />
+								<input id="allTarget" type="checkbox" checked />
 								<label for="allTarget">전체</label>
-								<input id="adult" class="round" type="checkbox" />
-								<label for="adult">성인</label>
-								<input id="kids" class="round" type="checkbox" />
-								<label for="kids">키즈</label>
-								<input id="family" class="round" type="checkbox" />
+								<input id="free" type="checkbox" />
+								<label for="free">프리맘</label>
+								<input id="senior" type="checkbox" />
+								<label for="senior">시니어</label>
+								<input id="man" type="checkbox" />
+								<label for="man">맨즈</label>
+								<input id="daddy" type="checkbox" />
+								<label for="daddy">위드맘<br>(대디)</label>
+								<input id="family" type="checkbox" />
 								<label for="family">패밀리</label>
+								<input id="kids" type="checkbox" />
+								<label for="kids">키즈</label>
+								<input id="couple" type="checkbox" />
+								<label for="couple">커플</label>
 							</dd>
 						</dl>
 						<button type="button">조건 적용</button>
@@ -245,12 +253,14 @@
 								<figure><img src="../resources/images/sample_featu02.png" alt="강좌 이미지" /></figure>
 								<div class="class">
 									<strong>Cooking</strong>
+									<!--
 									<div class="heartToggle">
 										<input type="checkbox" id="heart01">
 										<label for="heart01"><div>좋아요</div></label>
 									</div>
+									-->
 								</div>
-								<h6>손으로 빚는 우리 떡과 다과</h6>
+								<h6>손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과</h6>
 								<dl>
 									<dt>김하늘  </dt>
 									<dd>2026.09.01~2026.11.10 (총 10회) · 화 10:30~12:00</dd>
@@ -265,12 +275,8 @@
 								<figure><img src="../resources/images/sample_featu02.png" alt="강좌 이미지" /></figure>
 								<div class="class">
 									<strong>Cooking</strong>
-									<div class="heartToggle">
-										<input type="checkbox" id="heart02">
-										<label for="heart02"><div>좋아요</div></label>
-									</div>
 								</div>
-								<h6>손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과</h6>
+								<h6>손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과</h6>
 								<dl>
 									<dt>김하늘  </dt>
 									<dd>2026.09.01~2026.11.10 (총 10회) · 화 10:30~12:00</dd>
@@ -278,19 +284,15 @@
 								<div class="choice">
 									<strong>87,000원</strong>
 									<button type="button">담기</button>
-									<a href="#">신청하기</a>
+									<a href="#">수강신청</a>
 								</div>
 							</li>
 							<li class="swiper-slide">
 								<figure><img src="../resources/images/sample_featu02.png" alt="강좌 이미지" /></figure>
 								<div class="class">
 									<strong>Cooking</strong>
-									<div class="heartToggle">
-										<input type="checkbox" id="heart03">
-										<label for="heart03"><div>좋아요</div></label>
-									</div>
 								</div>
-								<h6>손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과</h6>
+								<h6>손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과</h6>
 								<dl>
 									<dt>김하늘  </dt>
 									<dd>2026.09.01~2026.11.10 (총 10회) · 화 10:30~12:00</dd>
@@ -298,19 +300,15 @@
 								<div class="choice">
 									<strong>87,000원</strong>
 									<button type="button">담기</button>
-									<a href="#">신청하기</a>
+									<a href="#">수강신청</a>
 								</div>
 							</li>
 							<li class="swiper-slide">
 								<figure><img src="../resources/images/sample_featu02.png" alt="강좌 이미지" /></figure>
 								<div class="class">
 									<strong>Cooking</strong>
-									<div class="heartToggle">
-										<input type="checkbox" id="heart04">
-										<label for="heart04"><div>좋아요</div></label>
-									</div>
 								</div>
-								<h6>손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과</h6>
+								<h6>손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과</h6>
 								<dl>
 									<dt>김하늘  </dt>
 									<dd>2026.09.01~2026.11.10 (총 10회) · 화 10:30~12:00</dd>
@@ -318,19 +316,15 @@
 								<div class="choice">
 									<strong>87,000원</strong>
 									<button type="button">담기</button>
-									<a href="#">신청하기</a>
+									<a href="#">수강신청</a>
 								</div>
 							</li>
 							<li class="swiper-slide">
 								<figure><img src="../resources/images/sample_featu02.png" alt="강좌 이미지" /></figure>
 								<div class="class">
 									<strong>Cooking</strong>
-									<div class="heartToggle">
-										<input type="checkbox" id="heart05">
-										<label for="heart05"><div>좋아요</div></label>
-									</div>
 								</div>
-								<h6>손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과</h6>
+								<h6>손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과</h6>
 								<dl>
 									<dt>김하늘  </dt>
 									<dd>2026.09.01~2026.11.10 (총 10회) · 화 10:30~12:00</dd>
@@ -338,19 +332,15 @@
 								<div class="choice">
 									<strong>87,000원</strong>
 									<button type="button">담기</button>
-									<a href="#">신청하기</a>
+									<a href="#">수강신청</a>
 								</div>
 							</li>
 							<li class="swiper-slide">
 								<figure><img src="../resources/images/sample_featu02.png" alt="강좌 이미지" /></figure>
 								<div class="class">
 									<strong>Cooking</strong>
-									<div class="heartToggle">
-										<input type="checkbox" id="heart06">
-										<label for="heart06"><div>좋아요</div></label>
-									</div>
 								</div>
-								<h6>손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과</h6>
+								<h6>손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과</h6>
 								<dl>
 									<dt>김하늘  </dt>
 									<dd>2026.09.01~2026.11.10 (총 10회) · 화 10:30~12:00</dd>
@@ -358,19 +348,15 @@
 								<div class="choice">
 									<strong>87,000원</strong>
 									<button type="button">담기</button>
-									<a href="#">신청하기</a>
+									<a href="#">수강신청</a>
 								</div>
 							</li>
 							<li class="swiper-slide">
 								<figure><img src="../resources/images/sample_featu02.png" alt="강좌 이미지" /></figure>
 								<div class="class">
 									<strong>Cooking</strong>
-									<div class="heartToggle">
-										<input type="checkbox" id="heart07">
-										<label for="heart07"><div>좋아요</div></label>
-									</div>
 								</div>
-								<h6>손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과</h6>
+								<h6>손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과 손으로 빚는 우리 떡과 다과</h6>
 								<dl>
 									<dt>김하늘  </dt>
 									<dd>2026.09.01~2026.11.10 (총 10회) · 화 10:30~12:00</dd>
@@ -378,7 +364,7 @@
 								<div class="choice">
 									<strong>87,000원</strong>
 									<button type="button">담기</button>
-									<a href="#">신청하기</a>
+									<a href="#">수강신청</a>
 								</div>
 							</li>
 						</ul>
@@ -403,14 +389,8 @@
 					</div>
 					<ul class="blogList">
 						<li>
-							<div class="class">
-								<strong>Cooking</strong>
-								<div class="heartToggle">
-									<input type="checkbox" id="heart08">
-									<label for="heart08"><div>좋아요</div></label>
-								</div>
-							</div>
 							<div class="lecture">
+								<strong>Cooking</strong>
 								<dl>
 									<dt>Cello & Guitar Strings Duo Concert: 3 Colors & More</dt>
 									<dd><strong>김서연 셰프</strong><em>2026.09.01~2026.11.10 (총 10회)</em><span>화 10:30~12:00</span></dd>
@@ -423,6 +403,7 @@
 							</div>
 						</li>
 						<li>
+							<!--
 							<div class="class">
 								<strong>Cooking</strong>
 								<div class="heartToggle">
@@ -430,7 +411,9 @@
 									<label for="heart08"><div>좋아요</div></label>
 								</div>
 							</div>
+							-->
 							<div class="lecture">
+								<strong>Cooking</strong>
 								<dl>
 									<dt>Cello & Guitar Strings Duo Concert: 3 Colors & More</dt>
 									<dd><strong>김서연 셰프</strong><em>2026.09.01~2026.11.10 (총 10회)</em><span>화 10:30~12:00</span></dd>
@@ -443,14 +426,8 @@
 							</div>
 						</li>
 						<li>
-							<div class="class">
-								<strong>Cooking</strong>
-								<div class="heartToggle">
-									<input type="checkbox" id="heart08">
-									<label for="heart08"><div>좋아요</div></label>
-								</div>
-							</div>
 							<div class="lecture">
+								<strong>Cooking</strong>
 								<dl>
 									<dt>Cello & Guitar Strings Duo Concert: 3 Colors & More</dt>
 									<dd><strong>김서연 셰프</strong><em>2026.09.01~2026.11.10 (총 10회)</em><span>화 10:30~12:00</span></dd>
@@ -463,14 +440,8 @@
 							</div>
 						</li>
 						<li>
-							<div class="class">
-								<strong>Cooking</strong>
-								<div class="heartToggle">
-									<input type="checkbox" id="heart08">
-									<label for="heart08"><div>좋아요</div></label>
-								</div>
-							</div>
 							<div class="lecture">
+								<strong>Cooking</strong>
 								<dl>
 									<dt>Cello & Guitar Strings Duo Concert: 3 Colors & More</dt>
 									<dd><strong>김서연 셰프</strong><em>2026.09.01~2026.11.10 (총 10회)</em><span>화 10:30~12:00</span></dd>
@@ -483,14 +454,8 @@
 							</div>
 						</li>
 						<li>
-							<div class="class">
-								<strong>Cooking</strong>
-								<div class="heartToggle">
-									<input type="checkbox" id="heart08">
-									<label for="heart08"><div>좋아요</div></label>
-								</div>
-							</div>
 							<div class="lecture">
+								<strong>Cooking</strong>
 								<dl>
 									<dt>Cello & Guitar Strings Duo Concert: 3 Colors & More</dt>
 									<dd><strong>김서연 셰프</strong><em>2026.09.01~2026.11.10 (총 10회)</em><span>화 10:30~12:00</span></dd>
