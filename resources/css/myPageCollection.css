@@ -643,12 +643,13 @@
 								}
 							}
 							a {
+								min-width:80px;
 								height:44px;
 								margin-left:8px;
-								padding:0 26px;
 								color:#fff;
 								font-size:15px;
 								line-height:44px;
+								text-align:center;
 								background:#6A4F37;
 								border-radius:8px;
 								transition:background .5s ease;
