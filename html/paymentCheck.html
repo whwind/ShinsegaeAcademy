@@ -371,7 +371,7 @@
 		<button type="button">닫기</button>
 	</div>
 	
-	<div class="popup style01" style="width:400px; top:500px; left:100px;">
+	<div class="popup style01" style="width:488px; top:500px; left:100px;">
 		<div class="popContents">
 			<h5>자녀회원 선택하기</h5>
 			<p>실제 수강하실 회원을 선택해 주세요</p>
@@ -421,22 +421,60 @@
 		<button type="button">닫기</button>
 	</div>
 
-	<div class="popup style01" style="width:460px; top:100px; left:600px;">
+	<div class="popup style01" style="width:488px; top:100px; left:600px;">
 		<div class="popContents noPad">
+			<h5>자녀회원 선택하기</h5>
+			<p>실제 수강하실 회원을 선택해 주세요</p>
+			<div class="pad">
+				<div class="table">
+					<table>
+						<colgroup>
+							<col width="14%">
+							<col width="28%">
+							<col width="29%">
+							<col width="29%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>선택</th>
+								<th>성명</th>
+								<th>관계</th>
+								<th>생년</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="center"><input type="checkbox" class="default" title="수강회원 선택" disabled></td>
+								<td>홍길동</td>
+								<td>자녀</td>
+								<td>2019년</td>
+							</tr>
+							<tr>
+								<td class="center"><input type="checkbox" class="default" title="수강회원 선택" disabled></td>
+								<td>홍길동</td>
+								<td>자녀</td>
+								<td>2019년</td>
+							</tr>
+							<tr>
+								<td class="center"><input type="checkbox" class="default" title="수강회원 선택" disabled></td>
+								<td>홍길동</td>
+								<td>자녀</td>
+								<td>2019년</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
 			<h5>자녀회원 등록하기</h5>
 			<div class="consent">
 				<ul>
 					<li>신세계포인트 회원의 만 14세 미만 자녀의경우, 법정 대리인(부모)의 서명으로 대체하여 별도 회원가입 절차 없이 강좌를 수강하실 수 있습니다.</li>
 					<li>회원님의 동의를 통해 수집된 개인정보는 수강신청 확인 및 관리 용도로만 사용 됩니다.</li>
-					<li class="none">
-						<ul>
-							<li>수집항목 : 관계, 성명, 성별, 생년 </li>
-							<li>활용목적 : 수강신청 및 취소, 수강 내역 확인</li>
-							<li>보유/이용기간 : 수강신청 후 6개월(학기 종료 시 까지) 또는 직접 자녀회원 정보 삭제 시</li>
-						</ul>
-					</li>
-					<li class="point">*개인정보 수집 동의에 거부 하실 수 있으며, 다만 이 경우 수강신청이 제한 됩니다.</li>
+					<li class="small">수집항목 : 관계, 성명, 성별, 생년 </li>
+					<li class="small">활용목적 : 수강신청 및 취소, 수강 내역 확인</li>
+					<li class="small">보유/이용기간 : 수강신청 후 6개월(학기 종료 시 까지) 또는 직접 자녀회원 정보 삭제 시</li>
 				</ul>
+				<p>*개인정보 수집 동의에 거부 하실 수 있으며, 다만 이 경우 수강신청이 제한 됩니다.</p>
 				<div>
 					<input type="radio" class="default" id="yes" name="consent" checked>
 					<label for="yes">동의합니다.</label>
@@ -479,7 +517,7 @@
 		</div>
 		<div class="btnWrap line">
 			<button type="button" class="cancel">취소</button>
-			<button type="button">확인</button>
+			<button type="button" disabled>등록</button>
 		</div>
 		<button type="button">닫기</button>
 	</div>
