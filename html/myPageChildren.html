@@ -283,115 +283,40 @@
 						<h4>자녀회원 관리</h4>
 						<p>신세계 아카데미에서 자녀 정보를 등록하고 함께 콘텐츠를 이용해 보세요</p>
 						<div class="collectionTop">
-							<input type="checkbox" id="all" class="default">
-							<label for="all">전체선택</label>
-							<button type="button">마감된 콘텐츠 삭제</button>
-							<select class="noLIne">
-								<option>일정 빠른 순</option>
-								<option>일정 빠른 순</option>
-								<option>일정 빠른 순</option>
-							</select>
-							<select>
-								<option>신세계 사우스시티점</option>
-								<option>신세계 사우스시티점</option>
-								<option>신세계 사우스시티점</option>
-							</select>
+							<button type="button" class="delete">선택삭제</button>
+							<button type="button" class="add">신규등록</button>
 						</div>
-						<div class="lectureList">
-							<div class="tableTitle webHidden">
-								<span>분류</span>
-								<span>강좌명 · 시간</span>
-								<span>진도</span>
-								<span>출석률</span>
-								<span>다음 수업</span>
-							</div>
-							<ul>
-								<li>
-									<span>Wellness</span>
-									<dl>
-										<dt>Cello & Guitar Strings Duo Concert<em>Next up</em></dt>
-										<dd>김명민 · 본점 502 · 수 11:00 ~ 13:00</dd>
-									</dl>
-									<div class="progress">
-										<span>
-											<em>5 / 12주차</em>
-											<strong><span>진도</span>42%</strong>
-										</span>
-										<div class="bar">
-											<em style="width:42%;">42%</em>
-										</div>
-									</div>
-									<div class="atten">
-										<em>출석률</em>
-										<strong>100%</strong>
-										<span>5/5회</span>
-									</div>
-									<div class="next">
-										<em>다음수업</em>
-										<strong>09.16</strong>
-										<span>D-2 · 수</span>
-									</div>
-								</li>
-								<li>
-									<span>Wellness</span>
-									<dl>
-										<dt>Cello & Guitar Strings Duo Concert<strong>임시휴강</strong></dt>
-										<dd>김명민 · 본점 502 · 수 11:00 ~ 13:00</dd>
-									</dl>
-									<div class="progress">
-										<span>
-											<em>5 / 12주차</em>
-											<strong><span>진도</span>42%</strong>
-										</span>
-										<div class="bar">
-											<em style="width:42%;">42%</em>
-										</div>
-									</div>
-									<div class="atten">
-										<em>출석률</em>
-										<strong>100%</strong>
-										<span>5/5회</span>
-									</div>
-									<div class="next">
-										<em>다음수업</em>
-										<strong>09.16</strong>
-										<span>D-2 · 수</span>
-									</div>
-								</li>
-								<li>
-									<span>Culture</span>
-									<dl>
-										<dt>이탈리아 가정식 12주<span>환불 D-2</span></dt>
-										<dd>김명민 · 본점 502 · 수 11:00 ~ 13:00</dd>
-									</dl>
-									<div class="progress">
-										<span>
-											<em>5 / 12주차</em>
-											<strong><span>진도</span>42%</strong>
-										</span>
-										<div class="bar">
-											<em style="width:75%;">75%</em>
-										</div>
-									</div>
-									<div class="atten">
-										<em>출석률</em>
-										<strong>50%</strong>
-										<span>5/5회</span>
-									</div>
-									<div class="next">
-										<em>다음수업</em>
-										<strong>09.16</strong>
-										<span>D-2 · 수</span>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="paging">
-							<a href="#" class="prev">이전</a>
-							<span>Page</span>
-							<input type="text" value="1" />
-							<span>of <em>10</em></span>
-							<a href="#" class="next">다음</a>
+						<div class="chilList">
+							<table>
+								<colgroup>
+									<col width="10%">
+									<col width="">
+									<col width="12%">
+									<col width="20%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>선택</th>
+										<th>이름</th>
+										<th class="center">관계</th>
+										<th class="center">생년</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" class="default" title="자녀회원 선택" checked></td>
+										<td>홍자남</td>
+										<td class="center">자녀</td>
+										<td class="center">2016년</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" class="default" title="자녀회원 선택" checked></td>
+										<td>홍자남</td>
+										<td class="center">자녀</td>
+										<td class="center">2016년</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
 					<dl class="callCenter blind">

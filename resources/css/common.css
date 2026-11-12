@@ -1672,6 +1672,24 @@ footer {
 	}
 }
 
+/**************************** guide ****************************/
+.guide {
+	padding:16px;
+	margin-top:40px;
+	border-left:2px solid #A38348;
+	background:#F7F1E6;
+	ul {
+		list-style:disc;
+		padding-left:30px;
+		li {
+			color:#666;
+			font-size:16px;
+			line-height:22px;
+			font-weight:400;
+		}
+	}
+}
+
 /**************************** popup ****************************/
 .popup {
 	position:fixed;
